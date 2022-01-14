@@ -1,0 +1,1011 @@
+### YamlMime:ManagedReference
+items:
+- uid: Battlehub.RTCommon.IOC
+  commentId: T:Battlehub.RTCommon.IOC
+  id: IOC
+  parent: Battlehub.RTCommon
+  children:
+  - Battlehub.RTCommon.IOC.ClearAll
+  - Battlehub.RTCommon.IOC.IsFallbackRegistered``1
+  - Battlehub.RTCommon.IOC.IsRegistered``1
+  - Battlehub.RTCommon.IOC.IsRegistered``1(System.String)
+  - Battlehub.RTCommon.IOC.Register``1(``0)
+  - Battlehub.RTCommon.IOC.Register``1(Func{``0})
+  - Battlehub.RTCommon.IOC.Register``1(System.String,``0)
+  - Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})
+  - Battlehub.RTCommon.IOC.RegisterFallback``1(``0)
+  - Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})
+  - Battlehub.RTCommon.IOC.Resolve``1
+  - Battlehub.RTCommon.IOC.Resolve``1(System.String)
+  - Battlehub.RTCommon.IOC.Unregister``1
+  - Battlehub.RTCommon.IOC.Unregister``1(``0)
+  - Battlehub.RTCommon.IOC.Unregister``1(Func{``0})
+  - Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)
+  - Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})
+  - Battlehub.RTCommon.IOC.UnregisterFallback``1
+  - Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)
+  - Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})
+  langs:
+  - csharp
+  - vb
+  name: IOC
+  nameWithType: IOC
+  fullName: Battlehub.RTCommon.IOC
+  type: Class
+  source:
+    id: IOC
+    path: ''
+    startLine: 27430
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nSimple IoC container implementation.\n"
+  example: []
+  syntax:
+    content: public static class IOC
+    content.vb: Public Module IOC
+  inheritance:
+  - System.Object
+  modifiers.csharp:
+  - public
+  - static
+  - class
+  modifiers.vb:
+  - Public
+  - Module
+- uid: Battlehub.RTCommon.IOC.IsRegistered``1(System.String)
+  commentId: M:Battlehub.RTCommon.IOC.IsRegistered``1(System.String)
+  id: IsRegistered``1(System.String)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: IsRegistered<T>(String)
+  nameWithType: IOC.IsRegistered<T>(String)
+  fullName: Battlehub.RTCommon.IOC.IsRegistered<T>(System.String)
+  type: Method
+  source:
+    id: IsRegistered
+    path: ''
+    startLine: 27438
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nChecks if a named dependency of type is registered.\n"
+  example: []
+  syntax:
+    content: public static bool IsRegistered<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    return:
+      type: System.Boolean
+      description: True if dependency of type with name registered.
+    content.vb: Public Shared Function IsRegistered(Of T)(name As String) As Boolean
+  overload: Battlehub.RTCommon.IOC.IsRegistered*
+  nameWithType.vb: IOC.IsRegistered(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.IsRegistered(Of T)(System.String)
+  name.vb: IsRegistered(Of T)(String)
+- uid: Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})
+  id: Register``1(System.String,Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(String, Func<T>)
+  nameWithType: IOC.Register<T>(String, Func<T>)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(System.String, Func<T>)
+  type: Method
+  source:
+    id: Register
+    path: ''
+    startLine: 27449
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters named dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Register<T>(string name, Func<T> func)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency.
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which constructs object of type.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Register(Of T)(name As String, func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.Register*
+  nameWithType.vb: IOC.Register(Of T)(String, Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(System.String, Func(Of T))
+  name.vb: Register(Of T)(String, Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Register``1(System.String,``0)
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(System.String,``0)
+  id: Register``1(System.String,``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(String, T)
+  nameWithType: IOC.Register<T>(String, T)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(System.String, T)
+  type: Method
+  source:
+    id: Register
+    path: ''
+    startLine: 27460
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters named dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Register<T>(string name, T instance)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency.
+    - id: instance
+      type: '{T}'
+      description: Instance of type.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Register(Of T)(name As String, instance As T)
+  overload: Battlehub.RTCommon.IOC.Register*
+  nameWithType.vb: IOC.Register(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(System.String, T)
+  name.vb: Register(Of T)(String, T)
+- uid: Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})
+  id: Unregister``1(System.String,Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Unregister<T>(String, Func<T>)
+  nameWithType: IOC.Unregister<T>(String, Func<T>)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(System.String, Func<T>)
+  type: Method
+  source:
+    id: Unregister
+    path: ''
+    startLine: 27471
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters named dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Unregister<T>(string name, Func<T> func)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency.
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which was passed to Register method.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Unregister(Of T)(name As String, func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.Unregister*
+  nameWithType.vb: IOC.Unregister(Of T)(String, Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(System.String, Func(Of T))
+  name.vb: Unregister(Of T)(String, Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)
+  id: Unregister``1(System.String,``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Unregister<T>(String, T)
+  nameWithType: IOC.Unregister<T>(String, T)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(System.String, T)
+  type: Method
+  source:
+    id: Unregister
+    path: ''
+    startLine: 27482
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters named dependency of type\n"
+  example: []
+  syntax:
+    content: public static void Unregister<T>(string name, T instance)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency
+    - id: instance
+      type: '{T}'
+      description: Instance which was passed to Register method.
+    typeParameters:
+    - id: T
+      description: Type of dependency
+    content.vb: Public Shared Sub Unregister(Of T)(name As String, instance As T)
+  overload: Battlehub.RTCommon.IOC.Unregister*
+  nameWithType.vb: IOC.Unregister(Of T)(String, T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(System.String, T)
+  name.vb: Unregister(Of T)(String, T)
+- uid: Battlehub.RTCommon.IOC.IsRegistered``1
+  commentId: M:Battlehub.RTCommon.IOC.IsRegistered``1
+  id: IsRegistered``1
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: IsRegistered<T>()
+  nameWithType: IOC.IsRegistered<T>()
+  fullName: Battlehub.RTCommon.IOC.IsRegistered<T>()
+  type: Method
+  source:
+    id: IsRegistered
+    path: ''
+    startLine: 27492
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nChecks if a dependency of type is registered.\n"
+  example: []
+  syntax:
+    content: public static bool IsRegistered<T>()
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    return:
+      type: System.Boolean
+      description: True if dependency of type with name registered.
+    content.vb: Public Shared Function IsRegistered(Of T) As Boolean
+  overload: Battlehub.RTCommon.IOC.IsRegistered*
+  nameWithType.vb: IOC.IsRegistered(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.IsRegistered(Of T)()
+  name.vb: IsRegistered(Of T)()
+- uid: Battlehub.RTCommon.IOC.Register``1(Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(Func{``0})
+  id: Register``1(Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(Func<T>)
+  nameWithType: IOC.Register<T>(Func<T>)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(Func<T>)
+  type: Method
+  source:
+    id: Register
+    path: ''
+    startLine: 27502
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Register<T>(Func<T> func)
+    parameters:
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which constructs object of type.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Register(Of T)(func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.Register*
+  nameWithType.vb: IOC.Register(Of T)(Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(Func(Of T))
+  name.vb: Register(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Register``1(``0)
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(``0)
+  id: Register``1(``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Register<T>(T)
+  nameWithType: IOC.Register<T>(T)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(T)
+  type: Method
+  source:
+    id: Register
+    path: ''
+    startLine: 27512
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Register<T>(T instance)
+    parameters:
+    - id: instance
+      type: '{T}'
+      description: Instance of type.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Register(Of T)(instance As T)
+  overload: Battlehub.RTCommon.IOC.Register*
+  nameWithType.vb: IOC.Register(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(T)
+  name.vb: Register(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.Unregister``1(Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(Func{``0})
+  id: Unregister``1(Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Unregister<T>(Func<T>)
+  nameWithType: IOC.Unregister<T>(Func<T>)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(Func<T>)
+  type: Method
+  source:
+    id: Unregister
+    path: ''
+    startLine: 27522
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Unregister<T>(Func<T> func)
+    parameters:
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which was passed to Register method.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Unregister(Of T)(func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.Unregister*
+  nameWithType.vb: IOC.Unregister(Of T)(Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(Func(Of T))
+  name.vb: Unregister(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Unregister``1(``0)
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(``0)
+  id: Unregister``1(``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Unregister<T>(T)
+  nameWithType: IOC.Unregister<T>(T)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(T)
+  type: Method
+  source:
+    id: Unregister
+    path: ''
+    startLine: 27532
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Unregister<T>(T instance)
+    parameters:
+    - id: instance
+      type: '{T}'
+      description: Instance which was passed to Register method.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    content.vb: Public Shared Sub Unregister(Of T)(instance As T)
+  overload: Battlehub.RTCommon.IOC.Unregister*
+  nameWithType.vb: IOC.Unregister(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(T)
+  name.vb: Unregister(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.Unregister``1
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1
+  id: Unregister``1
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Unregister<T>()
+  nameWithType: IOC.Unregister<T>()
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>()
+  type: Method
+  source:
+    id: Unregister
+    path: ''
+    startLine: 27541
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void Unregister<T>()
+    typeParameters:
+    - id: T
+      description: ''
+    content.vb: Public Shared Sub Unregister(Of T)
+  overload: Battlehub.RTCommon.IOC.Unregister*
+  nameWithType.vb: IOC.Unregister(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)()
+  name.vb: Unregister(Of T)()
+- uid: Battlehub.RTCommon.IOC.IsFallbackRegistered``1
+  commentId: M:Battlehub.RTCommon.IOC.IsFallbackRegistered``1
+  id: IsFallbackRegistered``1
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: IsFallbackRegistered<T>()
+  nameWithType: IOC.IsFallbackRegistered<T>()
+  fullName: Battlehub.RTCommon.IOC.IsFallbackRegistered<T>()
+  type: Method
+  source:
+    id: IsFallbackRegistered
+    path: ''
+    startLine: 27551
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nChecks if a fallback dependency of type is registered.\n"
+  example: []
+  syntax:
+    content: public static bool IsFallbackRegistered<T>()
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    return:
+      type: System.Boolean
+      description: True if fallback dependency of type with name registered.
+    content.vb: Public Shared Function IsFallbackRegistered(Of T) As Boolean
+  overload: Battlehub.RTCommon.IOC.IsFallbackRegistered*
+  nameWithType.vb: IOC.IsFallbackRegistered(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.IsFallbackRegistered(Of T)()
+  name.vb: IsFallbackRegistered(Of T)()
+- uid: Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})
+  id: RegisterFallback``1(Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: RegisterFallback<T>(Func<T>)
+  nameWithType: IOC.RegisterFallback<T>(Func<T>)
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback<T>(Func<T>)
+  type: Method
+  source:
+    id: RegisterFallback
+    path: ''
+    startLine: 27561
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void RegisterFallback<T>(Func<T> func)
+    parameters:
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which constructs object of type.
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    content.vb: Public Shared Sub RegisterFallback(Of T)(func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.RegisterFallback*
+  nameWithType.vb: IOC.RegisterFallback(Of T)(Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.RegisterFallback(Of T)(Func(Of T))
+  name.vb: RegisterFallback(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.RegisterFallback``1(``0)
+  commentId: M:Battlehub.RTCommon.IOC.RegisterFallback``1(``0)
+  id: RegisterFallback``1(``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: RegisterFallback<T>(T)
+  nameWithType: IOC.RegisterFallback<T>(T)
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback<T>(T)
+  type: Method
+  source:
+    id: RegisterFallback
+    path: ''
+    startLine: 27571
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nRegisters fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void RegisterFallback<T>(T instance)
+    parameters:
+    - id: instance
+      type: '{T}'
+      description: Instance of type.
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    content.vb: Public Shared Sub RegisterFallback(Of T)(instance As T)
+  overload: Battlehub.RTCommon.IOC.RegisterFallback*
+  nameWithType.vb: IOC.RegisterFallback(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.RegisterFallback(Of T)(T)
+  name.vb: RegisterFallback(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})
+  id: UnregisterFallback``1(Func{``0})
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: UnregisterFallback<T>(Func<T>)
+  nameWithType: IOC.UnregisterFallback<T>(Func<T>)
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>(Func<T>)
+  type: Method
+  source:
+    id: UnregisterFallback
+    path: ''
+    startLine: 27581
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void UnregisterFallback<T>(Func<T> func)
+    parameters:
+    - id: func
+      type: Global.Func{{T}}
+      description: Function which was passed to RegisterFallback method.
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    content.vb: Public Shared Sub UnregisterFallback(Of T)(func As Func(Of T))
+  overload: Battlehub.RTCommon.IOC.UnregisterFallback*
+  nameWithType.vb: IOC.UnregisterFallback(Of T)(Func(Of T))
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)(Func(Of T))
+  name.vb: UnregisterFallback(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)
+  id: UnregisterFallback``1(``0)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: UnregisterFallback<T>(T)
+  nameWithType: IOC.UnregisterFallback<T>(T)
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>(T)
+  type: Method
+  source:
+    id: UnregisterFallback
+    path: ''
+    startLine: 27591
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void UnregisterFallback<T>(T instance)
+    parameters:
+    - id: instance
+      type: '{T}'
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    content.vb: Public Shared Sub UnregisterFallback(Of T)(instance As T)
+  overload: Battlehub.RTCommon.IOC.UnregisterFallback*
+  nameWithType.vb: IOC.UnregisterFallback(Of T)(T)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)(T)
+  name.vb: UnregisterFallback(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1
+  id: UnregisterFallback``1
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: UnregisterFallback<T>()
+  nameWithType: IOC.UnregisterFallback<T>()
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>()
+  type: Method
+  source:
+    id: UnregisterFallback
+    path: ''
+    startLine: 27600
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nUnregisters fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static void UnregisterFallback<T>()
+    typeParameters:
+    - id: T
+      description: Type of fallback dependency.
+    content.vb: Public Shared Sub UnregisterFallback(Of T)
+  overload: Battlehub.RTCommon.IOC.UnregisterFallback*
+  nameWithType.vb: IOC.UnregisterFallback(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)()
+  name.vb: UnregisterFallback(Of T)()
+- uid: Battlehub.RTCommon.IOC.Resolve``1(System.String)
+  commentId: M:Battlehub.RTCommon.IOC.Resolve``1(System.String)
+  id: Resolve``1(System.String)
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Resolve<T>(String)
+  nameWithType: IOC.Resolve<T>(String)
+  fullName: Battlehub.RTCommon.IOC.Resolve<T>(System.String)
+  type: Method
+  source:
+    id: Resolve
+    path: ''
+    startLine: 27611
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nResolves named dependency or fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static T Resolve<T>(string name)
+    parameters:
+    - id: name
+      type: System.String
+      description: Name of dependency.
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    return:
+      type: '{T}'
+      description: Object of type (or null if dependency of type is not registered)
+    content.vb: Public Shared Function Resolve(Of T)(name As String) As T
+  overload: Battlehub.RTCommon.IOC.Resolve*
+  nameWithType.vb: IOC.Resolve(Of T)(String)
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Resolve(Of T)(System.String)
+  name.vb: Resolve(Of T)(String)
+- uid: Battlehub.RTCommon.IOC.Resolve``1
+  commentId: M:Battlehub.RTCommon.IOC.Resolve``1
+  id: Resolve``1
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: Resolve<T>()
+  nameWithType: IOC.Resolve<T>()
+  fullName: Battlehub.RTCommon.IOC.Resolve<T>()
+  type: Method
+  source:
+    id: Resolve
+    path: ''
+    startLine: 27621
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nResolves dependency or fallback dependency of type.\n"
+  example: []
+  syntax:
+    content: public static T Resolve<T>()
+    typeParameters:
+    - id: T
+      description: Type of dependency.
+    return:
+      type: '{T}'
+      description: Object of type (or null if dependency of type is not registered)
+    content.vb: Public Shared Function Resolve(Of T) As T
+  overload: Battlehub.RTCommon.IOC.Resolve*
+  nameWithType.vb: IOC.Resolve(Of T)()
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+  fullName.vb: Battlehub.RTCommon.IOC.Resolve(Of T)()
+  name.vb: Resolve(Of T)()
+- uid: Battlehub.RTCommon.IOC.ClearAll
+  commentId: M:Battlehub.RTCommon.IOC.ClearAll
+  id: ClearAll
+  parent: Battlehub.RTCommon.IOC
+  langs:
+  - csharp
+  - vb
+  name: ClearAll()
+  nameWithType: IOC.ClearAll()
+  fullName: Battlehub.RTCommon.IOC.ClearAll()
+  type: Method
+  source:
+    id: ClearAll
+    path: ''
+    startLine: 27636
+  assemblies:
+  - cs.temp.dll
+  namespace: Battlehub.RTCommon
+  summary: "\nClears container and removes all registered dependencies and fallbacks\n"
+  example: []
+  syntax:
+    content: public static void ClearAll()
+    content.vb: Public Shared Sub ClearAll
+  overload: Battlehub.RTCommon.IOC.ClearAll*
+  modifiers.csharp:
+  - public
+  - static
+  modifiers.vb:
+  - Public
+  - Shared
+references:
+- uid: Battlehub.RTCommon
+  commentId: N:Battlehub.RTCommon
+  name: Battlehub.RTCommon
+  nameWithType: Battlehub.RTCommon
+  fullName: Battlehub.RTCommon
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: System.Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: Battlehub.RTCommon.IOC.IsRegistered*
+  commentId: Overload:Battlehub.RTCommon.IOC.IsRegistered
+  name: IsRegistered
+  nameWithType: IOC.IsRegistered
+  fullName: Battlehub.RTCommon.IOC.IsRegistered
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: String
+  nameWithType: String
+  fullName: System.String
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: Boolean
+  nameWithType: Boolean
+  fullName: System.Boolean
+- uid: Battlehub.RTCommon.IOC.Register*
+  commentId: Overload:Battlehub.RTCommon.IOC.Register
+  name: Register
+  nameWithType: IOC.Register
+  fullName: Battlehub.RTCommon.IOC.Register
+- uid: Global.Func{{T}}
+  commentId: '!:Global.Func{``0}'
+  definition: Global.Func`1
+  name: Func<T>
+  nameWithType: Func<T>
+  fullName: Func<T>
+  nameWithType.vb: Func(Of T)
+  fullName.vb: Func(Of T)
+  name.vb: Func(Of T)
+  spec.csharp:
+  - uid: Global.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: T
+    nameWithType: T
+    fullName: T
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: Global.Func`1
+  isExternal: true
+  name: Func<>
+  nameWithType: Func<>
+  fullName: Func<>
+  nameWithType.vb: Func(Of )
+  fullName.vb: Func(Of )
+  name.vb: Func(Of )
+  spec.csharp:
+  - uid: Global.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: <
+    nameWithType: <
+    fullName: <
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: '>'
+    nameWithType: '>'
+    fullName: '>'
+  spec.vb:
+  - uid: Global.Func`1
+    name: Func
+    nameWithType: Func
+    fullName: Func
+    isExternal: true
+  - name: '(Of '
+    nameWithType: '(Of '
+    fullName: '(Of '
+  - name: ''
+    nameWithType: ''
+    fullName: ''
+  - name: )
+    nameWithType: )
+    fullName: )
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: Battlehub.RTCommon.IOC.Unregister*
+  commentId: Overload:Battlehub.RTCommon.IOC.Unregister
+  name: Unregister
+  nameWithType: IOC.Unregister
+  fullName: Battlehub.RTCommon.IOC.Unregister
+- uid: Battlehub.RTCommon.IOC.IsFallbackRegistered*
+  commentId: Overload:Battlehub.RTCommon.IOC.IsFallbackRegistered
+  name: IsFallbackRegistered
+  nameWithType: IOC.IsFallbackRegistered
+  fullName: Battlehub.RTCommon.IOC.IsFallbackRegistered
+- uid: Battlehub.RTCommon.IOC.RegisterFallback*
+  commentId: Overload:Battlehub.RTCommon.IOC.RegisterFallback
+  name: RegisterFallback
+  nameWithType: IOC.RegisterFallback
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback*
+  commentId: Overload:Battlehub.RTCommon.IOC.UnregisterFallback
+  name: UnregisterFallback
+  nameWithType: IOC.UnregisterFallback
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback
+- uid: Battlehub.RTCommon.IOC.Resolve*
+  commentId: Overload:Battlehub.RTCommon.IOC.Resolve
+  name: Resolve
+  nameWithType: IOC.Resolve
+  fullName: Battlehub.RTCommon.IOC.Resolve
+- uid: Battlehub.RTCommon.IOC.ClearAll*
+  commentId: Overload:Battlehub.RTCommon.IOC.ClearAll
+  name: ClearAll
+  nameWithType: IOC.ClearAll
+  fullName: Battlehub.RTCommon.IOC.ClearAll

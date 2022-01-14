@@ -1,0 +1,25 @@
+apiRules:
+- include:
+    uidRegex: ^Battlehub\.RTCommon\.IOC$
+    type: Class
+- exclude:
+      uidRegex: ^Battlehub\.RTCommon\..*$
+      type: Type
+- include:
+      uidRegex: ^Battlehub\.RTCommon$
+      type: Namespace
+- include:
+    uidRegex: ^Battlehub\.RTEditor\.IWindowManager$
+    type: Interface
+- exclude:
+      uidRegex: ^Battlehub\.RTEditor\..*$
+      type: Type
+- include:
+      uidRegex: ^Battlehub\.RTEditor$
+      type: Namespace
+- exclude:
+    uidRegex: ^Global
+    type: Namespace
+- exclude:
+    uidRegex: .*
+    type: Namespace
