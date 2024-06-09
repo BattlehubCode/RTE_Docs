@@ -1,4 +1,4 @@
-# Runtime Editor for Unity
+I'm# Runtime Editor for Unity
 
 Welcome to the **Runtime Editor v.4.0.0** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
@@ -254,8 +254,8 @@ Add the Assets/Battlehub/RTEditor/Runtime/RTCommon/**ExposeToEditor** component 
 ![Expose To Editor][expose_to_editor]
 
 1. **Selection Events**:
-   - **Selected (ExposeToEditor)**: Lists the objects that will be selected when this object is selected.
-   - **Unselected (ExposeToEditor)**: Lists the objects that will be unselected when this object is unselected.
+   - **Selected (ExposeToEditor)**
+   - **Unselected (ExposeToEditor)**
 	
 2. **Bounds Configuration**:
    - **Bounds Object**: Specifies the GameObject to which the collider will be added (if AddColliders == false)
