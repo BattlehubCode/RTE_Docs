@@ -1,0 +1,549 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> | Example Unity documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" | Example Unity documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>#Introduction</p>
+<p><img src="../resources/img/rteditor/overview/overview.png" alt="Screenshot"></p>
+<p>This documentation covers most important parts of Runtime Editor. Unlike previous versions of the documentation,
+I tried to concentrate more on examples rather then documenting each property of each script. <a href="mailto:Battlehub@outlook.com">Let me know</a> what examples you would like to see.</p>
+<p>Start with following sections:</p>
+<ul>
+<li><a href="runtime-editor.html#getting-started">Getting Started with Runtime Editor</a></li>
+<li><a href="transform-handles.html#getting-started">Getting Started with Transform Handles</a></li>
+<li><a href="save-load.html#getting-started">Getting Started with Save &amp; Load</a></li>
+<li><a href="infrastructure.html#expose-to-editor">Expose To Editor</a></li>
+<li><a href="infrastructure.html#event-methods">Event methods</a></li>
+<li><a href="infrastructure.html#ioc">IOC</a></li>
+<li><a href="infrastructure.html#runtime-selection">Runtime Selection</a></li>
+<li><a href="infrastructure.html#runtime-undo">Runtime Undo</a></li>
+</ul>
+<p>##List of Features</p>
+<ul>
+<li>Position Handle, Rotation Handle, Scale Handle, Rect Tool.</li>
+<li>Grid, Box Selection, Scene Gizmo.</li>
+<li>Global &amp; Local coordinates, Local &amp; Center pivot point modes, Vertex &amp; Grid snapping.</li>
+<li>Gizmos for Colliders, Lights and Audio Sources.</li>
+<li>Scene navigation, Orthographic &amp; Perspective mode.</li>
+<li>Undo &amp; Redo API.</li>
+<li>Object selection API.</li>
+<li>Object life-cycle Events.</li>
+<li>Play &amp; Edit mode.</li>
+<li><strong>Configurable Inspector</strong>.</li>
+<li>Component &amp; Material editors.</li>
+<li>20+ Built-in property editors.</li>
+<li><strong>Ability to edit components of multiple selected objects.</strong></li>
+<li>Add Component control.</li>
+<li><strong>Multiple scenes</strong> and cameras support.</li>
+<li><strong>Dock Panels</strong> &amp; Windows Management.</li>
+<li>Dialogs, Message Boxes, Confirmations.</li>
+<li>Easy to extend with new windows.</li>
+<li><strong>Configurable Main &amp; Context menu</strong>.</li>
+<li>Lightweight Virtualizing Tree View for Hierarchy and Project windows.</li>
+<li><strong>Configurable Save &amp; Load subsystem</strong> (almost no coding is required).</li>
+<li><strong>Easy to use Project API</strong>.</li>
+<li><strong>Static Assets, Asset Bundles and Runtime Assets support</strong>.</li>
+<li>Load assets on demand.</li>
+<li>Multiple Projects support.</li>
+<li><strong>Animation Editor</strong>.</li>
+<li><strong>Terrain Editor</strong>.</li>
+<li><strong>ProBuilder Integration</strong>.</li>
+<li><strong>Runtime Scripting</strong>.</li>
+<li><strong>Universal Render Pipeline</strong> support.</li>
+<li><strong>HD Renderer Pipeline</strong> support (Beta).</li>
+<li><strong>Mobile Support</strong>.</li>
+</ul>
+<p>###Breaking Changes</p>
+<p>Old Views derived from RuntimeWindow are replaced with Views and ViewModels and <a href="https://github.com/Real-Serious-Games/Unity-Weld">MVVM-style data-binding system for Unity</a>.</p>
+<ul>
+<li>Old views and dialogs have been moved to the <strong>Battlehub/RTEditor/Runtime/RTEditor/Legacy</strong> folder.</li>
+<li>Old prefabs can be found in the <strong>Battlehub/RTEditor/Content/Runtime/RTEditor/Prefabs/Legacy</strong> folder.</li>
+<li>New Views and ViewModels are located in <strong>Battlehub/RTEditor/Runtime/RTEditor/Views</strong> and <strong>Assets/Battlehub/RTEditor/Runtime/RTEditor/ViewsModels</strong> respectively.</li>
+</ul>
+<p>If you want to use legacy built-in windows, select the <strong>&quot;Use Legacy Built-In Windows&quot;</strong> toggle in the WindowManager component of the RuntimEditor prefab.</p>
+<p><img src="../resources/img/rteditor/overview/use-legacy-builtin-windows.png" alt="Screenshot"></p>
+<p>##Changelog</p>
+<p>####RTE 3.5.0 - Dec 24, 2021</p>
+<ul>
+<li>RTE: SceneViewImpl, SceneViewModel ExposePrefabInstance modified to not expose full hierarchy.</li>
+<li>UI: Set VirtualizingListBoxItem.m_toggle.interactable to true by default</li>
+<li>UI: Added VirtualizingScrollRect.ItemsChanged event</li>
+<li>UI: Added VirtualizingListBoxBinding.CanRemove property</li>
+<li>UI: Added VirtualizingListBoxBinding.CanReorder property</li>
+<li>UI: Added VirtualizingListBoxBinding.CanSelect property</li>
+<li>UI: Added VirtualizingListBoxBinding.Target property</li>
+<li>UI: Changed VirtualizingListBoxBinding base class from AbstractMemberBinding to ControlBinding</li>
+<li>RTE: Added code to activate Dialog windows WindowManager.OnInputModuleUpdate()</li>
+<li>RTE: Added WindowOverlay to RuntimeEditor.prefab \UI\LayoutRoot\Middle\DockPanels\Mask\Modal</li>
+<li>RTE PeekMode: added Commands Panel</li>
+<li>RTE PeekMode: added Group, Ungroup, CreatePrefab buttons to GameObjectView</li>
+<li>RTE PeekMode: added &quot;Begin Create&quot; button</li>
+<li>RTE: Added Tools/Runtime Editor/Create Custom Window menu command</li>
+<li>RTE: Added ability to Create CustomView and CustomViewModel from template</li>
+<li>RTE: UnityWeld.dll Auto Reference flag set to True</li>
+<li>RTH: Added code to update ExposeToEditor.LocalEulerAngles from RotationHandle</li>
+<li>RTE: Added support for Rotations &gt; 360 degrees in Animation Editor</li>
+<li>RTE: Fixed AnimationViewModel undo &amp; redo</li>
+<li>RTE: Fixed Legacy AnimationView undo &amp; redo</li>
+<li>RTE: Added InspectorModel</li>
+<li>RTC: Deprecated RuntimeTools.ShowGizmos, ShowGizmosChanged, ShowSelectionGizmos, ShowSelectionGizmosChanged</li>
+<li>RTC: IOC.IsRegistered and IOC.IsFallbackRegistered methods added</li>
+<li>RTE: Models\Placement\PlacementModel added to RuntimeEditor.prefab</li>
+<li>RTE: Models\Grouping\GroupingModel added to RuntimeEditor.prefab</li>
+<li>RTE: Deprecated IRuntimEditorExt</li>
+<li>RTE: Added IPlacementModel, PlacementModel</li>
+<li>RTE: Added IGroupingModel, GroupingModel</li>
+<li>RTE PeekMode: Added PeekModeCommandsHandler</li>
+<li>RTE PeekMode: Added CreatorWindow</li>
+<li>RTE:  Added Transform IWindowManager.Prompt(string header, string text, DialogAction<promptdialogargs> ok, DialogAction<promptdialogargs> cancel, string okText = &quot;OK&quot;, string cancelText = &quot;Cancel&quot;)</promptdialogargs></promptdialogargs></li>
+<li>RTE:  Added Transform IWindowManager.Prompt(Sprite icon, string header, string text, DialogAction<promptdialogargs> ok, DialogAction<promptdialogargs> cancel, string okText = &quot;OK&quot;, string cancelText = &quot;Cancel&quot;)</promptdialogargs></promptdialogargs></li>
+<li>RTE: Added EmptyView and EmptyDialog</li>
+<li>RTE: Added AutoUI</li>
+<li>RTE: added IProjectTreeViewModel, IProjectFolderViewModel as replacement for IProjectTree and IProjectFolder</li>
+<li>RTC: Added IRuntimeObjects.ComponentDestroyed event</li>
+<li>RTC: Added ExposeToEditor._ComponentDestroyed event</li>
+<li>RTE: IWindowManager.CreatePopup, .CreateDropdown methods added</li>
+<li>UI: Added RaiseTransformChanged() call to Start method of RectTransformChangeListener (in order to correctly initialize VirtualizingScrollRect)</li>
+<li>UI: Added Region.Destroy method</li>
+<li>UI: Added DockPanel.AddDropdownRegion and .AddPopupRegion methods with various overloads.</li>
+<li>RTE: Added IRuntimeEditor.StopCoroutine</li>
+<li>RTE: Added IWindowManager Confirmation overloads</li>
+<li>UI: Added DialogManager .ShowComplexDialog</li>
+<li>UI: Added Dialog Alt button, Alt event and Alt action</li>
+<li>RTH: Changed RuntimeHitTester DefaultExecutionOrder to -89</li>
+<li>RTB: Added support for Probuilder 4.4.0, 5.0.3</li>
+<li>RTC: Added IRuntimeUndo.AddComponentWithRequirements</li>
+<li>RTH: Added MinOrthoSize, MaxOrthoSize properties to RuntimeSceneComponent</li>
+<li>RTE PeekMode: Dropdowns, add component panel, add component viewmodel</li>
+<li>RTE PeekMode: GameObjectName toggle + styling</li>
+<li>RTE PeekMode: ContextPanel using minimum distance = 50 when Empty Game Object selected</li>
+<li>UI: Fixed NullReferenceException when opening a menu control with more than 2 levels of depth</li>
+<li>RTE PeekMode: Added ComponentViewModel</li>
+<li>RTE PeekMode: Added ContextPanelViewModel</li>
+<li>RTE: Component Editor Icons added</li>
+<li>RTE: Added Default Component Editor Icon</li>
+<li>RTE: Added ComponentEditorSettings.ShowIcon and ComponentEditorSettings.Icon fields</li>
+<li>RTE: Added HeaderDescriptor.ShowIcon and HeaderDescriptor.Icon fields</li>
+<li>RTE: Added Component Editor Icon</li>
+<li>RTE: Implemented PeekMode context panel visibility and positioning</li>
+<li>RTB: Highlight AutoUV with different color in Manual UV Editor window</li>
+<li>RTB: Hidden position/rotation/scale handle axes if no faces selected in uv editing mode</li>
+<li>RTB: Fixed bug where ManualUVRenderer was not refreshed correctly on mesh editing to uv editing mode change</li>
+<li>RTB: Fixed bug where ManualUVRenderer was not refreshed correctly on vertex/edge/face mode change</li>
+<li>UI: Added SceneName parameter to  MenuDefinitionAttribute (defines scene which menu applies to)</li>
+<li>RTE: Added PeekModeScene and PeekModeLayout</li>
+<li>RTE: Added BuiltInWindowNames</li>
+<li>RTE: Added LayoutExtension</li>
+<li>UI:  Added LayoutInfo  LayoutInfo.Horizontal(LayoutInfo top, LayoutInfo bottom, float ratio = 0.5f);</li>
+<li>UI:  Added LayoutInfo  LayoutInfo.Vertical(LayoutInfo left, LayoutInfo right, float ratio = 0.5f);</li>
+<li>UI:  Added LayoutInfo  LayoutInfo.Group(params LayoutInfo[] tabGroup);</li>
+<li>RTE: Added Transform IWindowManager.CreateWindow(string windowTypeName, out WindowDescriptor wd);</li>
+<li>RTE: Added Transform IWindowManager.CreateWindow(string windowTypeName, out WindowDescriptor wd, out bool isDialog);</li>
+<li>RTE: Added LayoutInfo IWindowManager.CreateLayoutInfo(Transform content, WindowDescriptor desc);</li>
+<li>RTH: Added SelectionPicker (corresponding code removed from BoxSelection and BoxSelectionRenderer)</li>
+<li>RTE: Replaced UnityEvent HideInInspector with NonSerialized attribute</li>
+<li>RTE: Added ReplaceSceneViewAndViewModelExample</li>
+<li>RTE: Added ability to overrided views</li>
+<li>RTE:  Added SceneViewModelOverride example</li>
+<li>RTE:  Added ability to override view models</li>
+<li>RTSL: Added support for objects with subassets imported from asset bundles.</li>
+<li>RTB: Material palette view tooltips added</li>
+<li>RTE: Added LocalizedTooltip</li>
+<li>RTC: SetCursor if m_currentCursorType != cursorType. CursorHelper.SetCursor return value changed from void to bool.</li>
+<li>RTE: ImportFileDialog replaced</li>
+<li>RTE: Fixed TimelineControl key already exists exceptions when adding row with ColumnCount = 1</li>
+<li>RTE: AnimationSelectPropertiesDialog replaced</li>
+<li>RTH: Fixed SceneGizmo.DoSceneGizmo</li>
+<li>UI:  DockPanel.RootRegion.FrameImage.enabled = false</li>
+<li>RTE: AnimationView replaced</li>
+<li>RTE: add BubbleUpPointerExit only if IsTouchSupported == true</li>
+<li>RTT: TerrainEditor instantiated by TerrainView OnEditorSelectionChanged</li>
+<li>RTT: store selected layer index.</li>
+<li>RTSL: Fixed compatibility with 2.11 - 2.26 files</li>
+<li>RTB:  ManualUVEditorView, ManualUVSceneComponent, ManualUVRenderer fixed to work with Universal and HD RP</li>
+<li>RTSL: Updated PersistentSprite class to save textures which are not mapped.</li>
+<li>RTE: Replaced SaveAssetsDialog</li>
+<li>RTE: Replaced SaveFileDialog</li>
+<li>RTE: Replaced OpenFileDialog</li>
+<li>RTE: ProjectTreeViewModel select assets folder when selected folder removed</li>
+<li>RTE: ProjectTreeViewModel.SelectedItem accepts items for which CanDisplay returns true</li>
+<li>RTH: Added SelectionMode { UseColliders - default, UseRenderers, UseRenderersBeforeColliders }.</li>
+<li>RTT: Removed ProjectItemView from LayerListBoxItem.prefab</li>
+<li>UI: VirtualizingTreeViewItem.ItemPresenter.Label Overflow set to Ellipsis</li>
+<li>RTE: Added bool ShowLayers = true</li>
+<li>RTE: Added GameObjectEditorSettings</li>
+<li>RTE: ZipConstants.DefaultCodePage = System.Text.Encoding.UTF8.CodePage;</li>
+<li>RTE: Added 'select' parameter to public static void AddGameObjectToScene(this IRTE editor, GameObject go, bool select = true) method</li>
+<li>RTC: Added ImputLowForRDP.cs</li>
+<li>RTH: #pragma target 3.5 removed from OutlineBlur, OutlinePrepass, OutlineCompomosite</li>
+<li>RTE: private string[] m_hiddenValues added to EnumEditor</li>
+<li>RTE: virtual modifer added to ComponentEditor.BuildEditor and .OnExpanded methods</li>
+<li>RTE: bool? IsExpandedByDefault added to ComponentEditorSettings (used to calculate defaultValue in IsComponentExpanded getter)</li>
+<li>RTE: Replaced ImportAssetsDialog</li>
+<li>RTE: Replaced SelectAssetsDialog</li>
+<li>RTE: Renderers with isPartOfStaticBatch == true excluded from BoxSelection</li>
+<li>RTE: Using Screen.currentResolution.width instead of Display.main.systemWidth</li>
+<li>RTE: BaseGizmoInput DefaultExecution order changed to -59</li>
+<li>RTE: BaseGizmo public virtual Reset method</li>
+<li>RTE: Replaced ToolsPanel</li>
+<li>RTE: Replaced SettingsDialog</li>
+<li>RTE: Fixed Default Layout procedure</li>
+<li>RTE: Added RectTool text outline</li>
+<li>RTE: Added HierarchicalDataView</li>
+<li>RTE: Implemented HierarchicalDataViewModel common drag &amp; drop handling</li>
+<li>RTE: Replaced ProjectView</li>
+<li>RTE: Fixed VirtualizingTreeView CanBeParent, CanReparent flags behaviour</li>
+<li>RTE:  Added ability to disable foreground layer in Universal RP (If disabled, then the windows with the camera should not go to the floating mode).</li>
+<li>RTE:  Added m_depthMaskOffset field to DepthMaskingBehaviour (presumably fixes window depth masking bug on MacOS?)</li>
+<li>RTE:  Using the default UI shader from Unity 2020 #if UNITY_2019 (fixes incorrect transparency of the ui in windows placed above the scene)</li>
+<li>RTSL: GetUOAssembliesAndTypes moved to ReflectionUtils.cs</li>
+<li>RTSL: UnityWeld excluded from assemblies array in CodeGen.GetUOAssembliesAndTypes and EditorsMapWindow.GetUOAssembliesAndTypes</li>
+<li>RTE: Replaced SelectObjectDialog</li>
+<li>RTE: Replaced SelectColorDialog</li>
+<li>RTE: Added IWindowManager.CreateDialogWindow overload without preferredWidth, preferredHeight parameters</li>
+<li>RTE: Replaced ManageProjectsDialog</li>
+<li>RTSL: ProjectInfo .Name, .LastWriteTime fields replaced with properties</li>
+<li>RTE: canResize = true param added to IWindowManager.Dialog methods</li>
+<li>RTE: canResize = true param added to Workspace.Dialog methods</li>
+<li>RTE: Replaced SaveSceneDialog</li>
+<li>RTE: Added DialogBinding</li>
+<li>RTE: OneWayPropertyBindingSlim and TwoWayPropertyBindingSlim added to ControlBinding</li>
+<li>RTSL: ProjectItem .Name, .Ext, .Children, .Parent fields replaced with properties</li>
+<li>RTE: Added missing functionality to write gameobject name changes to undo stack.</li>
+<li>RTE: Activated, Deactivated events added to RuntimeWindow</li>
+<li>RTE: AddComponentControl moved from InspectorView to GameObjectEditor</li>
+<li>RTE: Replaced InspectorView</li>
+<li>RTE: Ability to override Inspector selection.</li>
+<li>RTH: Added BoundingSphereRadius property to RuntimeSceneComponent</li>
+<li>RTE: Added RuntimeGameWindow</li>
+<li>RTE: Replaced SceneView</li>
+<li>RTE: Replaced ConsoleView</li>
+<li>RTE: Replaced HierarchyView</li>
+<li>RTSL: Added .Load_Async<t> method with correct Task<t> return type.</t></t></li>
+<li>RTSL: IProjectAsync .DeleteFolderAsync, .DeleteAsync don't throw an exception if ProjectItem doesn't exist</li>
+<li>RTE: View, ViewBinding added</li>
+<li>UI:  Added PrefabIndex to MenuItemInfo</li>
+<li>UI:  Replaced Menu m_menuItemPrefab with m_menuItemPrefabs</li>
+<li>RTE: Fixed Strong and EditorsMap classes (Universal Windows Platform)</li>
+<li>UI: Added VirtualizingTreeViewBinding .ItemClick, .ItemHold, .ItemDoubleClick, .ItemExpanded, .ItemCollapsed, .ItemDragEnter, .ItemDragExit events</li>
+<li>UI: Added VirtualizingTreeViewBinding .Target property</li>
+<li>UI: VirtualizingItemsControl .ItemClick event no longer occurs after ItemDoubleClick operation.</li>
+<li>UI: VirtualizingItemsControl .ItemClick event no longer occurs during a drag-and-drop operation.</li>
+<li>UI: Added VirtualizingTreeViewBinding DragItems, DropTargets</li>
+<li>UI: Added VirtualizingTreeViewBinding Drag&amp;Drop Unity Events</li>
+<li>UI: Added ControlBinding, EventBindingSlim</li>
+<li>RTE: Added Project LockAsync WebGL implementation</li>
+<li>UI: VirtualizingListBox binding added</li>
+<li>UI: VirtualizingListBox added</li>
+<li>UI: VirtualizingScroller continuous mode added</li>
+<li>RTC: Added .Name property to ExposeToEditor.</li>
+<li>RTE: Added BuiltInWindows component added to Runtime Editor prefab.</li>
+<li>RTE: Added WindowManager.m_useLegacyBuiltInWindows = false.</li>
+<li>RTE: Added View prefabs, ViewModels and ViewModelTests.</li>
+<li>RTE: Existing view and dialog prefabs moved to Battlehub\RTEditor\Content\Runtime\RTEditor\Prefabs\Legacy.</li>
+<li>RTE: Existing views and dialogs moved to Battlehub\RTEditor\Runtime\RTEditor\Legacy.</li>
+<li>UI:  MenuItem quick fix for InputSystem and mouse support</li>
+<li>RTE: InputSystem 1.0.1 package added</li>
+<li>RTE: WindowManager will call Editor.ActivateWindow only if ActiveWorkspace.ActivateWindow returns true;</li>
+<li>RTE: Workspace .ActivateWindow method fixed. Allow to activate window only in case if m_isTabDragInProgress == false;</li>
+<li>UI: Region .Insert method fixed. Turn on the new tab <em>first</em> or else Unity's UI.Toggle.Set() won't let us turn off the tab that was previously active.</li>
+<li>UI: Tab m_toggle.interactable = false; this will prevent the Toggle event from firing twice.</li>
+<li>RTE: Added HierarchyViewModel, HierarchyView prefab</li>
+<li>RTE: Deprecated prefabs from RTEditor\Content\Runtime\Prefabs\View and Dialog folders</li>
+<li>RTE: Deprecated AboutDialog, AssetLibraryImportDialog, AssetLibrarySelectDialog, ImportFileDialog, InputDialog, OpenFileDialog, ProjectsDialog, SaveAssetsDialog, SelectColorDialog, SelectObjectDialog, SettingsDialog</li>
+<li>RTE: Deprecated ProjectFolderView, ProjectFolderViewImpl, ProjectItemView, ProjectTreeViewImpl, ProjectView, ProjectViewImpl</li>
+<li>RTE: Deprecated SceneView, SceneViewImpl, GameView, HierarchyView, HierarchyViewImpl, InspectorView, ConsoleView, ToolsPanel</li>
+<li>RTE: Scene cursor cannot be changed when popup is displayed.</li>
+<li>RTE: Removed DragField from RangeEditor and RangeIntEditor prefabs.</li>
+<li>RTE: URP, HDRP UIForeground transparency fix for unity 2019.</li>
+<li>UI: Added IHierarchicalData<t> interface.</t></li>
+<li>UI: Added INotifyHierarchicalDataChanged interface.</li>
+<li>UI: Added VirtualizingTreeViewBinding editor.</li>
+<li>UI: VirtualizingTreeViewBinding added.</li>
+<li>RTE: Added UnityWeld.dll.</li>
+</ul>
+<p>####RTE 2.25 - Sept 30, 2020</p>
+<ul>
+<li><p>Project structure: <a href="https://docs.unity3d.com/Manual/cus-layout.html">reorganized to support unity package manager</a></p>
+</li>
+<li><p>Inspector: ability to select and edit multiple game objects and components.</p>
+</li>
+<li><p>Inspector: layers editor.</p>
+</li>
+<li><p>Inspector: layer mask editor.</p>
+</li>
+<li><p>Inspector: culling mask added to camera component editor.</p>
+</li>
+<li><p>Inspector: add component button keyboard navigation.</p>
+</li>
+<li><p>Inspector: ability to configure visibility of buttons.</p>
+</li>
+<li><p>Inspector: support for components with RequireComponent attribute.</p>
+</li>
+<li><p>Hierarchy: search field added.</p>
+</li>
+<li><p>Hierarchy: ability to override HierarchyView.</p>
+</li>
+<li><p>Project: search field added.</p>
+</li>
+<li><p>Project: ability to duplicate folders.</p>
+</li>
+<li><p>Project: ability to override ProjectFolderView.</p>
+</li>
+<li><p>Project: ability to override ProjectTreeView.</p>
+</li>
+<li><p>Scene: ability to focus all active in hierarchy game objects with renderers.</p>
+</li>
+<li><p>Scene: select objects on mouse button up.</p>
+</li>
+<li><p>Scene: ability to select objects without collider.</p>
+</li>
+<li><p>Scene: new box selection mode - pixel perfect depth test.</p>
+</li>
+<li><p>Scene: auto save layout.</p>
+</li>
+<li><p>DockPanel: Region.ClassAllTabs method added.</p>
+</li>
+<li><p>DockPanel: variable tab size support.</p>
+</li>
+<li><p>DockPanel: LayoutInfo must be created using IWindowManager.CreateLayoutInfo method.</p>
+</li>
+<li><p>Theming: ability to set and update theme at runtime.</p>
+</li>
+<li><p>Settings: dialog added.</p>
+</li>
+<li><p>ProBuilder: uv unwrapping window.</p>
+</li>
+<li><p>ProBuilder: uv stitch tool.</p>
+</li>
+<li><p>ProBuilder: smooth groups editor.</p>
+</li>
+<li><p>Graphics: HD Render Pipeline Support (Beta).</p>
+</li>
+<li><p>Graphics: Universal Render Pipeline Support.</p>
+</li>
+<li><p>Graphics: <a href="https://docs.unity3d.com/ScriptReference/GL.html">GL</a> is not used anymore and replaced with <a href="https://docs.unity3d.com/ScriptReference/Rendering.CommandBuffer.html">CommandBuffer</a>.</p>
+</li>
+<li><p>RTSL: k__BackingField and delegates are not visible in Persistent Classes Window anymore.</p>
+</li>
+<li><p>RTSL: separate RuntimeTypeModel.dll for each build target.</p>
+</li>
+<li><p>RTSL: generating link.xml to support IL2CPP scripting backend.</p>
+</li>
+<li><p>RTSL: mesh, texture, audio data imported from asset bundle is not saved on disk anymore.</p>
+</li>
+<li><p>RTSL: save &amp; load time and memory consumption reduced.</p>
+</li>
+<li><p>RTSL: preventing the Editor from crashing when entering play mode with selected asset library.</p>
+</li>
+<li><p>RTSL: support for different types of identifiers.</p>
+</li>
+<li><p>RTSL: Autogenerated TypeMap.cs replace with TypeMapCreator</p>
+</li>
+<li><p>RTSL: [CustomImplementation] class structure changed</p>
+</li>
+<li><p>RTSL: IProject.ToID replaced with IProject.ToPersistentID method.</p>
+</li>
+<li><p>RTSL: IProject.FromID replaced with IProject.FromPersistentID method.</p>
+</li>
+<li><p>RTSL: IStorage interface replaced with IStrorage&lt;&gt; with PersistentObject&lt;&gt; params</p>
+</li>
+</ul>
+<p>####RTE 2.11 - Jan 30, 2020</p>
+<ul>
+<li>Terrain details &amp; trees editor</li>
+</ul>
+<p>####RTE 2.10 - Dec 30, 2019</p>
+<ul>
+<li>Terrain editor.</li>
+<li>ProBuilder integration.</li>
+<li>Animation editor.</li>
+<li>Runtime scripting.</li>
+<li>Localization.</li>
+<li>Transform Handles: Rect Tool.</li>
+</ul>
+<p>####RTE 2.05 - April 30, 2019</p>
+<ul>
+<li>Ability to change RTE UI Colors.</li>
+<li>UI.Text replaced with TextMeshProUGUI;</li>
+<li>File importers -&gt; obj, png, jpg;</li>
+<li>VTV.SelectedIndex is set to -1 when Selected Item is null;</li>
+<li>Creating Primitives with Default-Material;</li>
+<li>ProjectItem.Get method fixed;</li>
+<li>Loading last project by default;</li>
+<li>Create project folder if there was no project before.</li>
+<li>Create camera and directional light by default.</li>
+<li>Dynamic resouces cleanup procedure fixed;</li>
+<li>Project Folder Drag &amp; Drop bug fixed.</li>
+</ul>
+<p>####RTE 2.04 - March 30, 2019</p>
+<ul>
+<li>Rendering scene view and game view using RenderTexture and RawImage;</li>
+<li>LWRP support;</li>
+<li>Transform Handles: position handle freeze bug fixed.</li>
+<li>Transform Handles: correct model scale.</li>
+<li>Duplicate scene bug fixed.</li>
+<li>&quot;Open&quot; context menu item added.</li>
+<li>RuntimeWindow CanActivate property added.</li>
+<li>Ability to create tab groups.</li>
+<li>IOC container unloading bug fixed.</li>
+</ul>
+<p>####RTE 2.03 - February 13, 2019</p>
+<ul>
+<li>Configurable layout.</li>
+<li>Configurable tools panel.</li>
+<li>Configurable ui scale.</li>
+<li>Editor mappings are stored in RTEditor_Data folder and will not be overriden anymore.</li>
+<li>RTSL: TypeModel.dll correct import settings.</li>
+<li>RTSL: close progress bar in case of exception.</li>
+<li>Trasnform Handles: nullref exception fixed.</li>
+</ul>
+<h4 id="rte-202---january-30-2019">RTE 2.02 - January 30, 2019</h4>
+<ul>
+<li>RTSL: codegen &amp; persistent class storage fixed.</li>
+<li>RTSL: camera.pixelRect saved by default.</li>
+<li>RTSL: demo scene update.</li>
+<li>Transform Handles: demo scene update.</li>
+</ul>
+<h4 id="rte-201---january-13-2019">RTE 2.01 - January 13, 2019</h4>
+<ul>
+<li>Set default layout nullref exception fixed.</li>
+<li>Transform Handles: prefabs added;</li>
+<li>Transform Handles: demo scene;</li>
+</ul>
+<p>####RTE 2.00 - Dec 30, 2018</p>
+<ul>
+<li>Runtime save-load subsystem.</li>
+<li>Ability create/manage projects.</li>
+<li>Project API.</li>
+<li>Assets &amp; Asset bundles importer.</li>
+<li>Configurable layout (dock panels).</li>
+<li>Configurable main &amp; context menu.</li>
+<li>New dialog windows and message boxes.</li>
+<li>Multiple viewports supported.</li>
+<li>Runtime handles touch support.</li>
+<li>Simple depency injection (IOC).</li>
+<li>Undo &amp; Redo API.</li>
+<li>Object selection API.</li>
+<li>Object life-cycle events.</li>
+<li>Add components control.</li>
+<li>Console window.</li>
+<li>Lists and Hierarchies virtualization.</li>
+</ul>
+<p>##About
+Hi, I am <a href="https://www.facebook.com/vadim.andriyanov">Vadym</a>. I put a lot of effort into creating the Runtime Editor, but it was an interesting and rewarding experience. The first version of Runtime editor was released in June 2016 and was pretty simplistic. The current version is much more sophisticated but at the same time much more flexible and contains many useful features.
+If you have any questions or suggestions send them by email to <a href="mailto:Battlehub@outlook.com">Battlehub@outlook.com</a> or join this <a href="https://t.me/battlehub">support group</a>. I hope you enjoy using the Runtime Editor and it will be useful.</p>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Battlehub0x/RTE_Docs/blob/main/docs/manual/general.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Example Unity documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

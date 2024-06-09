@@ -1,0 +1,1165 @@
+### YamlMime:XRefMap
+sorted: true
+references:
+- uid: Battlehub.RTCommon
+  name: Battlehub.RTCommon
+  href: api/Battlehub.RTCommon.html
+  commentId: N:Battlehub.RTCommon
+  fullName: Battlehub.RTCommon
+  nameWithType: Battlehub.RTCommon
+- uid: Battlehub.RTCommon.IOC
+  name: IOC
+  href: api/Battlehub.RTCommon.IOC.html
+  commentId: T:Battlehub.RTCommon.IOC
+  fullName: Battlehub.RTCommon.IOC
+  nameWithType: IOC
+- uid: Battlehub.RTCommon.IOC.ClearAll
+  name: ClearAll()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_ClearAll
+  commentId: M:Battlehub.RTCommon.IOC.ClearAll
+  fullName: Battlehub.RTCommon.IOC.ClearAll()
+  nameWithType: IOC.ClearAll()
+- uid: Battlehub.RTCommon.IOC.ClearAll*
+  name: ClearAll
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_ClearAll_
+  commentId: Overload:Battlehub.RTCommon.IOC.ClearAll
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.ClearAll
+  nameWithType: IOC.ClearAll
+- uid: Battlehub.RTCommon.IOC.IsFallbackRegistered*
+  name: IsFallbackRegistered
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_IsFallbackRegistered_
+  commentId: Overload:Battlehub.RTCommon.IOC.IsFallbackRegistered
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.IsFallbackRegistered
+  nameWithType: IOC.IsFallbackRegistered
+- uid: Battlehub.RTCommon.IOC.IsFallbackRegistered``1
+  name: IsFallbackRegistered<T>()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_IsFallbackRegistered__1
+  commentId: M:Battlehub.RTCommon.IOC.IsFallbackRegistered``1
+  name.vb: IsFallbackRegistered(Of T)()
+  fullName: Battlehub.RTCommon.IOC.IsFallbackRegistered<T>()
+  fullName.vb: Battlehub.RTCommon.IOC.IsFallbackRegistered(Of T)()
+  nameWithType: IOC.IsFallbackRegistered<T>()
+  nameWithType.vb: IOC.IsFallbackRegistered(Of T)()
+- uid: Battlehub.RTCommon.IOC.IsRegistered*
+  name: IsRegistered
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_IsRegistered_
+  commentId: Overload:Battlehub.RTCommon.IOC.IsRegistered
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.IsRegistered
+  nameWithType: IOC.IsRegistered
+- uid: Battlehub.RTCommon.IOC.IsRegistered``1
+  name: IsRegistered<T>()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_IsRegistered__1
+  commentId: M:Battlehub.RTCommon.IOC.IsRegistered``1
+  name.vb: IsRegistered(Of T)()
+  fullName: Battlehub.RTCommon.IOC.IsRegistered<T>()
+  fullName.vb: Battlehub.RTCommon.IOC.IsRegistered(Of T)()
+  nameWithType: IOC.IsRegistered<T>()
+  nameWithType.vb: IOC.IsRegistered(Of T)()
+- uid: Battlehub.RTCommon.IOC.IsRegistered``1(System.String)
+  name: IsRegistered<T>(String)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_IsRegistered__1_System_String_
+  commentId: M:Battlehub.RTCommon.IOC.IsRegistered``1(System.String)
+  name.vb: IsRegistered(Of T)(String)
+  fullName: Battlehub.RTCommon.IOC.IsRegistered<T>(System.String)
+  fullName.vb: Battlehub.RTCommon.IOC.IsRegistered(Of T)(System.String)
+  nameWithType: IOC.IsRegistered<T>(String)
+  nameWithType.vb: IOC.IsRegistered(Of T)(String)
+- uid: Battlehub.RTCommon.IOC.Register*
+  name: Register
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Register_
+  commentId: Overload:Battlehub.RTCommon.IOC.Register
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.Register
+  nameWithType: IOC.Register
+- uid: Battlehub.RTCommon.IOC.RegisterFallback*
+  name: RegisterFallback
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_RegisterFallback_
+  commentId: Overload:Battlehub.RTCommon.IOC.RegisterFallback
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback
+  nameWithType: IOC.RegisterFallback
+- uid: Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})
+  name: RegisterFallback<T>(Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_RegisterFallback__1_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})
+  name.vb: RegisterFallback(Of T)(Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback<T>(Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.RegisterFallback(Of T)(Func(Of T))
+  nameWithType: IOC.RegisterFallback<T>(Func<T>)
+  nameWithType.vb: IOC.RegisterFallback(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.RegisterFallback``1(``0)
+  name: RegisterFallback<T>(T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_RegisterFallback__1___0_
+  commentId: M:Battlehub.RTCommon.IOC.RegisterFallback``1(``0)
+  name.vb: RegisterFallback(Of T)(T)
+  fullName: Battlehub.RTCommon.IOC.RegisterFallback<T>(T)
+  fullName.vb: Battlehub.RTCommon.IOC.RegisterFallback(Of T)(T)
+  nameWithType: IOC.RegisterFallback<T>(T)
+  nameWithType.vb: IOC.RegisterFallback(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.Register``1(Func{``0})
+  name: Register<T>(Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Register__1_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(Func{``0})
+  name.vb: Register(Of T)(Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.Register<T>(Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(Func(Of T))
+  nameWithType: IOC.Register<T>(Func<T>)
+  nameWithType.vb: IOC.Register(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})
+  name: Register<T>(String, Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Register__1_System_String_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})
+  name.vb: Register(Of T)(String, Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.Register<T>(System.String, Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(System.String, Func(Of T))
+  nameWithType: IOC.Register<T>(String, Func<T>)
+  nameWithType.vb: IOC.Register(Of T)(String, Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Register``1(System.String,``0)
+  name: Register<T>(String, T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Register__1_System_String___0_
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(System.String,``0)
+  name.vb: Register(Of T)(String, T)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(System.String, T)
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(System.String, T)
+  nameWithType: IOC.Register<T>(String, T)
+  nameWithType.vb: IOC.Register(Of T)(String, T)
+- uid: Battlehub.RTCommon.IOC.Register``1(``0)
+  name: Register<T>(T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Register__1___0_
+  commentId: M:Battlehub.RTCommon.IOC.Register``1(``0)
+  name.vb: Register(Of T)(T)
+  fullName: Battlehub.RTCommon.IOC.Register<T>(T)
+  fullName.vb: Battlehub.RTCommon.IOC.Register(Of T)(T)
+  nameWithType: IOC.Register<T>(T)
+  nameWithType.vb: IOC.Register(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.Resolve*
+  name: Resolve
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Resolve_
+  commentId: Overload:Battlehub.RTCommon.IOC.Resolve
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.Resolve
+  nameWithType: IOC.Resolve
+- uid: Battlehub.RTCommon.IOC.Resolve``1
+  name: Resolve<T>()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Resolve__1
+  commentId: M:Battlehub.RTCommon.IOC.Resolve``1
+  name.vb: Resolve(Of T)()
+  fullName: Battlehub.RTCommon.IOC.Resolve<T>()
+  fullName.vb: Battlehub.RTCommon.IOC.Resolve(Of T)()
+  nameWithType: IOC.Resolve<T>()
+  nameWithType.vb: IOC.Resolve(Of T)()
+- uid: Battlehub.RTCommon.IOC.Resolve``1(System.String)
+  name: Resolve<T>(String)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Resolve__1_System_String_
+  commentId: M:Battlehub.RTCommon.IOC.Resolve``1(System.String)
+  name.vb: Resolve(Of T)(String)
+  fullName: Battlehub.RTCommon.IOC.Resolve<T>(System.String)
+  fullName.vb: Battlehub.RTCommon.IOC.Resolve(Of T)(System.String)
+  nameWithType: IOC.Resolve<T>(String)
+  nameWithType.vb: IOC.Resolve(Of T)(String)
+- uid: Battlehub.RTCommon.IOC.Unregister*
+  name: Unregister
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister_
+  commentId: Overload:Battlehub.RTCommon.IOC.Unregister
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.Unregister
+  nameWithType: IOC.Unregister
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback*
+  name: UnregisterFallback
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_UnregisterFallback_
+  commentId: Overload:Battlehub.RTCommon.IOC.UnregisterFallback
+  isSpec: "True"
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback
+  nameWithType: IOC.UnregisterFallback
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1
+  name: UnregisterFallback<T>()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_UnregisterFallback__1
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1
+  name.vb: UnregisterFallback(Of T)()
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>()
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)()
+  nameWithType: IOC.UnregisterFallback<T>()
+  nameWithType.vb: IOC.UnregisterFallback(Of T)()
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})
+  name: UnregisterFallback<T>(Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_UnregisterFallback__1_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})
+  name.vb: UnregisterFallback(Of T)(Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>(Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)(Func(Of T))
+  nameWithType: IOC.UnregisterFallback<T>(Func<T>)
+  nameWithType.vb: IOC.UnregisterFallback(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)
+  name: UnregisterFallback<T>(T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_UnregisterFallback__1___0_
+  commentId: M:Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)
+  name.vb: UnregisterFallback(Of T)(T)
+  fullName: Battlehub.RTCommon.IOC.UnregisterFallback<T>(T)
+  fullName.vb: Battlehub.RTCommon.IOC.UnregisterFallback(Of T)(T)
+  nameWithType: IOC.UnregisterFallback<T>(T)
+  nameWithType.vb: IOC.UnregisterFallback(Of T)(T)
+- uid: Battlehub.RTCommon.IOC.Unregister``1
+  name: Unregister<T>()
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister__1
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1
+  name.vb: Unregister(Of T)()
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>()
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)()
+  nameWithType: IOC.Unregister<T>()
+  nameWithType.vb: IOC.Unregister(Of T)()
+- uid: Battlehub.RTCommon.IOC.Unregister``1(Func{``0})
+  name: Unregister<T>(Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister__1_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(Func{``0})
+  name.vb: Unregister(Of T)(Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(Func(Of T))
+  nameWithType: IOC.Unregister<T>(Func<T>)
+  nameWithType.vb: IOC.Unregister(Of T)(Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})
+  name: Unregister<T>(String, Func<T>)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister__1_System_String_Func___0__
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})
+  name.vb: Unregister(Of T)(String, Func(Of T))
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(System.String, Func<T>)
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(System.String, Func(Of T))
+  nameWithType: IOC.Unregister<T>(String, Func<T>)
+  nameWithType.vb: IOC.Unregister(Of T)(String, Func(Of T))
+- uid: Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)
+  name: Unregister<T>(String, T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister__1_System_String___0_
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)
+  name.vb: Unregister(Of T)(String, T)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(System.String, T)
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(System.String, T)
+  nameWithType: IOC.Unregister<T>(String, T)
+  nameWithType.vb: IOC.Unregister(Of T)(String, T)
+- uid: Battlehub.RTCommon.IOC.Unregister``1(``0)
+  name: Unregister<T>(T)
+  href: api/Battlehub.RTCommon.IOC.html#Battlehub_RTCommon_IOC_Unregister__1___0_
+  commentId: M:Battlehub.RTCommon.IOC.Unregister``1(``0)
+  name.vb: Unregister(Of T)(T)
+  fullName: Battlehub.RTCommon.IOC.Unregister<T>(T)
+  fullName.vb: Battlehub.RTCommon.IOC.Unregister(Of T)(T)
+  nameWithType: IOC.Unregister<T>(T)
+  nameWithType.vb: IOC.Unregister(Of T)(T)
+- uid: Battlehub.RTEditor
+  name: Battlehub.RTEditor
+  href: api/Battlehub.RTEditor.html
+  commentId: N:Battlehub.RTEditor
+  fullName: Battlehub.RTEditor
+  nameWithType: Battlehub.RTEditor
+- uid: Battlehub.RTEditor.IWindowManager
+  name: IWindowManager
+  href: api/Battlehub.RTEditor.IWindowManager.html
+  commentId: T:Battlehub.RTEditor.IWindowManager
+  fullName: Battlehub.RTEditor.IWindowManager
+  nameWithType: IWindowManager
+- uid: Battlehub.RTEditor.IWindowManager.ActivateWindow(System.String)
+  name: ActivateWindow(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ActivateWindow_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.ActivateWindow(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.ActivateWindow(System.String)
+  nameWithType: IWindowManager.ActivateWindow(String)
+- uid: Battlehub.RTEditor.IWindowManager.ActivateWindow(Transform)
+  name: ActivateWindow(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ActivateWindow_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.ActivateWindow(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.ActivateWindow(Transform)
+  nameWithType: IWindowManager.ActivateWindow(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.ActivateWindow*
+  name: ActivateWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ActivateWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ActivateWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ActivateWindow
+  nameWithType: IWindowManager.ActivateWindow
+- uid: Battlehub.RTEditor.IWindowManager.ActiveWorkspace
+  name: ActiveWorkspace
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ActiveWorkspace
+  commentId: P:Battlehub.RTEditor.IWindowManager.ActiveWorkspace
+  fullName: Battlehub.RTEditor.IWindowManager.ActiveWorkspace
+  nameWithType: IWindowManager.ActiveWorkspace
+- uid: Battlehub.RTEditor.IWindowManager.ActiveWorkspace*
+  name: ActiveWorkspace
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ActiveWorkspace_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ActiveWorkspace
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ActiveWorkspace
+  nameWithType: IWindowManager.ActiveWorkspace
+- uid: Battlehub.RTEditor.IWindowManager.AfterLayout
+  name: AfterLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_AfterLayout
+  commentId: E:Battlehub.RTEditor.IWindowManager.AfterLayout
+  fullName: Battlehub.RTEditor.IWindowManager.AfterLayout
+  nameWithType: IWindowManager.AfterLayout
+- uid: Battlehub.RTEditor.IWindowManager.ComponentsRoot
+  name: ComponentsRoot
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ComponentsRoot
+  commentId: P:Battlehub.RTEditor.IWindowManager.ComponentsRoot
+  fullName: Battlehub.RTEditor.IWindowManager.ComponentsRoot
+  nameWithType: IWindowManager.ComponentsRoot
+- uid: Battlehub.RTEditor.IWindowManager.ComponentsRoot*
+  name: ComponentsRoot
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ComponentsRoot_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ComponentsRoot
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ComponentsRoot
+  nameWithType: IWindowManager.ComponentsRoot
+- uid: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite,System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.String)
+  name: Confirmation(Sprite, String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Confirmation_Sprite_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Confirmation(Sprite,System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.String)
+  name.vb: Confirmation(Sprite, String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite, System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite, System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String, System.String)
+  nameWithType: IWindowManager.Confirmation(Sprite, String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, String)
+  nameWithType.vb: IWindowManager.Confirmation(Sprite, String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite,System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String)
+  name: Confirmation(Sprite, String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Confirmation_Sprite_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Confirmation(Sprite,System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String)
+  name.vb: Confirmation(Sprite, String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite, System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Confirmation(Sprite, System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String)
+  nameWithType: IWindowManager.Confirmation(Sprite, String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String)
+  nameWithType.vb: IWindowManager.Confirmation(Sprite, String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Confirmation(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.String)
+  name: Confirmation(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Confirmation_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Confirmation(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.String)
+  name.vb: Confirmation(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Confirmation(System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Confirmation(System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String, System.String)
+  nameWithType: IWindowManager.Confirmation(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, String)
+  nameWithType.vb: IWindowManager.Confirmation(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Confirmation(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String)
+  name: Confirmation(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Confirmation_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Confirmation(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String)
+  name.vb: Confirmation(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Confirmation(System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Confirmation(System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String)
+  nameWithType: IWindowManager.Confirmation(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String)
+  nameWithType.vb: IWindowManager.Confirmation(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Confirmation*
+  name: Confirmation
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Confirmation_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.Confirmation
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.Confirmation
+  nameWithType: IWindowManager.Confirmation
+- uid: Battlehub.RTEditor.IWindowManager.CopyTransform(Transform,Transform)
+  name: CopyTransform(Transform, Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CopyTransform_Transform_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CopyTransform(Transform,Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.CopyTransform(Transform, Transform)
+  nameWithType: IWindowManager.CopyTransform(Transform, Transform)
+- uid: Battlehub.RTEditor.IWindowManager.CopyTransform*
+  name: CopyTransform
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CopyTransform_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CopyTransform
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CopyTransform
+  nameWithType: IWindowManager.CopyTransform
+- uid: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.Boolean,System.Single,System.Single)
+  name: CreateDialogWindow(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateDialogWindow_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.Boolean,System.Single,System.Single)
+  name.vb: CreateDialogWindow(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), Boolean, Single, Single)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.Boolean, System.Single, System.Single)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.CreateDialogWindow(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, Boolean, Single, Single)
+  nameWithType.vb: IWindowManager.CreateDialogWindow(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name: CreateDialogWindow(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, Single, Single, Single, Single, Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateDialogWindow_System_String_System_String_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_Single_System_Single_System_Single_System_Single_System_Boolean_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String,System.String,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name.vb: CreateDialogWindow(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), Single, Single, Single, Single, Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String, System.String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.CreateDialogWindow(System.String, System.String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  nameWithType: IWindowManager.CreateDialogWindow(String, String, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, Single, Single, Single, Single, Boolean)
+  nameWithType.vb: IWindowManager.CreateDialogWindow(String, String, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), Single, Single, Single, Single, Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.CreateDialogWindow*
+  name: CreateDialogWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateDialogWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CreateDialogWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CreateDialogWindow
+  nameWithType: IWindowManager.CreateDialogWindow
+- uid: Battlehub.RTEditor.IWindowManager.CreateDropdown(System.String,RectTransform,System.Boolean,System.Single,System.Single)
+  name: CreateDropdown(String, RectTransform, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateDropdown_System_String_RectTransform_System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateDropdown(System.String,RectTransform,System.Boolean,System.Single,System.Single)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateDropdown(System.String, RectTransform, System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.CreateDropdown(String, RectTransform, Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.CreateDropdown*
+  name: CreateDropdown
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateDropdown_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CreateDropdown
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CreateDropdown
+  nameWithType: IWindowManager.CreateDropdown
+- uid: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String)
+  name: CreateLayoutInfo(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateLayoutInfo_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String)
+  nameWithType: IWindowManager.CreateLayoutInfo(String)
+- uid: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String,System.String)
+  name: CreateLayoutInfo(String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateLayoutInfo_System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String,System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(System.String, System.String)
+  nameWithType: IWindowManager.CreateLayoutInfo(String, String)
+- uid: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform,Battlehub.RTEditor.WindowDescriptor)
+  name: CreateLayoutInfo(Transform, WindowDescriptor)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateLayoutInfo_Transform_Battlehub_RTEditor_WindowDescriptor_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform,Battlehub.RTEditor.WindowDescriptor)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform, Battlehub.RTEditor.WindowDescriptor)
+  nameWithType: IWindowManager.CreateLayoutInfo(Transform, WindowDescriptor)
+- uid: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform,System.String,Sprite)
+  name: CreateLayoutInfo(Transform, String, Sprite)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateLayoutInfo_Transform_System_String_Sprite_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform,System.String,Sprite)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo(Transform, System.String, Sprite)
+  nameWithType: IWindowManager.CreateLayoutInfo(Transform, String, Sprite)
+- uid: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo*
+  name: CreateLayoutInfo
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateLayoutInfo_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CreateLayoutInfo
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CreateLayoutInfo
+  nameWithType: IWindowManager.CreateLayoutInfo
+- uid: Battlehub.RTEditor.IWindowManager.CreatePopup(System.String,System.Boolean,System.Single,System.Single)
+  name: CreatePopup(String, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreatePopup_System_String_System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreatePopup(System.String,System.Boolean,System.Single,System.Single)
+  fullName: Battlehub.RTEditor.IWindowManager.CreatePopup(System.String, System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.CreatePopup(String, Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.CreatePopup(System.String,Vector2,System.Boolean,System.Single,System.Single)
+  name: CreatePopup(String, Vector2, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreatePopup_System_String_Vector2_System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreatePopup(System.String,Vector2,System.Boolean,System.Single,System.Single)
+  fullName: Battlehub.RTEditor.IWindowManager.CreatePopup(System.String, Vector2, System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.CreatePopup(String, Vector2, Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.CreatePopup*
+  name: CreatePopup
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreatePopup_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CreatePopup
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CreatePopup
+  nameWithType: IWindowManager.CreatePopup
+- uid: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@)
+  name: CreateWindow(String, out WindowDescriptor)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateWindow_System_String_Battlehub_RTEditor_WindowDescriptor__
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@)
+  name.vb: CreateWindow(String, ByRef WindowDescriptor)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, out Battlehub.RTEditor.WindowDescriptor)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, ByRef Battlehub.RTEditor.WindowDescriptor)
+  nameWithType: IWindowManager.CreateWindow(String, out WindowDescriptor)
+  nameWithType.vb: IWindowManager.CreateWindow(String, ByRef WindowDescriptor)
+- uid: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@,GameObject@,System.Boolean@)
+  name: CreateWindow(String, out WindowDescriptor, out GameObject, out Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateWindow_System_String_Battlehub_RTEditor_WindowDescriptor__GameObject__System_Boolean__
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@,GameObject@,System.Boolean@)
+  name.vb: CreateWindow(String, ByRef WindowDescriptor, ByRef GameObject, ByRef Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, out Battlehub.RTEditor.WindowDescriptor, out GameObject, out System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, ByRef Battlehub.RTEditor.WindowDescriptor, ByRef GameObject, ByRef System.Boolean)
+  nameWithType: IWindowManager.CreateWindow(String, out WindowDescriptor, out GameObject, out Boolean)
+  nameWithType.vb: IWindowManager.CreateWindow(String, ByRef WindowDescriptor, ByRef GameObject, ByRef Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@,System.Boolean@)
+  name: CreateWindow(String, out WindowDescriptor, out Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateWindow_System_String_Battlehub_RTEditor_WindowDescriptor__System_Boolean__
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,Battlehub.RTEditor.WindowDescriptor@,System.Boolean@)
+  name.vb: CreateWindow(String, ByRef WindowDescriptor, ByRef Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, out Battlehub.RTEditor.WindowDescriptor, out System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, ByRef Battlehub.RTEditor.WindowDescriptor, ByRef System.Boolean)
+  nameWithType: IWindowManager.CreateWindow(String, out WindowDescriptor, out Boolean)
+  nameWithType.vb: IWindowManager.CreateWindow(String, ByRef WindowDescriptor, ByRef Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,System.Boolean,RegionSplitType,System.Single,Transform)
+  name: CreateWindow(String, Boolean, RegionSplitType, Single, Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateWindow_System_String_System_Boolean_RegionSplitType_System_Single_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.CreateWindow(System.String,System.Boolean,RegionSplitType,System.Single,Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.CreateWindow(System.String, System.Boolean, RegionSplitType, System.Single, Transform)
+  nameWithType: IWindowManager.CreateWindow(String, Boolean, RegionSplitType, Single, Transform)
+- uid: Battlehub.RTEditor.IWindowManager.CreateWindow*
+  name: CreateWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_CreateWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.CreateWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.CreateWindow
+  nameWithType: IWindowManager.CreateWindow
+- uid: Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName
+  name: DefaultPersistentLayoutName
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DefaultPersistentLayoutName
+  commentId: P:Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName
+  fullName: Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName
+  nameWithType: IWindowManager.DefaultPersistentLayoutName
+- uid: Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName*
+  name: DefaultPersistentLayoutName
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DefaultPersistentLayoutName_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.DefaultPersistentLayoutName
+  nameWithType: IWindowManager.DefaultPersistentLayoutName
+- uid: Battlehub.RTEditor.IWindowManager.DeleteLayout(System.String)
+  name: DeleteLayout(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DeleteLayout_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.DeleteLayout(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.DeleteLayout(System.String)
+  nameWithType: IWindowManager.DeleteLayout(String)
+- uid: Battlehub.RTEditor.IWindowManager.DeleteLayout*
+  name: DeleteLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DeleteLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.DeleteLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.DeleteLayout
+  nameWithType: IWindowManager.DeleteLayout
+- uid: Battlehub.RTEditor.IWindowManager.DestroyDialogWindow
+  name: DestroyDialogWindow()
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyDialogWindow
+  commentId: M:Battlehub.RTEditor.IWindowManager.DestroyDialogWindow
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyDialogWindow()
+  nameWithType: IWindowManager.DestroyDialogWindow()
+- uid: Battlehub.RTEditor.IWindowManager.DestroyDialogWindow*
+  name: DestroyDialogWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyDialogWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.DestroyDialogWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyDialogWindow
+  nameWithType: IWindowManager.DestroyDialogWindow
+- uid: Battlehub.RTEditor.IWindowManager.DestroyWindow(Transform)
+  name: DestroyWindow(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyWindow_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.DestroyWindow(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyWindow(Transform)
+  nameWithType: IWindowManager.DestroyWindow(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.DestroyWindow*
+  name: DestroyWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.DestroyWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyWindow
+  nameWithType: IWindowManager.DestroyWindow
+- uid: Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType(System.String)
+  name: DestroyWindowsOfType(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyWindowsOfType_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType(System.String)
+  nameWithType: IWindowManager.DestroyWindowsOfType(String)
+- uid: Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType*
+  name: DestroyWindowsOfType
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_DestroyWindowsOfType_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.DestroyWindowsOfType
+  nameWithType: IWindowManager.DestroyWindowsOfType
+- uid: Battlehub.RTEditor.IWindowManager.Dialog(Sprite,System.String,Transform,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name: Dialog(Sprite, String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, Single, Single, Single, Single, Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Dialog_Sprite_System_String_Transform_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_System_Single_System_Single_System_Single_System_Single_System_Boolean_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Dialog(Sprite,System.String,Transform,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name.vb: Dialog(Sprite, String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, Single, Single, Single, Single, Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.Dialog(Sprite, System.String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String, System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Dialog(Sprite, System.String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String, System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  nameWithType: IWindowManager.Dialog(Sprite, String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, Single, Single, Single, Single, Boolean)
+  nameWithType.vb: IWindowManager.Dialog(Sprite, String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, Single, Single, Single, Single, Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.Dialog(Sprite,System.String,Transform,DialogAction{DialogCancelArgs},System.String,DialogAction{DialogCancelArgs},System.String,System.Boolean,System.Single,System.Single)
+  name: Dialog(Sprite, String, Transform, DialogAction<DialogCancelArgs>, String, DialogAction<DialogCancelArgs>, String, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Dialog_Sprite_System_String_Transform_DialogAction_DialogCancelArgs__System_String_DialogAction_DialogCancelArgs__System_String_System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Dialog(Sprite,System.String,Transform,DialogAction{DialogCancelArgs},System.String,DialogAction{DialogCancelArgs},System.String,System.Boolean,System.Single,System.Single)
+  name.vb: Dialog(Sprite, String, Transform, DialogAction(Of DialogCancelArgs), String, DialogAction(Of DialogCancelArgs), String, Boolean, Single, Single)
+  fullName: Battlehub.RTEditor.IWindowManager.Dialog(Sprite, System.String, Transform, DialogAction<DialogCancelArgs>, System.String, DialogAction<DialogCancelArgs>, System.String, System.Boolean, System.Single, System.Single)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Dialog(Sprite, System.String, Transform, DialogAction(Of DialogCancelArgs), System.String, DialogAction(Of DialogCancelArgs), System.String, System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.Dialog(Sprite, String, Transform, DialogAction<DialogCancelArgs>, String, DialogAction<DialogCancelArgs>, String, Boolean, Single, Single)
+  nameWithType.vb: IWindowManager.Dialog(Sprite, String, Transform, DialogAction(Of DialogCancelArgs), String, DialogAction(Of DialogCancelArgs), String, Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.Dialog(System.String,Transform,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name: Dialog(String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, Single, Single, Single, Single, Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Dialog_System_String_Transform_DialogAction_DialogCancelArgs__DialogAction_DialogCancelArgs__System_String_System_String_System_Single_System_Single_System_Single_System_Single_System_Boolean_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Dialog(System.String,Transform,DialogAction{DialogCancelArgs},DialogAction{DialogCancelArgs},System.String,System.String,System.Single,System.Single,System.Single,System.Single,System.Boolean)
+  name.vb: Dialog(String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, Single, Single, Single, Single, Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.Dialog(System.String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, System.String, System.String, System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Dialog(System.String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), System.String, System.String, System.Single, System.Single, System.Single, System.Single, System.Boolean)
+  nameWithType: IWindowManager.Dialog(String, Transform, DialogAction<DialogCancelArgs>, DialogAction<DialogCancelArgs>, String, String, Single, Single, Single, Single, Boolean)
+  nameWithType.vb: IWindowManager.Dialog(String, Transform, DialogAction(Of DialogCancelArgs), DialogAction(Of DialogCancelArgs), String, String, Single, Single, Single, Single, Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.Dialog(System.String,Transform,DialogAction{DialogCancelArgs},System.String,DialogAction{DialogCancelArgs},System.String,System.Boolean,System.Single,System.Single)
+  name: Dialog(String, Transform, DialogAction<DialogCancelArgs>, String, DialogAction<DialogCancelArgs>, String, Boolean, Single, Single)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Dialog_System_String_Transform_DialogAction_DialogCancelArgs__System_String_DialogAction_DialogCancelArgs__System_String_System_Boolean_System_Single_System_Single_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Dialog(System.String,Transform,DialogAction{DialogCancelArgs},System.String,DialogAction{DialogCancelArgs},System.String,System.Boolean,System.Single,System.Single)
+  name.vb: Dialog(String, Transform, DialogAction(Of DialogCancelArgs), String, DialogAction(Of DialogCancelArgs), String, Boolean, Single, Single)
+  fullName: Battlehub.RTEditor.IWindowManager.Dialog(System.String, Transform, DialogAction<DialogCancelArgs>, System.String, DialogAction<DialogCancelArgs>, System.String, System.Boolean, System.Single, System.Single)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Dialog(System.String, Transform, DialogAction(Of DialogCancelArgs), System.String, DialogAction(Of DialogCancelArgs), System.String, System.Boolean, System.Single, System.Single)
+  nameWithType: IWindowManager.Dialog(String, Transform, DialogAction<DialogCancelArgs>, String, DialogAction<DialogCancelArgs>, String, Boolean, Single, Single)
+  nameWithType.vb: IWindowManager.Dialog(String, Transform, DialogAction(Of DialogCancelArgs), String, DialogAction(Of DialogCancelArgs), String, Boolean, Single, Single)
+- uid: Battlehub.RTEditor.IWindowManager.Dialog*
+  name: Dialog
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Dialog_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.Dialog
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.Dialog
+  nameWithType: IWindowManager.Dialog
+- uid: Battlehub.RTEditor.IWindowManager.Exists(System.String)
+  name: Exists(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Exists_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Exists(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.Exists(System.String)
+  nameWithType: IWindowManager.Exists(String)
+- uid: Battlehub.RTEditor.IWindowManager.Exists*
+  name: Exists
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Exists_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.Exists
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.Exists
+  nameWithType: IWindowManager.Exists
+- uid: Battlehub.RTEditor.IWindowManager.FindPointerOverWindow(Battlehub.RTCommon.RuntimeWindow)
+  name: FindPointerOverWindow(RuntimeWindow)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_FindPointerOverWindow_Battlehub_RTCommon_RuntimeWindow_
+  commentId: M:Battlehub.RTEditor.IWindowManager.FindPointerOverWindow(Battlehub.RTCommon.RuntimeWindow)
+  fullName: Battlehub.RTEditor.IWindowManager.FindPointerOverWindow(Battlehub.RTCommon.RuntimeWindow)
+  nameWithType: IWindowManager.FindPointerOverWindow(RuntimeWindow)
+- uid: Battlehub.RTEditor.IWindowManager.FindPointerOverWindow*
+  name: FindPointerOverWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_FindPointerOverWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.FindPointerOverWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.FindPointerOverWindow
+  nameWithType: IWindowManager.FindPointerOverWindow
+- uid: Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate
+  name: ForceLayoutUpdate()
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ForceLayoutUpdate
+  commentId: M:Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate
+  fullName: Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate()
+  nameWithType: IWindowManager.ForceLayoutUpdate()
+- uid: Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate*
+  name: ForceLayoutUpdate
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ForceLayoutUpdate_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ForceLayoutUpdate
+  nameWithType: IWindowManager.ForceLayoutUpdate
+- uid: Battlehub.RTEditor.IWindowManager.GetComponents(Transform)
+  name: GetComponents(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetComponents_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetComponents(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.GetComponents(Transform)
+  nameWithType: IWindowManager.GetComponents(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.GetComponents*
+  name: GetComponents
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetComponents_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetComponents
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetComponents
+  nameWithType: IWindowManager.GetComponents
+- uid: Battlehub.RTEditor.IWindowManager.GetHeaderIcon(Transform)
+  name: GetHeaderIcon(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetHeaderIcon_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetHeaderIcon(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.GetHeaderIcon(Transform)
+  nameWithType: IWindowManager.GetHeaderIcon(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.GetHeaderIcon*
+  name: GetHeaderIcon
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetHeaderIcon_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetHeaderIcon
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetHeaderIcon
+  nameWithType: IWindowManager.GetHeaderIcon
+- uid: Battlehub.RTEditor.IWindowManager.GetHeaderText(Transform)
+  name: GetHeaderText(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetHeaderText_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetHeaderText(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.GetHeaderText(Transform)
+  nameWithType: IWindowManager.GetHeaderText(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.GetHeaderText*
+  name: GetHeaderText
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetHeaderText_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetHeaderText
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetHeaderText
+  nameWithType: IWindowManager.GetHeaderText
+- uid: Battlehub.RTEditor.IWindowManager.GetLayout
+  name: GetLayout()
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetLayout
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetLayout
+  fullName: Battlehub.RTEditor.IWindowManager.GetLayout()
+  nameWithType: IWindowManager.GetLayout()
+- uid: Battlehub.RTEditor.IWindowManager.GetLayout(System.String,GameObject)
+  name: GetLayout(String, GameObject)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetLayout_System_String_GameObject_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetLayout(System.String,GameObject)
+  fullName: Battlehub.RTEditor.IWindowManager.GetLayout(System.String, GameObject)
+  nameWithType: IWindowManager.GetLayout(String, GameObject)
+- uid: Battlehub.RTEditor.IWindowManager.GetLayout*
+  name: GetLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetLayout
+  nameWithType: IWindowManager.GetLayout
+- uid: Battlehub.RTEditor.IWindowManager.GetWindow(System.String)
+  name: GetWindow(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindow_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetWindow(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindow(System.String)
+  nameWithType: IWindowManager.GetWindow(String)
+- uid: Battlehub.RTEditor.IWindowManager.GetWindow*
+  name: GetWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindow
+  nameWithType: IWindowManager.GetWindow
+- uid: Battlehub.RTEditor.IWindowManager.GetWindowDescriptor(System.String,System.Boolean@)
+  name: GetWindowDescriptor(String, out Boolean)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindowDescriptor_System_String_System_Boolean__
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetWindowDescriptor(System.String,System.Boolean@)
+  name.vb: GetWindowDescriptor(String, ByRef Boolean)
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindowDescriptor(System.String, out System.Boolean)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.GetWindowDescriptor(System.String, ByRef System.Boolean)
+  nameWithType: IWindowManager.GetWindowDescriptor(String, out Boolean)
+  nameWithType.vb: IWindowManager.GetWindowDescriptor(String, ByRef Boolean)
+- uid: Battlehub.RTEditor.IWindowManager.GetWindowDescriptor*
+  name: GetWindowDescriptor
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindowDescriptor_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetWindowDescriptor
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindowDescriptor
+  nameWithType: IWindowManager.GetWindowDescriptor
+- uid: Battlehub.RTEditor.IWindowManager.GetWindowTypeName(Transform)
+  name: GetWindowTypeName(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindowTypeName_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetWindowTypeName(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindowTypeName(Transform)
+  nameWithType: IWindowManager.GetWindowTypeName(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.GetWindowTypeName*
+  name: GetWindowTypeName
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindowTypeName_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetWindowTypeName
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindowTypeName
+  nameWithType: IWindowManager.GetWindowTypeName
+- uid: Battlehub.RTEditor.IWindowManager.GetWindows
+  name: GetWindows()
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindows
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetWindows
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindows()
+  nameWithType: IWindowManager.GetWindows()
+- uid: Battlehub.RTEditor.IWindowManager.GetWindows(System.String)
+  name: GetWindows(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindows_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.GetWindows(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindows(System.String)
+  nameWithType: IWindowManager.GetWindows(String)
+- uid: Battlehub.RTEditor.IWindowManager.GetWindows*
+  name: GetWindows
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_GetWindows_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.GetWindows
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.GetWindows
+  nameWithType: IWindowManager.GetWindows
+- uid: Battlehub.RTEditor.IWindowManager.IsActive(System.String)
+  name: IsActive(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsActive_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.IsActive(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.IsActive(System.String)
+  nameWithType: IWindowManager.IsActive(String)
+- uid: Battlehub.RTEditor.IWindowManager.IsActive(Transform)
+  name: IsActive(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsActive_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.IsActive(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.IsActive(Transform)
+  nameWithType: IWindowManager.IsActive(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.IsActive*
+  name: IsActive
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsActive_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.IsActive
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.IsActive
+  nameWithType: IWindowManager.IsActive
+- uid: Battlehub.RTEditor.IWindowManager.IsDialogOpened
+  name: IsDialogOpened
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsDialogOpened
+  commentId: P:Battlehub.RTEditor.IWindowManager.IsDialogOpened
+  fullName: Battlehub.RTEditor.IWindowManager.IsDialogOpened
+  nameWithType: IWindowManager.IsDialogOpened
+- uid: Battlehub.RTEditor.IWindowManager.IsDialogOpened*
+  name: IsDialogOpened
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsDialogOpened_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.IsDialogOpened
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.IsDialogOpened
+  nameWithType: IWindowManager.IsDialogOpened
+- uid: Battlehub.RTEditor.IWindowManager.IsWindowRegistered(System.String)
+  name: IsWindowRegistered(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsWindowRegistered_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.IsWindowRegistered(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.IsWindowRegistered(System.String)
+  nameWithType: IWindowManager.IsWindowRegistered(String)
+- uid: Battlehub.RTEditor.IWindowManager.IsWindowRegistered*
+  name: IsWindowRegistered
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_IsWindowRegistered_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.IsWindowRegistered
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.IsWindowRegistered
+  nameWithType: IWindowManager.IsWindowRegistered
+- uid: Battlehub.RTEditor.IWindowManager.LayoutExist(System.String)
+  name: LayoutExist(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_LayoutExist_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.LayoutExist(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.LayoutExist(System.String)
+  nameWithType: IWindowManager.LayoutExist(String)
+- uid: Battlehub.RTEditor.IWindowManager.LayoutExist*
+  name: LayoutExist
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_LayoutExist_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.LayoutExist
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.LayoutExist
+  nameWithType: IWindowManager.LayoutExist
+- uid: Battlehub.RTEditor.IWindowManager.LoadLayout(System.String,GameObject)
+  name: LoadLayout(String, GameObject)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_LoadLayout_System_String_GameObject_
+  commentId: M:Battlehub.RTEditor.IWindowManager.LoadLayout(System.String,GameObject)
+  fullName: Battlehub.RTEditor.IWindowManager.LoadLayout(System.String, GameObject)
+  nameWithType: IWindowManager.LoadLayout(String, GameObject)
+- uid: Battlehub.RTEditor.IWindowManager.LoadLayout*
+  name: LoadLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_LoadLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.LoadLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.LoadLayout
+  nameWithType: IWindowManager.LoadLayout
+- uid: Battlehub.RTEditor.IWindowManager.MessageBox(Sprite,System.String,System.String,DialogAction{DialogCancelArgs})
+  name: MessageBox(Sprite, String, String, DialogAction<DialogCancelArgs>)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_MessageBox_Sprite_System_String_System_String_DialogAction_DialogCancelArgs__
+  commentId: M:Battlehub.RTEditor.IWindowManager.MessageBox(Sprite,System.String,System.String,DialogAction{DialogCancelArgs})
+  name.vb: MessageBox(Sprite, String, String, DialogAction(Of DialogCancelArgs))
+  fullName: Battlehub.RTEditor.IWindowManager.MessageBox(Sprite, System.String, System.String, DialogAction<DialogCancelArgs>)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.MessageBox(Sprite, System.String, System.String, DialogAction(Of DialogCancelArgs))
+  nameWithType: IWindowManager.MessageBox(Sprite, String, String, DialogAction<DialogCancelArgs>)
+  nameWithType.vb: IWindowManager.MessageBox(Sprite, String, String, DialogAction(Of DialogCancelArgs))
+- uid: Battlehub.RTEditor.IWindowManager.MessageBox(System.String,System.String,DialogAction{DialogCancelArgs})
+  name: MessageBox(String, String, DialogAction<DialogCancelArgs>)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_MessageBox_System_String_System_String_DialogAction_DialogCancelArgs__
+  commentId: M:Battlehub.RTEditor.IWindowManager.MessageBox(System.String,System.String,DialogAction{DialogCancelArgs})
+  name.vb: MessageBox(String, String, DialogAction(Of DialogCancelArgs))
+  fullName: Battlehub.RTEditor.IWindowManager.MessageBox(System.String, System.String, DialogAction<DialogCancelArgs>)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.MessageBox(System.String, System.String, DialogAction(Of DialogCancelArgs))
+  nameWithType: IWindowManager.MessageBox(String, String, DialogAction<DialogCancelArgs>)
+  nameWithType.vb: IWindowManager.MessageBox(String, String, DialogAction(Of DialogCancelArgs))
+- uid: Battlehub.RTEditor.IWindowManager.MessageBox*
+  name: MessageBox
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_MessageBox_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.MessageBox
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.MessageBox
+  nameWithType: IWindowManager.MessageBox
+- uid: Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout(Func{Battlehub.RTEditor.IWindowManager,LayoutInfo},System.String)
+  name: OverrideDefaultLayout(Func<IWindowManager, LayoutInfo>, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideDefaultLayout_Func_Battlehub_RTEditor_IWindowManager_LayoutInfo__System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout(Func{Battlehub.RTEditor.IWindowManager,LayoutInfo},System.String)
+  name.vb: OverrideDefaultLayout(Func(Of IWindowManager, LayoutInfo), String)
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout(Func<Battlehub.RTEditor.IWindowManager, LayoutInfo>, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout(Func(Of Battlehub.RTEditor.IWindowManager, LayoutInfo), System.String)
+  nameWithType: IWindowManager.OverrideDefaultLayout(Func<IWindowManager, LayoutInfo>, String)
+  nameWithType.vb: IWindowManager.OverrideDefaultLayout(Func(Of IWindowManager, LayoutInfo), String)
+- uid: Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout*
+  name: OverrideDefaultLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideDefaultLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideDefaultLayout
+  nameWithType: IWindowManager.OverrideDefaultLayout
+- uid: Battlehub.RTEditor.IWindowManager.OverrideTools(Transform)
+  name: OverrideTools(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideTools_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.OverrideTools(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideTools(Transform)
+  nameWithType: IWindowManager.OverrideTools(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.OverrideTools*
+  name: OverrideTools
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideTools_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.OverrideTools
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideTools
+  nameWithType: IWindowManager.OverrideTools
+- uid: Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String,Battlehub.RTEditor.WindowDescriptor)
+  name: OverrideWindow(String, WindowDescriptor)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideWindow_System_String_Battlehub_RTEditor_WindowDescriptor_
+  commentId: M:Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String,Battlehub.RTEditor.WindowDescriptor)
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String, Battlehub.RTEditor.WindowDescriptor)
+  nameWithType: IWindowManager.OverrideWindow(String, WindowDescriptor)
+- uid: Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String,GameObject)
+  name: OverrideWindow(String, GameObject)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideWindow_System_String_GameObject_
+  commentId: M:Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String,GameObject)
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideWindow(System.String, GameObject)
+  nameWithType: IWindowManager.OverrideWindow(String, GameObject)
+- uid: Battlehub.RTEditor.IWindowManager.OverrideWindow*
+  name: OverrideWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_OverrideWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.OverrideWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.OverrideWindow
+  nameWithType: IWindowManager.OverrideWindow
+- uid: Battlehub.RTEditor.IWindowManager.PopupRoot
+  name: PopupRoot
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_PopupRoot
+  commentId: P:Battlehub.RTEditor.IWindowManager.PopupRoot
+  fullName: Battlehub.RTEditor.IWindowManager.PopupRoot
+  nameWithType: IWindowManager.PopupRoot
+- uid: Battlehub.RTEditor.IWindowManager.PopupRoot*
+  name: PopupRoot
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_PopupRoot_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.PopupRoot
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.PopupRoot
+  nameWithType: IWindowManager.PopupRoot
+- uid: Battlehub.RTEditor.IWindowManager.Prompt(Sprite,System.String,System.String,DialogAction{Battlehub.RTEditor.PromptDialogArgs},DialogAction{Battlehub.RTEditor.PromptDialogArgs},System.String,System.String)
+  name: Prompt(Sprite, String, String, DialogAction<PromptDialogArgs>, DialogAction<PromptDialogArgs>, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Prompt_Sprite_System_String_System_String_DialogAction_Battlehub_RTEditor_PromptDialogArgs__DialogAction_Battlehub_RTEditor_PromptDialogArgs__System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Prompt(Sprite,System.String,System.String,DialogAction{Battlehub.RTEditor.PromptDialogArgs},DialogAction{Battlehub.RTEditor.PromptDialogArgs},System.String,System.String)
+  name.vb: Prompt(Sprite, String, String, DialogAction(Of PromptDialogArgs), DialogAction(Of PromptDialogArgs), String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Prompt(Sprite, System.String, System.String, DialogAction<Battlehub.RTEditor.PromptDialogArgs>, DialogAction<Battlehub.RTEditor.PromptDialogArgs>, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Prompt(Sprite, System.String, System.String, DialogAction(Of Battlehub.RTEditor.PromptDialogArgs), DialogAction(Of Battlehub.RTEditor.PromptDialogArgs), System.String, System.String)
+  nameWithType: IWindowManager.Prompt(Sprite, String, String, DialogAction<PromptDialogArgs>, DialogAction<PromptDialogArgs>, String, String)
+  nameWithType.vb: IWindowManager.Prompt(Sprite, String, String, DialogAction(Of PromptDialogArgs), DialogAction(Of PromptDialogArgs), String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Prompt(System.String,System.String,DialogAction{Battlehub.RTEditor.PromptDialogArgs},DialogAction{Battlehub.RTEditor.PromptDialogArgs},System.String,System.String)
+  name: Prompt(String, String, DialogAction<PromptDialogArgs>, DialogAction<PromptDialogArgs>, String, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Prompt_System_String_System_String_DialogAction_Battlehub_RTEditor_PromptDialogArgs__DialogAction_Battlehub_RTEditor_PromptDialogArgs__System_String_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.Prompt(System.String,System.String,DialogAction{Battlehub.RTEditor.PromptDialogArgs},DialogAction{Battlehub.RTEditor.PromptDialogArgs},System.String,System.String)
+  name.vb: Prompt(String, String, DialogAction(Of PromptDialogArgs), DialogAction(Of PromptDialogArgs), String, String)
+  fullName: Battlehub.RTEditor.IWindowManager.Prompt(System.String, System.String, DialogAction<Battlehub.RTEditor.PromptDialogArgs>, DialogAction<Battlehub.RTEditor.PromptDialogArgs>, System.String, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.Prompt(System.String, System.String, DialogAction(Of Battlehub.RTEditor.PromptDialogArgs), DialogAction(Of Battlehub.RTEditor.PromptDialogArgs), System.String, System.String)
+  nameWithType: IWindowManager.Prompt(String, String, DialogAction<PromptDialogArgs>, DialogAction<PromptDialogArgs>, String, String)
+  nameWithType.vb: IWindowManager.Prompt(String, String, DialogAction(Of PromptDialogArgs), DialogAction(Of PromptDialogArgs), String, String)
+- uid: Battlehub.RTEditor.IWindowManager.Prompt*
+  name: Prompt
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_Prompt_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.Prompt
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.Prompt
+  nameWithType: IWindowManager.Prompt
+- uid: Battlehub.RTEditor.IWindowManager.RegisterWindow(Battlehub.RTEditor.CustomWindowDescriptor)
+  name: RegisterWindow(CustomWindowDescriptor)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_RegisterWindow_Battlehub_RTEditor_CustomWindowDescriptor_
+  commentId: M:Battlehub.RTEditor.IWindowManager.RegisterWindow(Battlehub.RTEditor.CustomWindowDescriptor)
+  fullName: Battlehub.RTEditor.IWindowManager.RegisterWindow(Battlehub.RTEditor.CustomWindowDescriptor)
+  nameWithType: IWindowManager.RegisterWindow(CustomWindowDescriptor)
+- uid: Battlehub.RTEditor.IWindowManager.RegisterWindow*
+  name: RegisterWindow
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_RegisterWindow_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.RegisterWindow
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.RegisterWindow
+  nameWithType: IWindowManager.RegisterWindow
+- uid: Battlehub.RTEditor.IWindowManager.SaveLayout(System.String)
+  name: SaveLayout(String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SaveLayout_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SaveLayout(System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.SaveLayout(System.String)
+  nameWithType: IWindowManager.SaveLayout(String)
+- uid: Battlehub.RTEditor.IWindowManager.SaveLayout*
+  name: SaveLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SaveLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SaveLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SaveLayout
+  nameWithType: IWindowManager.SaveLayout
+- uid: Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform,Vector3,Vector2@)
+  name: ScreenPointToLocalPointInRectangle(RectTransform, Vector3, out Vector2)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ScreenPointToLocalPointInRectangle_RectTransform_Vector3_Vector2__
+  commentId: M:Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform,Vector3,Vector2@)
+  name.vb: ScreenPointToLocalPointInRectangle(RectTransform, Vector3, ByRef Vector2)
+  fullName: Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform, Vector3, out Vector2)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform, Vector3, ByRef Vector2)
+  nameWithType: IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform, Vector3, out Vector2)
+  nameWithType.vb: IWindowManager.ScreenPointToLocalPointInRectangle(RectTransform, Vector3, ByRef Vector2)
+- uid: Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle*
+  name: ScreenPointToLocalPointInRectangle
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ScreenPointToLocalPointInRectangle_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ScreenPointToLocalPointInRectangle
+  nameWithType: IWindowManager.ScreenPointToLocalPointInRectangle
+- uid: Battlehub.RTEditor.IWindowManager.SetBottomBar(Transform)
+  name: SetBottomBar(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetBottomBar_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetBottomBar(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.SetBottomBar(Transform)
+  nameWithType: IWindowManager.SetBottomBar(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.SetBottomBar*
+  name: SetBottomBar
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetBottomBar_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetBottomBar
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetBottomBar
+  nameWithType: IWindowManager.SetBottomBar
+- uid: Battlehub.RTEditor.IWindowManager.SetDefaultLayout
+  name: SetDefaultLayout()
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetDefaultLayout
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetDefaultLayout
+  fullName: Battlehub.RTEditor.IWindowManager.SetDefaultLayout()
+  nameWithType: IWindowManager.SetDefaultLayout()
+- uid: Battlehub.RTEditor.IWindowManager.SetDefaultLayout*
+  name: SetDefaultLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetDefaultLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetDefaultLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetDefaultLayout
+  nameWithType: IWindowManager.SetDefaultLayout
+- uid: Battlehub.RTEditor.IWindowManager.SetHeaderIcon(Transform,Sprite)
+  name: SetHeaderIcon(Transform, Sprite)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetHeaderIcon_Transform_Sprite_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetHeaderIcon(Transform,Sprite)
+  fullName: Battlehub.RTEditor.IWindowManager.SetHeaderIcon(Transform, Sprite)
+  nameWithType: IWindowManager.SetHeaderIcon(Transform, Sprite)
+- uid: Battlehub.RTEditor.IWindowManager.SetHeaderIcon*
+  name: SetHeaderIcon
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetHeaderIcon_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetHeaderIcon
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetHeaderIcon
+  nameWithType: IWindowManager.SetHeaderIcon
+- uid: Battlehub.RTEditor.IWindowManager.SetHeaderText(Transform,System.String)
+  name: SetHeaderText(Transform, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetHeaderText_Transform_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetHeaderText(Transform,System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.SetHeaderText(Transform, System.String)
+  nameWithType: IWindowManager.SetHeaderText(Transform, String)
+- uid: Battlehub.RTEditor.IWindowManager.SetHeaderText*
+  name: SetHeaderText
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetHeaderText_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetHeaderText
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetHeaderText
+  nameWithType: IWindowManager.SetHeaderText
+- uid: Battlehub.RTEditor.IWindowManager.SetLayout(Func{Battlehub.RTEditor.IWindowManager,LayoutInfo},System.String)
+  name: SetLayout(Func<IWindowManager, LayoutInfo>, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetLayout_Func_Battlehub_RTEditor_IWindowManager_LayoutInfo__System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetLayout(Func{Battlehub.RTEditor.IWindowManager,LayoutInfo},System.String)
+  name.vb: SetLayout(Func(Of IWindowManager, LayoutInfo), String)
+  fullName: Battlehub.RTEditor.IWindowManager.SetLayout(Func<Battlehub.RTEditor.IWindowManager, LayoutInfo>, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.SetLayout(Func(Of Battlehub.RTEditor.IWindowManager, LayoutInfo), System.String)
+  nameWithType: IWindowManager.SetLayout(Func<IWindowManager, LayoutInfo>, String)
+  nameWithType.vb: IWindowManager.SetLayout(Func(Of IWindowManager, LayoutInfo), String)
+- uid: Battlehub.RTEditor.IWindowManager.SetLayout(Func{LayoutInfo},System.String)
+  name: SetLayout(Func<LayoutInfo>, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetLayout_Func_LayoutInfo__System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetLayout(Func{LayoutInfo},System.String)
+  name.vb: SetLayout(Func(Of LayoutInfo), String)
+  fullName: Battlehub.RTEditor.IWindowManager.SetLayout(Func<LayoutInfo>, System.String)
+  fullName.vb: Battlehub.RTEditor.IWindowManager.SetLayout(Func(Of LayoutInfo), System.String)
+  nameWithType: IWindowManager.SetLayout(Func<LayoutInfo>, String)
+  nameWithType.vb: IWindowManager.SetLayout(Func(Of LayoutInfo), String)
+- uid: Battlehub.RTEditor.IWindowManager.SetLayout*
+  name: SetLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetLayout
+  nameWithType: IWindowManager.SetLayout
+- uid: Battlehub.RTEditor.IWindowManager.SetLeftBar(Transform)
+  name: SetLeftBar(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetLeftBar_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetLeftBar(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.SetLeftBar(Transform)
+  nameWithType: IWindowManager.SetLeftBar(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.SetLeftBar*
+  name: SetLeftBar
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetLeftBar_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetLeftBar
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetLeftBar
+  nameWithType: IWindowManager.SetLeftBar
+- uid: Battlehub.RTEditor.IWindowManager.SetRightBar(Transform)
+  name: SetRightBar(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetRightBar_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetRightBar(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.SetRightBar(Transform)
+  nameWithType: IWindowManager.SetRightBar(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.SetRightBar*
+  name: SetRightBar
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetRightBar_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetRightBar
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetRightBar
+  nameWithType: IWindowManager.SetRightBar
+- uid: Battlehub.RTEditor.IWindowManager.SetTools(Transform)
+  name: SetTools(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTools_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetTools(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.SetTools(Transform)
+  nameWithType: IWindowManager.SetTools(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.SetTools*
+  name: SetTools
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTools_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetTools
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetTools
+  nameWithType: IWindowManager.SetTools
+- uid: Battlehub.RTEditor.IWindowManager.SetTopBar(Transform)
+  name: SetTopBar(Transform)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTopBar_Transform_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetTopBar(Transform)
+  fullName: Battlehub.RTEditor.IWindowManager.SetTopBar(Transform)
+  nameWithType: IWindowManager.SetTopBar(Transform)
+- uid: Battlehub.RTEditor.IWindowManager.SetTopBar*
+  name: SetTopBar
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTopBar_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetTopBar
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetTopBar
+  nameWithType: IWindowManager.SetTopBar
+- uid: Battlehub.RTEditor.IWindowManager.SetTransform(Transform,Vector2,Vector2,Vector2,Vector2)
+  name: SetTransform(Transform, Vector2, Vector2, Vector2, Vector2)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTransform_Transform_Vector2_Vector2_Vector2_Vector2_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetTransform(Transform,Vector2,Vector2,Vector2,Vector2)
+  fullName: Battlehub.RTEditor.IWindowManager.SetTransform(Transform, Vector2, Vector2, Vector2, Vector2)
+  nameWithType: IWindowManager.SetTransform(Transform, Vector2, Vector2, Vector2, Vector2)
+- uid: Battlehub.RTEditor.IWindowManager.SetTransform*
+  name: SetTransform
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetTransform_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetTransform
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetTransform
+  nameWithType: IWindowManager.SetTransform
+- uid: Battlehub.RTEditor.IWindowManager.SetWindowArgs(Transform,System.String)
+  name: SetWindowArgs(Transform, String)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetWindowArgs_Transform_System_String_
+  commentId: M:Battlehub.RTEditor.IWindowManager.SetWindowArgs(Transform,System.String)
+  fullName: Battlehub.RTEditor.IWindowManager.SetWindowArgs(Transform, System.String)
+  nameWithType: IWindowManager.SetWindowArgs(Transform, String)
+- uid: Battlehub.RTEditor.IWindowManager.SetWindowArgs*
+  name: SetWindowArgs
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_SetWindowArgs_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.SetWindowArgs
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.SetWindowArgs
+  nameWithType: IWindowManager.SetWindowArgs
+- uid: Battlehub.RTEditor.IWindowManager.ValidateLayout(LayoutInfo)
+  name: ValidateLayout(LayoutInfo)
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ValidateLayout_LayoutInfo_
+  commentId: M:Battlehub.RTEditor.IWindowManager.ValidateLayout(LayoutInfo)
+  fullName: Battlehub.RTEditor.IWindowManager.ValidateLayout(LayoutInfo)
+  nameWithType: IWindowManager.ValidateLayout(LayoutInfo)
+- uid: Battlehub.RTEditor.IWindowManager.ValidateLayout*
+  name: ValidateLayout
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_ValidateLayout_
+  commentId: Overload:Battlehub.RTEditor.IWindowManager.ValidateLayout
+  isSpec: "True"
+  fullName: Battlehub.RTEditor.IWindowManager.ValidateLayout
+  nameWithType: IWindowManager.ValidateLayout
+- uid: Battlehub.RTEditor.IWindowManager.WindowCreated
+  name: WindowCreated
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_WindowCreated
+  commentId: E:Battlehub.RTEditor.IWindowManager.WindowCreated
+  fullName: Battlehub.RTEditor.IWindowManager.WindowCreated
+  nameWithType: IWindowManager.WindowCreated
+- uid: Battlehub.RTEditor.IWindowManager.WindowDestroyed
+  name: WindowDestroyed
+  href: api/Battlehub.RTEditor.IWindowManager.html#Battlehub_RTEditor_IWindowManager_WindowDestroyed
+  commentId: E:Battlehub.RTEditor.IWindowManager.WindowDestroyed
+  fullName: Battlehub.RTEditor.IWindowManager.WindowDestroyed
+  nameWithType: IWindowManager.WindowDestroyed

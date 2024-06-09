@@ -1,0 +1,497 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title> | Example Unity documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content=" | Example Unity documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+
+<p>#Virtualizing TreeView Docs
+##Overview
+The <a href="#virtualizing-tree-view"><strong>Virtualizing Tree View</strong></a> is a control that displays a hierarchical data. Virtualzing Tree View implements drag &amp; drop, data binding and selection functions.
+It is highly customizable and can be used to display large collections of data (1000+ items).</p>
+<p><img src="../resources/img/vtv/overview/vtv.png" alt="Screenshot"></p>
+<p>##Getting Started</p>
+<ol>
+<li>Create Canvas.</li>
+<li>Add <strong>VirtualizingTreeView.prefab</strong> from<br>
+<strong>/Battlehub/RTEditor/Content/Runtime/UIControls/VirtualizingTreeView/Prefabs</strong> to hierarchy.</li>
+<li>Create <strong>GettingStarted.cs</strong> script and add it to <strong>VirtualizingTreeView</strong> Game Object.</li>
+<li>Hit Play.</li>
+</ol>
+<pre><code class="lang-C#">//GetStarted.cs
+
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+using Battlehub.UIControls;
+
+//Example of hierarchical data item
+public class ExampleDataItem
+{
+    public string Name; 
+    //... additional fields here ...//
+    
+    public ExampleDataItem Parent; 
+    public List&lt;ExampleDataItem&gt; Children;
+
+    public ExampleDataItem(string name)
+    {
+        Name = name;
+        Children = new List&lt;ExampleDataItem&gt;();
+    }
+
+    public override string ToString()
+    {
+        return Name;
+    }
+}
+
+public class GetStarted : MonoBehaviour
+{
+    private VirtualizingTreeView m_treeView;
+	
+	//root level data items
+    private List&lt;ExampleDataItem&gt; m_items; 
+
+    void Start()
+    {
+        m_treeView = GetComponent&lt;VirtualizingTreeView&gt;();
+
+        //This event fired for each item that becomes visible
+        m_treeView.ItemDataBinding += OnItemDataBinding;
+
+        //This event is fired for each expanded item
+        m_treeView.ItemExpanding += OnItemExpanding;
+
+        //This event is triggered for each item after drag &amp; drop
+        m_treeView.ItemDrop += OnItemDrop;
+
+		//Create data items 
+        m_items = new List&lt;ExampleDataItem&gt;();
+        for(int i = 0; i &lt; 1000; ++i)
+        {
+            m_items.Add(new ExampleDataItem(&quot;Data Item &quot; + i));
+        }
+
+        //Populate tree view with data items
+        m_treeView.Items = m_items;
+    }
+
+    void OnDestroy()
+    {
+        if(m_treeView != null)
+        {
+            m_treeView.ItemDataBinding -= OnItemDataBinding;
+            m_treeView.ItemExpanding -= OnItemExpanding;
+            m_treeView.ItemDrop -= OnItemDrop;
+        }
+    }
+
+    void OnItemDataBinding(object sender, VirtualizingTreeViewItemDataBindingArgs e)
+    {
+        ExampleDataItem item = (ExampleDataItem)e.Item;
+
+        //Get the controls from ItemsPresenter and copy the data into them.
+        Text text = e.ItemPresenter.GetComponentInChildren&lt;Text&gt;(true);
+        text.text = item.Name;
+		
+		Image icon = e.ItemPresenter.GetComponentsInChildren&lt;Image&gt;()[4];
+        icon.sprite = Resources.Load&lt;Sprite&gt;(&quot;IconNew&quot;);
+
+        //Notify the tree of the presence of child data items.
+        e.HasChildren = item.Children.Count &gt; 0;
+    }
+
+    void OnItemExpanding(object sender, VirtualizingItemExpandingArgs e)
+    {
+        ExampleDataItem item = (ExampleDataItem)e.Item;
+
+        //Return children to the tree view
+        e.Children = item.Children;
+    }
+   
+    void OnItemDrop(object sender, ItemDropArgs args)
+    {
+        if (args.DropTarget == null)
+        {
+            return;
+        }
+
+        //Handle ItemDrop event using standard handler.
+        m_treeView.ItemDropStdHandler&lt;ExampleDataItem&gt;(args,
+            (item) =&gt; item.Parent, 
+            (item, parent) =&gt; item.Parent = parent,
+            (item, parent) =&gt; ChildrenOf(parent).IndexOf(item),
+            (item, parent) =&gt; ChildrenOf(parent).Remove(item),
+            (item, parent, i) =&gt; ChildrenOf(parent).Insert(i, item));
+    }
+
+    List&lt;ExampleDataItem&gt; ChildrenOf(ExampleDataItem parent)
+    {
+        if (parent == null)
+        {
+            return m_items; 
+        }
+        return parent.Children;
+    }
+}
+</code></pre>
+<p>You should see scrollable tree view with data items and drag &amp; drop support:</p>
+<p><img src="../resources/img/vtv/get-started/get-started.png" alt="Screenshot"></p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>Full demo can be found in  <strong>Assets/Battlehub/RTEditorDemo/Content/Runtime/UIControls/VirtualizingTreeView</strong> folder</p>
+</div>
+<p>##Virtualizing Scroll Rect</p>
+<p>This class reuse &quot;ui containers&quot; to efficiently represent large data collections. UI containers are created only for a small visible part of data.
+<strong>VirtualizingScrollRect.cs</strong> can be found in <strong>Assets/Battlehub/RTEditor/Runtime/UIControls/VirtualizingTreeView</strong> folder.</p>
+<p>Events:</p>
+<ul>
+<li><code>event DataBindAction ItemDataBinding</code> - raised when new portion of data become visible .</li>
+</ul>
+<p>Fields:</p>
+<ul>
+<li><code>Container Prefab</code> - prefab, which is used to create instances of ui containers for data items.</li>
+<li><code>Virtual Content</code> - parent of ui containers.</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li><code>IList Items { get; set; }</code> - gets or sets list of data items.</li>
+<li><code>int ItemsCount{ get; }</code> -  gets the number of data items.</li>
+<li><code>int Index { get; set; }</code> - gets or sets index of first visible data item.</li>
+<li><code>int VisibleItemsCount { get; }</code> - gets the number of currently visible data items.</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li><code>bool IsParentOf(Transform child)</code> -  returns true if the Scroll Rect is the parent of the Transform.</li>
+<li><code>void InsertItem(int index, object item, bool raiseDataBindingEvent = true)</code> - insert data item.</li>
+<li><code>void RemoveItems(int[] indices, bool raiseItemDataBindingEvent = true)</code> - remove data items.</li>
+<li><code>RectTransform GetContainer(object obj)</code> - returns the ui container for data item.</li>
+<li><code>RectTransform FirstContainer()</code> - returns the first visible ui container.</li>
+<li><code>RectTransform LastContainer()</code> - returns the last visible ui container.</li>
+<li><code>void ForEachContainer(System.Action&lt;RectTransform&gt; action)</code> - run action for each ui container.</li>
+<li><code>void SetNextSibling(object sibling, object nextSibling)</code> - reorder data items and ui containers.</li>
+<li><code>void SetPrevSibling(object sibling, object prevSibling)</code> - reorder data items and ui containers.</li>
+</ul>
+<p>##Virtualizing Items Control
+This class implements drag and drop, insert, delete, reorder functions and triggers many useful events. It also serves as the base class for controls, such as listbox and treeview.<br>
+Implementation can be found in <strong>Assets/Battlehub/RTEditor/Runtime/UIControls/VirtualizingTreeView</strong> folder.</p>
+<p>Events:</p>
+<ul>
+<li><code>event EventHandler&lt;ItemArgs&gt; ItemBeginDrag</code> - raised on begin drag.</li>
+<li><code>event EventHandler&lt;ItemDropCancelArgs&gt; ItemBeginDrop</code> - raised on item drop.</li>
+<li><code>event EventHandler&lt;ItemDropCancelArgs&gt; ItemDragEnter</code> - occurs when the pointer enters a new drop target.</li>
+<li><code>event EventHandler ItemDragExit</code> - raised when pointer leaves drop area.</li>
+<li><code>event EventHandler&lt;ItemArgs&gt; ItemDrag</code> - fired while dragging an item.</li>
+<li><code>event EventHandler&lt;ItemDropArgs&gt; ItemDrop</code> - fired after item dropped.</li>
+<li><code>event EventHandler&lt;ItemArgs&gt; ItemEndDrag</code> - raised when drag &amp; drop operation completed.</li>
+<li><code>event EventHandler&lt;SelectionChangedArgs&gt; SelectionChanged</code> - occurs when the selection is changed.</li>
+<li><code>event EventHandler&lt;ItemArgs&gt; ItemDoubleClick</code> - triggered after double clicking on an item.</li>
+<li><code>event EventHandler&lt;ItemArgs&gt; ItemClick</code> - triggered after clicking on an item.</li>
+<li><code>event EventHandler&lt;ItemsCancelArgs&gt; ItemsRemoving</code> - triggered before removing items.</li>
+<li><code>event EventHandler&lt;ItemsRemovedArgs&gt; ItemsRemoved</code> - triggered after removing items.</li>
+<li><code>event EventHandler IsFocusedChanged</code> - raised when IsFocused value changed.</li>
+<li><code>event EventHandler Submit</code> - on submit.</li>
+<li><code>event EventHandler Cancel</code> - on cancel.</li>
+<li><code>event EventHandler&lt;PointerEventArgs&gt; Click</code> - triggered after clicking on the tree view.</li>
+<li><code>event EventHandler&lt;PointerEventArgs&gt; PointerEnter</code> - occurs when the pointer enters the tree view.</li>
+<li><code>event EventHandler&lt;PointerEventArgs&gt; PointerExit</code> - occurs when the pointer leaves the tree view.</li>
+<li><code>event EventHandler&lt;TDataBindingArgs&gt; ItemDataBinding</code> - occurs when a new ui container is created or an update is required.</li>
+<li><code>event EventHandler&lt;TDataBindingArgs&gt; ItemBeginEdit</code> - occurs when the ui container enters edit mode, and the EditorPresenter becomes visible.</li>
+<li><code>event EventHandler&lt;TDataBindingArgs&gt; ItemEndEdit</code>- occurs when the ui container exit edit mode, and the ItemsPresenter becomes visible.</li>
+</ul>
+<p>Fields:</p>
+<ul>
+<li><code>bool SelectOnPointerUp</code> - select item on pointer up (default: false).</li>
+<li><code>bool CanUnselectAll</code> - can the user unselect all items? If set to false then at least one item has to be selected (default: true).</li>
+<li><code>bool CanSelectAll</code> - can the user select all items? (default:true).</li>
+<li><code>bool CanEdit</code> - can the user edit items? (default: true).</li>
+<li><code>bool CanRemove</code> - can the user remove items? (default: true).</li>
+<li><code>bool CanDrag</code> - is drag &amp; drop allowed? (default:true).</li>
+<li><code>bool CanReorder</code> - Is the reordering of items allowed? (default: true).</li>
+<li><code>float ScrollSpeed</code> - scrolling sensitivity.</li>
+</ul>
+<p>Properties:</p>
+<ul>
+<li><code>object DropTarget { get; }</code> - get currently active drop target.</li>
+<li><code>object[] DragItems { get; }</code> - get items that are currently dragging.</li>
+<li><code>ItemDropAction DropAction { get; }</code> - get current drop action:
+<ul>
+<li><em>None</em>,</li>
+<li><em>SetLastChild</em>,</li>
+<li><em>SetPrevSilbing</em>,</li>
+<li><em>SetNextSibling</em>.</li>
+</ul>
+</li>
+<li><code>int SelectedItemsCount { get; }</code> - get selected data items count.</li>
+<li><code>IEnumerable SelectedItems { get; set; }</code> - get or set selected data items.</li>
+<li><code>object SelectedItem { get; set; }</code> - get or set selected data item.</li>
+<li><code>int SelectedIndex { get; set; }</code> - get or set index of selected data item.</li>
+<li><code>IEnumerable Items { get; set;  }</code> - data source.</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li><code>int IndexOf(object obj)</code> - get the index of the data item.</li>
+<li><code>void SetIndex(object obj, int newIndex)</code> - set index of data item.</li>
+<li><code>VirtualizingItemContainer GetItemContainer(object item)</code> - get the visible ui container.</li>
+<li><code>ItemContainerData GetItemContainerData(object item)</code> - get the state of the ui container.</li>
+<li><code>ItemContainerData Add(object item)</code> - add data item.</li>
+<li><code>ItemContainerData Insert(int index, object item)</code> - insert data item.</li>
+<li><code>void Remove(object item)</code> - remove data item.</li>
+<li><code>void SetNextSibling(object sibling, object nextSibling)</code> - reorder data items and ui containers.</li>
+<li><code>void SetPrevSibling(object sibling, object prevSibling)</code> - reorder data items and ui containers.</li>
+</ul>
+<p>##Virtualizing Drop Marker</p>
+<p>The <strong>Virtualizing Drop Marker</strong> is used to highlight the drop location of the item. Virtualizing Drop Marker can be in one of the states defined in the <strong>ItemDropAction</strong> enum.</p>
+<pre><code class="lang-C#">public enum ItemDropAction      
+{         
+	None,          
+	SetLastChild,          
+	SetPrevSibling,          
+	SetNextSibling      
+}  
+</code></pre>
+<p><img src="../resources/img/vtv/item-drop-marker/item-drop-marker.png" alt="Screenshot"></p>
+<p>##Virtualizing Tree View</p>
+<p>Structure:</p>
+<p><img src="../resources/img/vtv/vtv/structure.png" alt="Screenshot"></p>
+<p>Prefab: <br> <strong>/Battlehub/RTEditor/Content/Runtime/UIControls/VirtualizingTreeView/Prefabs/VirtualizingTreeView</strong>.
+Script: <br> <strong>/Battlehub/RTEditor/Runtime/UIControls/VirtualizingTreeView/VirtualizingTreeView.cs</strong>.<br>
+Base Class: <a href="#virtualizing-items-control"><strong>Virtualizing Items Control</strong></a></p>
+<p>Events:</p>
+<ul>
+<li><code>event EventHandler&lt;VirtualizingItemExpandingArgs&gt; ItemExpanding</code> -<br>
+triggered before the parent item expands.</li>
+<li><code>event EventHandler&lt;VirtualizingItemCollapsedArgs&gt; ItemCollapsed</code> -<br>
+triggered after folding the parent item.</li>
+</ul>
+<p>Fields:</p>
+<ul>
+<li><code>bool SelectOnPointerUp</code> - select item on pointer up (default: false).</li>
+<li><code>bool CanUnselectAll</code> - If set to false then at least one item has to be selected (default: true).</li>
+<li><code>bool CanSelectAll</code> - can the user select all items? (default:true).</li>
+<li><code>bool CanEdit</code> - can the user edit items? (default: true).</li>
+<li><code>bool CanRemove</code> - can the user remove items? (default: true).</li>
+<li><code>bool CanDrag</code> - is drag &amp; drop allowed? (default:true).</li>
+<li><code>bool CanReorder</code> - Is the reordering of items allowed? (default: true).</li>
+<li><code>bool CanReparent</code> - Is parent change allowed? (default: true).</li>
+<li><code>float ScrollSpeed</code> - scrolling sensitivity.</li>
+</ul>
+<p>Methods:</p>
+<ul>
+<li><code>void AddChild(object parent, object item)</code> - add child item.</li>
+<li><code>void RemoveChild(object parent, object item)</code> - remove child item.</li>
+<li><code>bool Expand(object item)</code> - expand item<br>
+<em>fails and returns false if the element is not visible and is a descendant of the collapsed parent)</em>.</li>
+<li><code>void ExpandTo&lt;T&gt;(T item, Func&lt;T,T&gt; getParent)</code> - expand all ancestors.</li>
+<li><code>void ExpandChildren&lt;T&gt;(T item, Func&lt;T, IEnumerable&gt; getChildren)</code> - expand all descendants.</li>
+<li><code>void ExpandAll(T item, Func&lt;T,T&gt; getParent, Func&lt;T, IEnumerable&gt; getChildren)</code> -<br>
+calls ExpandTo, then ExpandChildren.</li>
+<li><code>void Collapse(object item)</code> - collapse item.</li>
+</ul>
+<p>Examples:</p>
+<pre><code class="lang-C#">
+//Select all root items 
+
+private VirtualizingTreeView m_treeView;
+
+void Start()
+{
+	m_treeView = GetComponent&lt;VirtualizingTreeView&gt;();
+
+	//..Initialization and data binding...
+
+	m_treeView.SelectionChanged += OnSelectionChanged;
+	m_treeView.SelectedItems = m_treeView.Items;
+}
+
+void OnDestroy()
+{
+	if(m_treeView != null)
+	{
+		m_treeView.SelectionChanged -= OnSelectionChanged;
+	}
+}
+
+private void OnSelectionChanged(object sender, SelectionChangedArgs e)
+{
+	if(e.NewItems != null)
+	{
+		foreach(object item in e.NewItems)
+		{
+			Debug.Log(item);
+		}
+	}
+}
+
+</code></pre>
+<pre><code class="lang-C#">//Add children and expand selected items
+public void Add()
+{
+	foreach (ExampleDataItem parent in m_treeView.SelectedItems)
+	{
+		ExampleDataItem item = new ExampleDataItem(&quot;New Item&quot;);
+		parent.Children.Add(item);
+		item.Parent = parent;
+
+		m_treeView.AddChild(parent, item);
+		m_treeView.Expand(parent);
+	}
+}
+</code></pre>
+<pre><code class="lang-C#">//Collapse selected items
+public void Collapse()
+{
+	foreach (DataItem selectedItem in TreeView.SelectedItems)
+	{
+		TreeView.Collapse(selectedItem);
+	}
+}
+</code></pre>
+<pre><code class="lang-C#">//Expand selected items and their children
+public void Expand()
+{
+	foreach(ExampleDataItem selectedItem in m_treeView.SelectedItems)
+	{
+		m_treeView.ExpandAll(selectedItem, item =&gt; item.Parent, item =&gt; item.Children);
+	}
+}
+
+</code></pre>
+<pre><code class="lang-C#">//Remove selected items
+public void Remove()
+{
+	foreach (ExampleDataItem selectedItem in m_treeView.SelectedItems.OfType&lt;object&gt;().ToArray())
+	{
+		m_treeView.RemoveChild(selectedItem.Parent, selectedItem);                
+	}
+}
+</code></pre>
+<div class="NOTE">
+<h5>Note</h5>
+<p>ExampleDataItem defined in <a href="#getting-started">Getting Started</a> section.</p>
+</div>
+<p>##Virtualizing Tree View Item
+Structure:</p>
+<p><img src="../resources/img/vtv/vtv-item/structure.png" alt="Screenshot"></p>
+<p>Prefab: <br> <strong>/Battlehub/RTEditor/Content/Runtime/UIControls/VirtualizingTreeView/Prefabs/VirtualizingTreeViewItem</strong>.<br>
+Script: <br> <strong>/Battlehub/RTEditor/Runtime/UIControls/VirtualizingTreeView/VirtualizingTreeViewItem.cs</strong>.</p>
+<p>Fields:</p>
+<ul>
+<li><code>ItemPresenter</code> - normal mode ui.</li>
+<li><code>EditorPresenter</code> - edit mode ui.</li>
+<li><code>ItemLayout</code> - reference to LayoutElement.</li>
+</ul>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Battlehub0x/RTE_Docs/blob/main/docs/manual/vtv.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Example Unity documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

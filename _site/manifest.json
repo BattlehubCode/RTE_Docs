@@ -1,0 +1,1661 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://normanderwan.github.io/DocFxForUnity/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "C:/Development/Github/RTE_Docs/docs",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      }
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Battlehub.RTCommon.IOC.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Battlehub.RTCommon.IOC.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Battlehub.RTCommon.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Battlehub.RTCommon.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Battlehub.RTEditor.IWindowManager.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Battlehub.RTEditor.IWindowManager.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/Battlehub.RTEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/Battlehub.RTEditor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "logo.svg",
+      "output": {
+        "resource": {
+          "relative_path": "logo.svg"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/animation-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/animation-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/dock-panels.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/dock-panels.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/editor-extensions.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/editor-extensions.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/general.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/general.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/gizmos.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/gizmos.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/hdrp-support.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/hdrp-support.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/infrastructure.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/infrastructure.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/menu-control.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/menu-control.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/rendering.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/rendering.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/runtime-editor.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/runtime-editor.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/save-load.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/save-load.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/transform-handles.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/transform-handles.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/urp-support.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/urp-support.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/vtv.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/vtv.html"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleManual.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleManual.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/ExampleScriptingApi.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/ExampleScriptingApi.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/css/extra.css",
+      "output": {
+        "resource": {
+          "relative_path": "resources/css/extra.css"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/animation-editor/animation-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/animation-editor/animation-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/dialog-manager/dialog-manager.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/dialog-manager/dialog-manager.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/dialog-manager/usage.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/dialog-manager/usage.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/dock-panel/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/dock-panel/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/get-started/create-dock-panel.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/get-started/create-dock-panel.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/get-started/get-started-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/get-started/get-started-result.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/overview/dock-panels.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/overview/dock-panels.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/region/floating-region.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/region/floating-region.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/region/region.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/region/region.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/region/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/region/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/tab-preview/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/tab-preview/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/tab-preview/tab-preview.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/tab-preview/tab-preview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/tab/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/tab/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/dock-panels/tab/tab.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/dock-panels/tab/tab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/editor-extensions.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/editor-extensions.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/getting-started1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/getting-started1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/getting-started2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/getting-started2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtbuilder/standalone-demo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtbuilder/standalone-demo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtscripting/create-script.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtscripting/create-script.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtscripting/edit-script.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtscripting/edit-script.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtscripting/unpack-rtscripting.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtscripting/unpack-rtscripting.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtterrain/terrain-editor-inspector.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtterrain/terrain-editor-inspector.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/extensions/rtterrain/terrain-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/extensions/rtterrain/terrain-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/favicon.ico",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/favicon.ico"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/audio-source-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/audio-source-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/box-collider-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/box-collider-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/capsule-collider-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/capsule-collider-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/directional-light-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/directional-light-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/getting-started/getting-started.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/getting-started/getting-started.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/point-light-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/point-light-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/skinned-mesh-renderer-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/skinned-mesh-renderer-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/sphere-collider-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/sphere-collider-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/gizmos/spot-light-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/gizmos/spot-light-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/hdrp-support/getting-started-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/hdrp-support/getting-started-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/hdrp-support/getting-started-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/hdrp-support/getting-started-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/hdrp-support/getting-started-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/hdrp-support/getting-started-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/hdrp-support/getting-started-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/hdrp-support/getting-started-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/hdrp-support/rthandles-hdrp-support.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/hdrp-support/rthandles-hdrp-support.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/infrastructure/expose-to-editor/expose-to-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/infrastructure/expose-to-editor/expose-to-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/context-menu-trigger/context-menu-trigger.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/context-menu-trigger/context-menu-trigger.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/context-menu-trigger/context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/context-menu-trigger/context-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/get-started/results.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/get-started/results.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/get-started/set-event-handlers.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/get-started/set-event-handlers.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/get-started/set-menu-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/get-started/set-menu-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/menu-item/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/menu-item/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/menu/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/menu/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/menu/overview/menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/menu/overview/menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rendering/layers-used-by-runtime-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rendering/layers-used-by-runtime-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rendering/runtime-graphics-layer.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rendering/runtime-graphics-layer.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/change-colors/rte-appearance.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/change-colors/rte-appearance.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/change-colors/rte-resources.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/change-colors/rte-resources.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/editors-config/config-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/editors-config/config-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/editors-config/open-config-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/editors-config/open-config-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/file-importers/menu-item.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/file-importers/menu-item.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/file-importers/rtimporter-package.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/file-importers/rtimporter-package.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/after-import.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/after-import.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/build-all.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/build-all.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/create-runtime-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/create-runtime-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/delete-rtsl-data.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/delete-rtsl-data.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/expose-to-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/expose-to-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/file-import-assets.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/file-import-assets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/game-view-camera.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/game-view-camera.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/import-assets.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/import-assets.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/rteditor-demo-scene.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/rteditor-demo-scene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/runtime-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/runtime-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/select-asset-library.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/select-asset-library.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/show-me-examples.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/show-me-examples.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/get-started/use-buitin-rp-asset.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/get-started/use-buitin-rp-asset.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/inspector-view/property-editors.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/inspector-view/property-editors.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/inspector-view/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/inspector-view/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/menu/context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/menu/context-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/menu/main-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/menu/main-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/menu/my-context-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/menu/my-context-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/overview/overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/overview/overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/overview/use-legacy-builtin-windows.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/overview/use-legacy-builtin-windows.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/custom-window-created.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/custom-window-created.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/custom-window-menu.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/custom-window-menu.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/custom-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/custom-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/layout-override-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/layout-override-result.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/layout-override.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/layout-override.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/tools-override-result.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/tools-override-result.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/tools-override.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/tools-override.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/ui-scale-after-override.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/ui-scale-after-override.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/rteditor/window-manager/ui-scale-before-override.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/rteditor/window-manager/ui-scale-before-override.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/asset-libraries/create-asset-library.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/asset-libraries/create-asset-library.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/asset-libraries/populate-asset-library.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/asset-libraries/populate-asset-library.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/asset-libraries/special-asset-libraries.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/asset-libraries/special-asset-libraries.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/asset-libraries/synchronize-asset-library.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/asset-libraries/synchronize-asset-library.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/collect-scene-dependencies.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/collect-scene-dependencies.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/config-window.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/config-window.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/demo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/demo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/demo2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/demo2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/folders.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/folders.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/game-prefab.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/game-prefab.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/project.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/project.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/get-started/savedscene.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/get-started/savedscene.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/create-custom-implementation.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/create-custom-implementation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/custom-implementation-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/custom-implementation-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/edit-custom-implementation.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/edit-custom-implementation.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/mappings-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/mappings-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/open-persistent-classes-editor.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/open-persistent-classes-editor.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/save-load/persistent-classes/persistent-classes-folder.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/save-load/persistent-classes/persistent-classes-folder.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/box-selection/create-box-selection.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/box-selection/create-box-selection.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/getting-started/step1-create-transform-handles.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/getting-started/step1-create-transform-handles.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/getting-started/step2-create-object.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/getting-started/step2-create-object.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/getting-started/step3-enable-editing.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/getting-started/step3-enable-editing.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/getting-started/step4-hit-play.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/getting-started/step4-hit-play.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/grid/scene-grid.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/grid/scene-grid.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/lock-axes/position-handle-x-y-locked.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/lock-axes/position-handle-x-y-locked.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/overview/all-in-one.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/overview/all-in-one.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/overview/overview.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/overview/overview.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/position-handle/create-position-handle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/position-handle/create-position-handle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/position-handle/position-handle-model-adjustment.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/position-handle/position-handle-model-adjustment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/position-handle/set-model-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/position-handle/set-model-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/rotation-handle/create-rotation-handle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/rotation-handle/create-rotation-handle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/rotation-handle/rotation-handle-model-adjustment.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/rotation-handle/rotation-handle-model-adjustment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/rotation-handle/set-model-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/rotation-handle/set-model-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/runtime-handles-component/runtime-handles-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/runtime-handles-component/runtime-handles-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/runtime-scene-component/create-runtime-scene-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/runtime-scene-component/create-runtime-scene-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/runtime-selection-component/runtime-selection-component.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/runtime-selection-component/runtime-selection-component.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/scale-handle/create-scale-handle.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/scale-handle/create-scale-handle.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/scale-handle/scale-handle-model-adjustment.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/scale-handle/scale-handle-model-adjustment.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/scale-handle/set-model-field.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/scale-handle/set-model-field.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/transform-handels/scene-gizmo/create-scene-gizmo.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/transform-handels/scene-gizmo/create-scene-gizmo.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/urp-support/getting-started-1.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/urp-support/getting-started-1.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/urp-support/getting-started-2.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/urp-support/getting-started-2.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/urp-support/getting-started-4.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/urp-support/getting-started-4.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/urp-support/getting-started-5.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/urp-support/getting-started-5.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/urp-support/rthandles-urp-support.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/urp-support/rthandles-urp-support.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/vtv/get-started/get-started.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/vtv/get-started/get-started.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/vtv/item-drop-marker/item-drop-marker.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/vtv/item-drop-marker/item-drop-marker.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/vtv/overview/vtv.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/vtv/overview/vtv.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/vtv/vtv-item/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/vtv/vtv-item/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Resource",
+      "source_relative_path": "resources/img/vtv/vtv/structure.png",
+      "output": {
+        "resource": {
+          "relative_path": "resources/img/vtv/vtv/structure.png"
+        }
+      },
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html"
+        }
+      },
+      "version": ""
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

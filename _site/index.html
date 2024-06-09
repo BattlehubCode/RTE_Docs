@@ -1,0 +1,285 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Runtime Editor Docs | Example Unity documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Runtime Editor Docs | Example Unity documentation ">
+    
+      <link rel="shortcut icon" href="favicon.ico">
+      <link rel="stylesheet" href="styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="styles/docfx.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <meta property="docfx:navrel" content="toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="index.html">
+                <img id="logo" class="svg" src="logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        <div class="article row grid">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="runtime-editor-docs">Runtime Editor Docs</h1>
+
+<p>Welcome to documentation of <a href="http://u3d.as/v9j" target="_blank"><strong>Runtime Editor v.3.5.0</strong></a> the set of scripts and prefabs that will help you to implement scene editor, game level editor or build your own modeling application. If you are new to this documentation please proceed to [introduction] (manual/general.md) page to get an overview what Runtime Editor
+and this documentation has to offer.</p>
+<div class="NOTE">
+<h5>Note</h5>
+<p>If you cannot find something in the documentation or have any questions, send an email to <a href="mailto:Battlehub@outlook.com">Battlehub@outlook.com</a> or ask directly in this <a href="https://t.me/battlehub">support group</a>.</p>
+</div>
+<p>Previous Versions:</p>
+<ul>
+<li><a href="http://rteditor.battlehub.net/v20/">v 2.00</a></li>
+<li><a href="http://rteditor.battlehub.net/v203/">v 2.03</a></li>
+<li><a href="http://rteditor.battlehub.net/v204/">v 2.04</a></li>
+<li><a href="http://rteditor.battlehub.net/v205/">v 2.05</a></li>
+<li><a href="http://rteditor.battlehub.net/v211/">v 2.11</a></li>
+<li><a href="http://rteditor.battlehub.net/v226/">v 2.26</a></li>
+</ul>
+<p>The documentation is organized as following:</p>
+<p>##[General] (manual/general.md)</p>
+<ul>
+<li>[Introduction] (manual/general.md#introduction)</li>
+<li><a href="manual/general.html#list-of-features">List of Features</a></li>
+<li><a href="manual/general.html#changelog">Changelog</a></li>
+<li><a href="manual/general.html#about">About</a></li>
+</ul>
+<h2 id="getting-started"><strong>Getting Started</strong></h2>
+<ul>
+<li>[Getting Started with Runtime Editor] (manual/runtime-editor.md#getting-started)</li>
+<li>[Getting Started with Transform Handles] (manual/transform-handles.md#getting-started)</li>
+<li>[Getting Started with Save &amp; Load] (manual/save-load.md#getting-started)</li>
+<li>[Expose To Editor] (manual/infrastructure.md#expose-to-editor)</li>
+<li>[Event methods] (manual/infrastructure.md#event-methods)</li>
+<li>[IOC] (manual/infrastructure.md#ioc)</li>
+<li>[Runtime Selection] (manual/infrastructure.md#runtime-selection)</li>
+<li>[Runtime Undo] (manual/infrastructure.md#runtime-undo)</li>
+</ul>
+<h2 id="transform-handles-manualtransform-handlesmd">[Transform Handles] (manual/transform-handles.md)</h2>
+<ul>
+<li>[Overview] (manual/transform-handles.md#overview)</li>
+<li>[Getting Started] (manual/transform-handles.md#getting-started)</li>
+<li>[Base Handle] (manual/transform-handles.md#base-handle)</li>
+<li>[Position Handle] (manual/transform-handles.md#position-handle)</li>
+<li>[Rotation Handle] (manual/transform-handles.md#rotation-handle)</li>
+<li>[Scale Handle] (manual/transform-handles.md#scale-handle)</li>
+<li>[Rect Tool] (manual/transform-handles.md#rect-tool)</li>
+<li>[Locking Axes] (manual/transform-handles.md#locking-axes)</li>
+<li>[Scene Gizmo] (manual/transform-handles.md#scene-gizmo)</li>
+<li>[Grid] (manual/transform-handles.md#grid)</li>
+<li>[Runtime Handles Component] (manual/transform-handles.md#runtime-handles-component)</li>
+<li>[Runtime Selection Component] (manual/transform-handles.md#runtime-selection-component)</li>
+<li>[Box Selection] (manual/transform-handles.md#box-selection)</li>
+<li>[Runtime Scene Component] (manual/transform-handles.md#runtime-scene-component)</li>
+</ul>
+<h2 id="common-infrastructure-manualinfrastructuremd">[Common Infrastructure] (manual/infrastructure.md)</h2>
+<ul>
+<li>[Overview] (manual/infrastructure.md#overview)</li>
+<li>[Expose To Editor] (manual/infrastructure.md#expose-to-editor)</li>
+<li>[Event methods] (manual/infrastructure.md#event-methods)</li>
+<li>[IOC] (manual/infrastructure.md#ioc)</li>
+<li>[IRTE interface] (manual/infrastructure.md#irte-interface)</li>
+<li>[Input] (manual/infrastructure.md#input)</li>
+<li>[RTE Component] (manual/infrastructure.md#rte-component)</li>
+<li>[Runtime Selection] (manual/infrastructure.md#runtime-selection)</li>
+<li>[Runtime Objects] (manual/infrastructure.md#runtime-objects)</li>
+<li>[Runtime Tools] (manual/infrastructure.md#runtime-tools)</li>
+<li>[Runtime Undo] (manual/infrastructure.md#runtime-undo)</li>
+<li>[Drag And Drop] (manual/infrastructure.md#drag-and-drop)</li>
+<li>[Runtime Window] (manual/infrastructure.md#runtime-window)</li>
+</ul>
+<h2 id="runtime-editor-manualruntime-editormd">[Runtime Editor] (manual/runtime-editor.md)</h2>
+<ul>
+<li>[Overview] (manual/runtime-editor.md#overview)</li>
+<li>[Getting Started] (manual/runtime-editor.md#getting-started)</li>
+<li>[Main &amp; Context Menu] (manual/runtime-editor.md#main--context-menu)</li>
+<li>[RTEDeps] (manual/runtime-editor.md#rtedeps)</li>
+<li>[Window Manager] (manual/runtime-editor.md#window-manager)</li>
+<li>[How To: How to add custom window to Window Manager] (manual/runtime-editor.md#how-to-add-custom-window-to-window-manager)</li>
+<li>[How to: override default layout] (manual/runtime-editor.md#how-to-override-default-layout)</li>
+<li>[How to: override scene parameters] (manual/runtime-editor.md#how-to-override-scene-parameters)</li>
+<li>[How to: override tools panels] (manual/runtime-editor.md#how-to-override-tools-panel)</li>
+<li>[How to: override ui scale] (manual/runtime-editor.md#how-to-override-ui-scale)</li>
+<li>[How to: change runtime editor colors] (manual/runtime-editor.md#how-to-change-runtime-editor-colors)</li>
+<li>[File Importers] (manual/runtime-editor.md#file-importers)</li>
+<li>[Inspector View] (manual/runtime-editor.md#inspector-view)</li>
+<li>[How To: Configure Editors] (manual/runtime-editor.md#how-to-configure-editors)</li>
+<li>[How To: Select Component Properties] (manual/runtime-editor.md#how-to-select-component-properties)</li>
+<li>[Resource Preview Utility] (manual/runtime-editor.md#resource-preview-utility)</li>
+</ul>
+<h2 id="save-load-manualsave-loadmd">[Save Load] (manual/save-load.md)</h2>
+<ul>
+<li>[Overview] (manual/save-load.md#overview)</li>
+<li>[Getting Started] (manual/save-load.md#getting-started)</li>
+<li>[Persistent Classes] (manual/save-load.md#persistent-classes)</li>
+<li>[How To: Create Custom Persistent Class] (manual/save-load.md#how-to-create-custom-persistent-class)</li>
+<li>[Asset Library] (manual/save-load.md#asset-library)</li>
+<li>[How To: Create Asset Library] (manual/save-load.md#how-to-create-asset-library)</li>
+<li>[Project Item &amp; Asset Item] (manual/save-load.md#project-item--asset-item)</li>
+<li>[Project] (manual/save-load.md#project)</li>
+</ul>
+<h2 id="rendering-manualrenderingmd">[Rendering] (manual/rendering.md)</h2>
+<ul>
+<li>[IRTECamera] (manual/rendering.md#irtecamera)</li>
+<li>[Graphics Layer Camera] (manual/rendering.md#graphics-layer-camera)</li>
+</ul>
+<h2 id="gizmos-manualgizmosmd">[Gizmos] (manual/gizmos.md)</h2>
+<ul>
+<li>[Overview] (manual/gizmos.md#overview)</li>
+<li>[Getting Started With Gizmos] (manual/gizmos.md#getting-started)</li>
+<li>[Base Gizmo] (manual/gizmos.md#base-gizmo)</li>
+<li>[Box Gizmo] (manual/gizmos.md#box-gizmo)</li>
+<li>[Sphere Gizmo] (manual/gizmos.md#sphere-gizmo)</li>
+<li>[Capsule Gizmo] (manual/gizmos.md#capsule-gizmo)</li>
+<li>[Cone Gizmo] (manual/gizmos.md#cone-gizmo)</li>
+<li>[Box Collider Gizmo] (manual/gizmos.md#box-collider-gizmo)</li>
+<li>[Sphere Collider Gizmo] (manual/gizmos.md#sphere-collider-gizmo)</li>
+<li>[Capsule Collider Gizmo] (manual/gizmos.md#capsule-collider-gizmo)</li>
+<li>[Point Light Gizmo] (manual/gizmos.md#point-light-gizmo)</li>
+<li>[Spot Light Gizmo] (manual/gizmos.md#spot-light-gizmo)</li>
+<li>[Directional Light Gizmo] (manual/gizmos.md#directional-light-gizmo)</li>
+<li>[Audio Source Gizmo] (manual/gizmos.md#audio-source-gizmo)</li>
+<li>[Audio Reverb Zone Gizmo] (manual/gizmos.md#audio-reverb-zone-gizmo)</li>
+<li>[Skinned Mesh Renderer Gizmo] (manual/gizmos.md#skinned-mesh-renderer-gizmo)</li>
+</ul>
+<h2 id="dock-panel-manualdock-panelsmd">[Dock Panel] (manual/dock-panels.md)</h2>
+<ul>
+<li>[Overview] (manual/dock-panels.md#overview)</li>
+<li>[Getting Started] (manual/dock-panels.md#getting-started)</li>
+<li>[Dock Panel] (manual/dock-panels.md#dock-panel)</li>
+<li>[Tab] (manual/dock-panels.md#tab)</li>
+<li>[Region] (manual/dock-panels.md#region)</li>
+<li>[Dialog Manager] (manual/dock-panels.md#dialog-manager)</li>
+</ul>
+<h2 id="virtualizing-treeview-manualvtvmd">[Virtualizing TreeView] (manual/vtv.md)</h2>
+<ul>
+<li>[Overview] (manual/vtv.md#overview)</li>
+<li>[Getting Started] (manual/vtv.md#getting-started)</li>
+<li>[Virtualizing Scroll Rect] (manual/vtv.md#virtualizing-scroll-rect)</li>
+<li>[Virtualizing Items Control] (manual/vtv.md#virtualizing-items-control)</li>
+<li>[Virtualizing Drop Marker] (manual/vtv.md#virtualizing-drop-marker)</li>
+<li>[Virtualizing Tree View] (manual/vtv.md#virtualizing-tree-view)</li>
+<li>[Virtualizing Tree View Item] (manual/vtv.md#virtualizing-tree-view-item)</li>
+</ul>
+<h2 id="menu-control-manualmenu-controlmd">[Menu Control] (manual/menu-control.md)</h2>
+<ul>
+<li>[Overview] (manual/menu-control.md#overview)</li>
+<li>[Getting Started] (manual/menu-control.md#getting-started)</li>
+<li>[Menu Item] (manual/menu-control.md#menu-item)</li>
+<li>[Menu] (manual/menu-control.md#menu)</li>
+<li>[Main Menu Button] (manual/menu-control.md#main-menu-button)</li>
+<li>[Context Menu Trigger] (manual/menu-control.md#context-menu-trigger)</li>
+</ul>
+<p>##[Animation Editor] (manual/animation-editor.md)</p>
+<ul>
+<li>[Overview] (manual/animation-editor.md#overview)</li>
+</ul>
+<p>##[Editor Extensions] (manual/editor-extensions.md)</p>
+<ul>
+<li>[Overview] (manual/editor-extensions.md#overview)</li>
+<li>[Getting Started] (manual/editor-extensions.md#getting-started)</li>
+<li>[Editor Extensions] (manual/editor-extensions.md#editor-extensions)</li>
+<li>[Runtime Builder] (manual/editor-extensions.md#runtime-builder)</li>
+<li>[Terrain Editor] (manual/editor-extensions.md#terrain-editor)</li>
+<li>[Runtime Scripting] (manual/editor-extensions.md#runtime-scripting)</li>
+</ul>
+<p>##[Universal RP Support] (manual/urp-support.md)</p>
+<ul>
+<li>[Overview] (manual/urp-support.md#overview)</li>
+<li>[Getting Started] (manual/urp-support.md#getting-started)</li>
+</ul>
+<p>##[HDRP Support] (manual/hdrp-support.md)</p>
+<ul>
+<li>[Overview] (manual/hdrp-support.md#overview)</li>
+<li>[Getting Started] (manual/hdrp-support.md#getting-started)</li>
+</ul>
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/Battlehub0x/RTE_Docs/blob/main/docs/index.md/#L1" class="contribution-link">Edit this page</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Example Unity documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="styles/docfx.js"></script>
+    <script type="text/javascript" src="styles/main.js"></script>
+  </body>
+</html>

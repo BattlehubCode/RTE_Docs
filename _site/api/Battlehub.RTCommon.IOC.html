@@ -1,0 +1,1017 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+
+  <head>
+    <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <title>Class IOC
+ | Example Unity documentation </title>
+      <meta name="viewport" content="width=device-width">
+      <meta name="title" content="Class IOC
+ | Example Unity documentation ">
+    
+      <link rel="shortcut icon" href="../favicon.ico">
+      <link rel="stylesheet" href="../styles/docfx.vendor.min.css">
+      <link rel="stylesheet" href="../styles/docfx.css">
+      <link rel="stylesheet" href="../styles/main.css">
+      <meta property="docfx:navrel" content="../toc.html">
+      <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Battlehub.RTCommon.IOC">
+
+
+
+  <h1 id="Battlehub_RTCommon_IOC" data-uid="Battlehub.RTCommon.IOC" class="text-break">Class IOC
+</h1>
+  <div class="markdown level0 summary"><p>Simple IoC container implementation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">Object</span></div>
+    <div class="level1"><span class="xref">IOC</span></div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="Battlehub.RTCommon.html">Battlehub.RTCommon</a></h6>
+  <h6><strong>Assembly</strong>: cs.temp.dll.dll</h6>
+  <h5 id="Battlehub_RTCommon_IOC_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class IOC</code></pre>
+  </div>
+  <h3 id="methods">Methods
+</h3>
+
+
+  <a id="Battlehub_RTCommon_IOC_ClearAll_" data-uid="Battlehub.RTCommon.IOC.ClearAll*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_ClearAll" data-uid="Battlehub.RTCommon.IOC.ClearAll">ClearAll()</h4>
+  <div class="markdown level1 summary"><p>Clears container and removes all registered dependencies and fallbacks</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void ClearAll()</code></pre>
+  </div>
+
+
+  <a id="Battlehub_RTCommon_IOC_IsFallbackRegistered_" data-uid="Battlehub.RTCommon.IOC.IsFallbackRegistered*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_IsFallbackRegistered__1" data-uid="Battlehub.RTCommon.IOC.IsFallbackRegistered``1">IsFallbackRegistered&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Checks if a fallback dependency of type is registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFallbackRegistered&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><p>True if fallback dependency of type with name registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_IsRegistered_" data-uid="Battlehub.RTCommon.IOC.IsRegistered*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_IsRegistered__1" data-uid="Battlehub.RTCommon.IOC.IsRegistered``1">IsRegistered&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Checks if a dependency of type is registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRegistered&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><p>True if dependency of type with name registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_IsRegistered_" data-uid="Battlehub.RTCommon.IOC.IsRegistered*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_IsRegistered__1_System_String_" data-uid="Battlehub.RTCommon.IOC.IsRegistered``1(System.String)">IsRegistered&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Checks if a named dependency of type is registered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsRegistered&lt;T&gt;(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Boolean</span></td>
+        <td><p>True if dependency of type with name registered.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Register_" data-uid="Battlehub.RTCommon.IOC.Register*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Register__1___0_" data-uid="Battlehub.RTCommon.IOC.Register``1(``0)">Register&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Registers dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register&lt;T&gt;(T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Register_" data-uid="Battlehub.RTCommon.IOC.Register*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Register__1_Func___0__" data-uid="Battlehub.RTCommon.IOC.Register``1(Func{``0})">Register&lt;T&gt;(Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register&lt;T&gt;(Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which constructs object of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Register_" data-uid="Battlehub.RTCommon.IOC.Register*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Register__1_System_String___0_" data-uid="Battlehub.RTCommon.IOC.Register``1(System.String,``0)">Register&lt;T&gt;(String, T)</h4>
+  <div class="markdown level1 summary"><p>Registers named dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register&lt;T&gt;(string name, T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Register_" data-uid="Battlehub.RTCommon.IOC.Register*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Register__1_System_String_Func___0__" data-uid="Battlehub.RTCommon.IOC.Register``1(System.String,Func{``0})">Register&lt;T&gt;(String, Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers named dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Register&lt;T&gt;(string name, Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which constructs object of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_RegisterFallback_" data-uid="Battlehub.RTCommon.IOC.RegisterFallback*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_RegisterFallback__1___0_" data-uid="Battlehub.RTCommon.IOC.RegisterFallback``1(``0)">RegisterFallback&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Registers fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterFallback&lt;T&gt;(T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_RegisterFallback_" data-uid="Battlehub.RTCommon.IOC.RegisterFallback*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_RegisterFallback__1_Func___0__" data-uid="Battlehub.RTCommon.IOC.RegisterFallback``1(Func{``0})">RegisterFallback&lt;T&gt;(Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Registers fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RegisterFallback&lt;T&gt;(Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which constructs object of type.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Resolve_" data-uid="Battlehub.RTCommon.IOC.Resolve*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Resolve__1" data-uid="Battlehub.RTCommon.IOC.Resolve``1">Resolve&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Resolves dependency or fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Resolve&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Object of type (or null if dependency of type is not registered)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Resolve_" data-uid="Battlehub.RTCommon.IOC.Resolve*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Resolve__1_System_String_" data-uid="Battlehub.RTCommon.IOC.Resolve``1(System.String)">Resolve&lt;T&gt;(String)</h4>
+  <div class="markdown level1 summary"><p>Resolves named dependency or fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static T Resolve&lt;T&gt;(string name)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><p>Object of type (or null if dependency of type is not registered)</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Unregister_" data-uid="Battlehub.RTCommon.IOC.Unregister*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Unregister__1" data-uid="Battlehub.RTCommon.IOC.Unregister``1">Unregister&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Unregisters dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Unregister_" data-uid="Battlehub.RTCommon.IOC.Unregister*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Unregister__1___0_" data-uid="Battlehub.RTCommon.IOC.Unregister``1(``0)">Unregister&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Unregisters dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;(T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance which was passed to Register method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Unregister_" data-uid="Battlehub.RTCommon.IOC.Unregister*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Unregister__1_Func___0__" data-uid="Battlehub.RTCommon.IOC.Unregister``1(Func{``0})">Unregister&lt;T&gt;(Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;(Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which was passed to Register method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Unregister_" data-uid="Battlehub.RTCommon.IOC.Unregister*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Unregister__1_System_String___0_" data-uid="Battlehub.RTCommon.IOC.Unregister``1(System.String,``0)">Unregister&lt;T&gt;(String, T)</h4>
+  <div class="markdown level1 summary"><p>Unregisters named dependency of type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;(string name, T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td><p>Instance which was passed to Register method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_Unregister_" data-uid="Battlehub.RTCommon.IOC.Unregister*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_Unregister__1_System_String_Func___0__" data-uid="Battlehub.RTCommon.IOC.Unregister``1(System.String,Func{``0})">Unregister&lt;T&gt;(String, Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters named dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void Unregister&lt;T&gt;(string name, Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">String</span></td>
+        <td><span class="parametername">name</span></td>
+        <td><p>Name of dependency.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which was passed to Register method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_UnregisterFallback_" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_UnregisterFallback__1" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback``1">UnregisterFallback&lt;T&gt;()</h4>
+  <div class="markdown level1 summary"><p>Unregisters fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterFallback&lt;T&gt;()</code></pre>
+  </div>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_UnregisterFallback_" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_UnregisterFallback__1___0_" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback``1(``0)">UnregisterFallback&lt;T&gt;(T)</h4>
+  <div class="markdown level1 summary"><p>Unregisters fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterFallback&lt;T&gt;(T instance)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">T</span></td>
+        <td><span class="parametername">instance</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+
+  <a id="Battlehub_RTCommon_IOC_UnregisterFallback_" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback*"></a>
+  <h4 id="Battlehub_RTCommon_IOC_UnregisterFallback__1_Func___0__" data-uid="Battlehub.RTCommon.IOC.UnregisterFallback``1(Func{``0})">UnregisterFallback&lt;T&gt;(Func&lt;T&gt;)</h4>
+  <div class="markdown level1 summary"><p>Unregisters fallback dependency of type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void UnregisterFallback&lt;T&gt;(Func&lt;T&gt; func)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Func</span>&lt;T&gt;</td>
+        <td><span class="parametername">func</span></td>
+        <td><p>Function which was passed to RegisterFallback method.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="typeParameters">Type Parameters</h5>
+  <table class="table table-bordered table-condensed">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="parametername">T</span></td>
+        <td><p>Type of fallback dependency.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+
+</article>
+          </div>
+
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In this article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+      Example Unity documentation
+      
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script type="text/javascript" src="../styles/docfx.vendor.min.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

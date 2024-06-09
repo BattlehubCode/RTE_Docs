@@ -1,5 +1,5 @@
-#Dock Panel Docs
-##Overview
+# Dock Panel Docs
+## Overview
 
 The [__Dock Panel__](#dock-panel) is a control, that provides an easy docking of content [regions](#region) to the left, right, top, bottom or center of the panel. The control also allow region to become an independent floating window, modal popup or dialog.
 
