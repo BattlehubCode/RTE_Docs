@@ -178,7 +178,7 @@ If you're new to this documentation, please start with the introduction section 
 # Introduction
 The Runtime Editor consists of several major parts, effectively decoupled using MVVM and dependency injection mechanisms:
 - **Common Infrastructure APIs**: Includes Selection, Tools, IOC, and Drag & Drop.
-- **UI Controls**: Features such as DockPanel, TreeView, Main Menu, and Context Menu.
+- **UI Controls**: DockPanel, TreeView, Main Menu, and Context Menu.
 - **WindowManager**: Provides built-in windows and dialogs like Inspector, Scene, Hierarchy, Project, and Console.
 - **Transform Handles & Gizmos**: Facilitates scene controls and navigation.
 - **Runtime Asset Database**: Manages assets, scenes, and prefabs.
