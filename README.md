@@ -184,8 +184,6 @@ The Runtime Editor consists of several major parts, effectively decoupled using 
 - **Runtime Asset Database**: Manages assets, scenes, and prefabs.
 - **Extensions**: Includes Terrain Editor, Animation Editor, ProBuilder Editor, and Runtime Scripting.
 
-[Let me know](#support) which examples you would like to see.
-
 # Getting Started
 1. Create a new scene.
 2. Click **Tools -> Runtime Editor -> Create RTEditor**.
