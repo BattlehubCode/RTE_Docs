@@ -222,7 +222,7 @@ In this mode, users will not be able to open legacy RTSL projects. The Project w
 In this mode, users can open both new Asset Database projects and legacy RTSL projects. The Project window is replaced with the AssetDatabase window, the Save Scene Dialog and Save Asset Dialog are replaced with the AssetDatabaseSave dialog, and the Select Object Dialog is replaced with the AssetDatabaseSelect dialog. Old IProjectAsync APIs are available, but corresponding functions must be called using the IRuntimeEditor or IAssetDatabaseModel interface, which is implemented by the AssetDatabaseOverRTSL class.
 
 ### LegacyRTSL
-In this mode, users can open only legacy RTSL projects. All legacy windows and APIs, such as IProjectAsync, are available. While it is possible to use some new methods of the IRuntimeEditor interface and IAssetDatabase interface, some of them might throw exceptions and are not tested. This mode is not recommended.
+In this mode, users can open only legacy RTSL projects. All legacy windows and APIs, such as IProjectAsync, are available. While it is possible to use some new methods of the IRuntimeEditor interface and IAssetDatabase interface, some of them might throw exceptions. This mode is not recommended.
 
 # Universal Render Pipeline Support
 1. Unpack "Assets/Battlehub/**1 UniversalRP Support.unitypackage**".
