@@ -2532,7 +2532,7 @@ For information on making the runtime editor compatible with projects created us
 The documentation for Runtime Save Load can be found [here](https://rteditor.battlehub.net/manual/save-load.html). 
 This section focuses on the new asset database and new API methods.
 
-##Core Methods and Events
+## Core Methods and Events
 
 Most of the new core project, scene, prefab, and asset management methods are defined in the `IRuntimeEditor` and `IAssetDatabaseModel` interfaces.
 
