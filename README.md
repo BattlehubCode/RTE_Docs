@@ -210,7 +210,7 @@ There are various example scenes available. To access them:
   If you are using Universal or HDRP, when you open the demo scene, also follow the steps in [Universal Render Pipeline Support](#universal-render-pipeline-support) or [HDRP Support](#hdrp-support).
 	
 # Compatibility Modes
-In Runtime Editor 4.0.0, the runtime asset database has replaced the Runtime Save Load subsystem, which is now considered legacy. By default, Runtime Editor cannot open projects created using RTSL. However, there are two compatibility modes, **AssetDatabaseOverRTSL** and **LegacyRTSL**, 
+In Runtime Editor 4.0.0, the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase) has replaced the Runtime Save Load subsystem, which is now considered legacy. By default, Runtime Editor cannot open projects created using RTSL. However, there are two compatibility modes, **AssetDatabaseOverRTSL** and **LegacyRTSL**, 
 which allow you to open and work with projects created before RTE 4.0.0. 
 To select a compatibility mode, use the **Compatibility Mode** dropdown in the Runtime Editor component editor.
 	![Compatibility Mode][compatibility_mode]
