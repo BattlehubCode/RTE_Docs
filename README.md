@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the **Runtime Editor v.4.0.0** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the **Runtime Editor v.4.0.3** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Promo Video][youtube_icon]](https://www.youtube.com/watch?v=ynA2kq2Eq3Y)
@@ -19,6 +19,7 @@ If you're new to this documentation, please start with the introduction section 
       + [None](#none)
       + [AssetDatabaseOverRTSL](#assetdatabaseoverrtsl)
       + [LegacyRTSL](#legacyrtsl)
+- [RTSL to AssetDatabase Project Converter](#rtsl-to-assetdatabase-project-converter)
 - [Universal Render Pipeline Support](#universal-render-pipeline-support)
 - [HDRP Support](#hdrp-support)
 - [Common Infrastructure](#common-infrastructure)
@@ -223,6 +224,17 @@ In this mode, users can open both new Asset Database projects and legacy RTSL pr
 
 ### LegacyRTSL
 In this mode, users can open only legacy RTSL projects. All legacy windows and APIs, such as IProjectAsync, are available. While it is possible to use some new methods of the IRuntimeEditor interface and IAssetDatabase interface, some of them might throw exceptions. This mode is not recommended.
+
+# RTSL to AssetDatabase Project Converter
+
+An example of a project converter from the old RTSL format to the new AssetDatabase format can be found in [Assets\Battlehub\RTEditorDemo\Examples\RTSL to AssetDatabase Project Converter.unity](#example-scenes).
+
+The converter is implemented in the `RTSLProjectConverter` class. It takes the RTSL project path and the new AssetDatabase project path as inputs. The converter performs the following steps:
+
+1. Copies the folder structure.
+2. Converts assets like materials, meshes, etc.
+3. Converts prefabs.
+4. Converts scenes.
 
 # Universal Render Pipeline Support
 1. Unpack "Assets/Battlehub/**1 UniversalRP Support.unitypackage**".
