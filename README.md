@@ -149,7 +149,8 @@ If you're new to this documentation, please start with the introduction section 
          - [IRuntimeEditor](#iruntimeeditor)
          - [IAssetDatabaseModel](#iassetdatabasemodel)
    * [IAssetDatabaseModel vs IRuntimeEditor Interface](#iassetdatabasemodel-vs-iruntimeeditor-interface)
-   * [Manage Projects ](#manage-projects)
+   * [Projects Root Folder Path](#projects-root-folder-path)
+   * [Manage Projects](#manage-projects)
    * [Create Folder](#create-folder)
    * [Set Current Folder](#set-current-folder)
    * [Runtime Scene](#runtime-scene)
@@ -169,6 +170,7 @@ If you're new to this documentation, please start with the introduction section 
       + [Custom Import Source](#custom-import-source)
    * [File Importers](#file-importers)
       + [Custom File Importer](#custom-file-importer)
+   * [Web Storage Sample](#web-storage-sample)
    * [Serializer Extensions](#serializer-extensions)
    * [Enumerators](#enumerators)
    * [Build All](#build-all)
@@ -2656,6 +2658,27 @@ Apart from the runtime editor itself, there are two implementations of the `IAss
 
 - The `AssetDatabaseModel` is a wrapper for the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase).
 - The `AssetDatabaseModelOverRTSL` is a wrapper for [RTSL](https://rteditor.battlehub.net/manual/save-load.html).
+
+## Projects Root Folder Path
+
+You can set the projects root folder in two ways:
+
+1. By updating the `Project Root Folder Path` field of the Runtime Editor (script) (see RuntimeEditor.prefab/Runtime Editor (Script)/Extra Settings/Projects Root Folder Path).
+
+2. Programmatically:
+
+```csharp
+using Battlehub.RTEditor;
+using Battlehub.RTCommon;
+
+public class SetRootFolderExt : EditorExtension
+{
+    protected override void OnInit()
+    {
+        var editor = IOC.Resolve<IRuntimeEditor>();
+        editor.ProjectsRootFolderPath = @"C:\Runtime Editor Projects";
+    }
+}
 
 ## Manage Projects 
 
