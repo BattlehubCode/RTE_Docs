@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the **Runtime Editor v.4.0.3** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the **Runtime Editor v.4.0.5** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Promo Video][youtube_icon]](https://www.youtube.com/watch?v=ynA2kq2Eq3Y)
@@ -3874,6 +3874,24 @@ public class FbxFileImporter : AssetDatabaseFileImporter
     }
 }
 ```
+
+## Web Storage Sample
+
+You can use the runtime asset database in conjunction with an HTTP web server, in WebGL and Standalone builds.
+
+To start the web sample, follow these steps:
+
+1. Install the [Newtonsoft Json package]((https://docs.unity3d.com/Packages/com.unity.nuget.newtonsoft-json@3.2/manual/index.html)). In Package Manager, click on "+ Add package by name" and enter "com.unity.nuget.newtonsoft-json"
+2. Unpack the `Asset/Battlehub/Storage.Web` Unity package.
+3. Open the `Asset/Battlehub.Extensions/Storage.Web/SampleScene` Unity scene.
+4. Extract `Asset/Battlehub.Extensions/Storage.Web/SampleHttpServer.zip` to a folder (e.g., `C:\SampleHttpWebServer`).
+5. Install Node.js from [Node.js](https://nodejs.org/en/learn/getting-started/how-to-install-nodejs).
+6. Open a terminal and navigate to `C:\SampleHttpWebServer`.
+7. Run the command `npm install`.
+8. Run the command `node app.js`.
+9. Enter play mode in Unity.
+10. The projects will be created in the `Project Root Folder Path` (see SampleScene/RuntimeEditor/Runtime Editor (Script)/Extra Settings/Projects Root Folder Path).
+
 
 ## Serializer Extensions
 Surrogates are intermediary classes used by the Serializer to facilitate the reading and writing of data to Unity objects during serialization. **To enable the serialization of a specific class, you must create a surrogate for it**. These surrogates can be generated automatically or created from scratch. To generate a Surrogate class, you can use the "Create Surrogates" window.
