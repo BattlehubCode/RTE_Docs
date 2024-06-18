@@ -2679,6 +2679,7 @@ public class SetRootFolderExt : EditorExtension
         editor.ProjectsRootFolderPath = @"C:\Runtime Editor Projects";
     }
 }
+```
 
 ## Manage Projects 
 
