@@ -213,8 +213,8 @@ There are various example scenes available. To access them:
   If you are using Universal or HDRP, when you open the demo scene, also follow the steps in [Universal Render Pipeline Support](#universal-render-pipeline-support) or [HDRP Support](#hdrp-support).
 	
 # Compatibility Modes
-In Runtime Editor 4.0.0, the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase) has replaced the [Runtime Save Load](https://rteditor.battlehub.net/manual/save-load.html) subsystem, which is now considered legacy. By default, Runtime Editor cannot open projects created using RTSL. However, there are two compatibility modes, **AssetDatabaseOverRTSL** and **LegacyRTSL**, 
-which allow you to open and work with projects created before RTE 4.0.0. 
+In Runtime Editor 4.x.x, the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase) has replaced the [Runtime Save Load](https://rteditor.battlehub.net/v350/manual/save-load.html) subsystem, which is now considered legacy. By default, Runtime Editor cannot open projects created using RTSL. However, there are two compatibility modes, **AssetDatabaseOverRTSL** and **LegacyRTSL**, 
+which allow you to open and work with projects created before RTE 4.x.x. 
 To select a compatibility mode, use the **Compatibility Mode** dropdown in the Runtime Editor component editor.
 	![Compatibility Mode][compatibility_mode]
 
@@ -2506,11 +2506,11 @@ Locale can be changed using following code `lc.Locale = "en-US";` This will work
 
 # UI Controls
 ## Dock Panel Control
-https://rteditor.battlehub.net/manual/dock-panels.html
+https://rteditor.battlehub.net/v350/manual/dock-panels.html
 ## Tree View Control
-https://rteditor.battlehub.net/manual/vtv.html
+https://rteditor.battlehub.net/v350/manual/vtv.html
 ## Menu Control
-https://rteditor.battlehub.net/manual/menu-control.html
+https://rteditor.battlehub.net/v350/manual/menu-control.html
 
 
 # Runtime Transform Handles
@@ -2523,27 +2523,27 @@ Supplementary controls such as the scene gizmo and grid help to change the viewi
 - **Scene Component**: Facilitates navigation within the scene.
 - **Handles Component**: Enables changing the appearance of transform handles.
 
-https://rteditor.battlehub.net/manual/transform-handles.html
+https://rteditor.battlehub.net/v350/manual/transform-handles.html
 
 ## Runtime Gizmos
 
 Runtime Gizmos are the runtime 3D controls used to manipulate items in the scene. Unlike transform handles, gizmos do not modify the transformation of objects. 
 Instead, they are used to modify colliders, bounding boxes, and properties of light and audio sources.
 
-https://rteditor.battlehub.net/manual/gizmos.html
+https://rteditor.battlehub.net/v350/manual/gizmos.html
 
 # Animation Editor 
 
-https://rteditor.battlehub.net/manual/animation-editor.html
+https://rteditor.battlehub.net/v350/manual/animation-editor.html
 
 # Runtime Editor Extensions
 
-https://rteditor.battlehub.net/manual/editor-extensions.html
+https://rteditor.battlehub.net/v350/manual/editor-extensions.html
 
 # Asset Database
 In **Runtime Editor 4.0.0**, the RTSL subsystem was replaced by the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase). 
 For information on making the runtime editor compatible with projects created using previous versions, see the [Compatibility Modes](#compatibility-modes) section. 
-The documentation for Runtime Save Load can be found [here](https://rteditor.battlehub.net/manual/save-load.html). 
+The documentation for Runtime Save Load can be found [here](https://rteditor.battlehub.net/v350/manual/save-load.html). 
 This section focuses on the new asset database and new API methods.
 
 ## Core Methods and Events
@@ -2657,7 +2657,7 @@ These two interfaces can be used almost interchangeably.
 Apart from the runtime editor itself, there are two implementations of the `IAssetDatabaseModel` interface: `AssetDatabaseModel` and `AssetDatabaseModelOverRTSL` (which exists for [compatibility](#compatibility-modes) with projects created using the Runtime Save Load subsystem in previous runtime editor versions).
 
 - The `AssetDatabaseModel` is a wrapper for the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase).
-- The `AssetDatabaseModelOverRTSL` is a wrapper for [RTSL](https://rteditor.battlehub.net/manual/save-load.html).
+- The `AssetDatabaseModelOverRTSL` is a wrapper for [RTSL](https://rteditor.battlehub.net/v350/manual/save-load.html).
 
 ## Projects Root Folder Path
 
