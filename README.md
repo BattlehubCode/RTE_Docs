@@ -6,7 +6,7 @@ If you're new to this documentation, please start with the introduction section 
 [![Promo Video][youtube_icon]](https://www.youtube.com/watch?v=ynA2kq2Eq3Y)
 
 > **Note**  
-	Documentation for the previous versions can be found [here](https://rteditor.battlehub.net/).
+	**Documentation for the previous versions can be found** [**here**](https://rteditor.battlehub.net/v350/).
 	
 # Contents
 
