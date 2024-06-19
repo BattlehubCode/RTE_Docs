@@ -3,7 +3,7 @@
 Welcome to the **Runtime Editor v.4.0.6** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
-[![Promo Video][youtube_icon]](https://www.youtube.com/watch?v=ynA2kq2Eq3Y)
+[![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
 
 > **Note**  
 	**Documentation for the previous versions can be found** [**here**](https://rteditor.battlehub.net/v350/).
