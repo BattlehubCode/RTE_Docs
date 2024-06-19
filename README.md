@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the **Runtime Editor v.4.0.5** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the **Runtime Editor v.4.0.6** documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Promo Video][youtube_icon]](https://www.youtube.com/watch?v=ynA2kq2Eq3Y)
