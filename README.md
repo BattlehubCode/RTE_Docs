@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.0.6**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.0.7**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -151,6 +151,7 @@ If you're new to this documentation, please start with the introduction section 
    * [IAssetDatabaseModel vs IRuntimeEditor Interface](#iassetdatabasemodel-vs-iruntimeeditor-interface)
    * [Projects Root Folder Path](#projects-root-folder-path)
    * [Manage Projects](#manage-projects)
+   * [Import Export Project](#import-export-project)
    * [Create Folder](#create-folder)
    * [Set Current Folder](#set-current-folder)
    * [Runtime Scene](#runtime-scene)
@@ -2803,6 +2804,38 @@ namespace Battlehub.RTEditor.Examples.Scene31
 
 ![Manage Projects][manage_projects_example]
 ![Manage Projects][manage_projects_example_2]
+
+## Import Export Project
+To export or import a project you can use following methods:
+
+```csharp
+private async Task ExportProjectAsync(string sourceProjectName, string archivePath)
+{
+	if (File.Exists(archivePath))
+	{
+		File.Delete(archivePath);
+	}
+
+	using (var fs = File.OpenWrite(archivePath))
+	{
+		var editor = IOC.Resolve<IRuntimeEditor>();
+		using var b = editor.SetBusy();
+		await editor.ExportProjectAsync(fs, sourceProjectName);
+	}
+}
+```
+
+```csharp
+private async Task ImportProjectAsync(string archivePath, string targetProjectName)
+{
+	using (var fs = File.OpenRead(archivePath))
+	{
+		var editor = IOC.Resolve<IRuntimeEditor>();
+		using var b = editor.SetBusy();
+		await editor.ImportProjectAsync(fs, targetProjectName);
+	}
+}
+```
 
 ## Create Folder
 
