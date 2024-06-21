@@ -2806,6 +2806,9 @@ namespace Battlehub.RTEditor.Examples.Scene31
 ![Manage Projects][manage_projects_example_2]
 
 ## Import Export Project
+
+Install the [SharpZipLib package](https://docs.unity3d.com/Packages/com.unity.sharp-zip-lib@1.3/manual/index.html). In Package Manager, click on "+ Add package by name" and enter "com.unity.sharp-zip-lib"
+
 To export or import a project you can use following methods:
 
 ```csharp
