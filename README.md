@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.0.7**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.1.0**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -160,6 +160,7 @@ If you're new to this documentation, please start with the introduction section 
    * [Instantiate asset](#instantiate-asset)
    * [Duplicate Asset](#duplicate-asset)
    * [Move Asset](#move-asset)
+   * [Import Export Assets](#import-export-assets)
    * [External Asset Loaders](#external-asset-loaders)
       + [TriLibLoader Example](#trilibloader-example)
          - [Implement IExternalAssetLoaderModel](#implement-iexternalassetloadermodel)
@@ -2807,7 +2808,7 @@ namespace Battlehub.RTEditor.Examples.Scene31
 
 ## Import Export Project
 
-Install the [SharpZipLib package](https://docs.unity3d.com/Packages/com.unity.sharp-zip-lib@1.3/manual/index.html). In Package Manager, click on "+ Add package by name" and enter "com.unity.sharp-zip-lib"
+Install the [SharpZipLib package](https://docs.unity3d.com/Packages/com.unity.sharp-zip-lib@1.3/manual/index.html). In Package Manager, click on **"+ Add package by name"** and enter **"com.unity.sharp-zip-lib"**
 
 To export or import a project you can use following methods:
 
@@ -3451,6 +3452,44 @@ public class MoveAssetExample : MonoBehaviour
 }
 ```
 
+## Import Export Assets
+
+Install the [SharpZipLib package](https://docs.unity3d.com/Packages/com.unity.sharp-zip-lib@1.3/manual/index.html). In Package Manager, click on **"+ Add package by name"** and enter **"com.unity.sharp-zip-lib"**
+
+```csharp
+     private async Task ExportAssetsAsync(string path)
+     {
+         if (File.Exists(path))
+         {
+             File.Delete(path);
+         }
+
+         using (var fs = File.OpenWrite(path))
+         {
+             var editor = IOC.Resolve<IRuntimeEditor>();
+			 
+             using var b = editor.SetBusy();
+             await editor.ExportAssetsAsync(editor.SelectedAssets, fs, includeDependencies:true);
+         }
+     }
+
+     
+     private async Task ImportAssetsAsync(string path)
+     {
+         using (var fs = File.OpenRead(path))
+         {
+             var editor = IOC.Resolve<IRuntimeEditor>();
+			 
+             using var b = editor.SetBusy();
+             await editor.ImportAssetsAsync(fs);
+         }
+     }
+```
+
+> **Note**  
+> For complete example, see **Scene33 - Export And Import Asset** in the [Example Scenes section](#example-scenes).
+
+
 
 ## External Asset Loaders
 
@@ -3524,7 +3563,7 @@ public class MyLoader : IExternalAssetLoaderModel
 
 To register your custom loader, use the AddExternalAssetLoader method:
 
-```
+```csharp
 using Battlehub.RTCommon;
 using Battlehub.RTEditor;
 using Battlehub.RTEditor.Models;
@@ -3553,7 +3592,7 @@ public class RegisterMyLoader : EditorExtension
 
 After registering the custom loader, you can use the ImportExternalAssetAsync method to import an external asset by providing the loader ID and key to the method:
 
-```
+```csharp
 using var b = m_editor.SetBusy();
 await m_editor.ImportExternalAssetAsync(m_editor.RootFolderID, key: "Cube", loaderID: nameof(MyLoader), desiredName: "My External Asset");
 ```
