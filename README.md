@@ -8,8 +8,7 @@ If you're new to this documentation, please start with the introduction section 
 > **Note**  
 	**Documentation for the previous versions can be found** [**here**](https://rteditor.battlehub.net/v350/).
 
-> **Note**
-   	**GPT Assistant can be found** [**here**](https://chatgpt.com/g/g-9Dws8Nfb2-runtime-editor-assistant)
+> **GPT Assistant can be found** [**here**](https://chatgpt.com/g/g-9Dws8Nfb2-runtime-editor-assistant)
 	
 # Contents
 
