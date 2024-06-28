@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.1.2**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.1.3**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -4151,6 +4151,22 @@ namespace Battlehub.Storage.Enumerators
 
 **Note that the second parameter of the MoveNext method is the property index, which should be equal to the argument of the ProtoMember attribute assigned to that property in the surrogate class.**
 
+You can also use the following simplified syntax when editing an enumerator:
+```C#
+namespace Battlehub.Storage.Enumerators
+{
+    [ObjectEnumerator(typeof(global::MyComponent))]
+    public class MyComponentEnumerator : ObjectEnumerator<global::MyComponent>
+    {
+       protected override IEnumerator<(object Object, int Key)> GetNext()
+       {
+           yield return (TypedObject.Material, 5);
+           yield return (TypedObject.Target, 6);
+           yield return (TypedObject, -1);
+       }
+    }
+}
+```
 
 ## Build All
 After finishing creating or updating surrogates, make sure to click **"Tools" > "Runtime Asset Library" > "Build All"** from the main menu. This command will build the type model and serializer.
