@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.1.3**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.2.0**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -42,6 +42,7 @@ If you're new to this documentation, please start with the introduction section 
       + [Example Usage](#example-usage-2)
    * [Drag And Drop](#drag-and-drop)
       + [Example Usage](#example-usage-3)
+   * [Time Scale](#time-scale)
 - [Runtime Editor UI and Window System](#runtime-editor-ui-and-window-system)
    * [Overview](#overview-1)
    * [RuntimeWindow](#runtimewindow)
@@ -177,6 +178,7 @@ If you're new to this documentation, please start with the introduction section 
    * [Web Storage Sample](#web-storage-sample)
    * [Serializer Extensions](#serializer-extensions)
    * [Enumerators](#enumerators)
+   * [Dynamic Surrogates (Preview)](#dynamic-surrogates-preview)
    * [Build All](#build-all)
    * [Support](#support)
 
@@ -784,7 +786,17 @@ public class ConsoleDragDropHandler : MonoBehaviour
 > **Note** <br/>
   For more examples, see **Scene11 - Handling Drag and Drop** in the [Example Scenes section](#example-scenes).
   
-  
+
+## Time Scale
+
+Sometimes, it's useful to "disable" physics and prevent scripts from updating, effectively pausing your scene.
+
+To achieve this, `Time.timeScale` is used (see: [Unity documentation](https://docs.unity3d.com/ScriptReference/Time-timeScale.html)).
+
+To enable a mode where `Time.timeScale` is set to 0 in edit mode and 1 in play mode, set `UseZeroTimeScaleInEditMode` to true (default value is false).
+
+![Use Zero TimeScale in Edit Mode][use_zero_time_scale_in_edit_mode]
+
 # Runtime Editor UI and Window System
 ## Overview
 
@@ -4168,6 +4180,52 @@ namespace Battlehub.Storage.Enumerators
 }
 ```
 
+## Dynamic Surrogates (Preview)
+
+It is possible to avoid creating surrogates by hand, instead letting the runtime asset database serialize types using reflection at runtime. This process is roughly equivalent to Unity serialization rules. It works with fields and not with properties.
+
+To enable Dynamic Surrogate for a type, use the following code:
+
+```csharp
+var assetDatabase = IOC.Resolve<IAssetDatabaseModel>(;
+assetDatabase.AddRuntimeSerializableType(typeof(MyMonoBehaviour));
+```
+
+To use field serialization, ensure that the field:
+
+- Is public, or has a `SerializeField` attribute.
+- Isn’t static.
+- Isn’t const.
+- Isn’t readonly.
+- Has a field type that can be serialized:
+  - Primitive data types (int, float, double, bool, string, etc.)
+  - Enum types (32 bits or smaller)
+  - Fixed-size buffers
+  - Unity built-in types, for example, Vector2, Vector3, Rect, Matrix4x4, Color. *Some types like AnimationCurve will not be serialized.*
+  - Custom structs with the `Serializable` attribute
+  - References to objects that derive from `UnityEngine.Object`
+  - Custom classes with the `Serializable` attribute (see Serialization of custom classes).
+  - An array of a field type mentioned above.
+  - A `List<T>` of a field type mentioned above.
+
+### Serialization of Custom Classes
+
+For Unity to serialize a custom class, ensure the class:
+
+- Has the `Serializable` attribute.
+- Isn’t static.
+
+The `[SerializeReference]` attribute is not supported.
+
+### Custom Serialization
+
+Sometimes you might want to serialize something that the serializer doesn’t support (for example, a C# Dictionary). The best approach is to implement the `ISerializationCallbackReceiver` interface in your class. This allows you to implement callbacks that are invoked at key points during serialization and deserialization:
+
+- When an object is about to be serialized, Unity invokes the `OnBeforeSerialize()` callback. Inside this callback is where you can transform your data into something Unity understands. For example, to serialize a C# Dictionary, copy the data from the Dictionary into an array of keys and an array of values.
+- After the `OnBeforeSerialize()` callback is complete, Unity serializes the arrays.
+- Later, when the object is deserialized, Unity invokes the `OnAfterDeserialize()` callback. Inside this callback is where you can transform the data back into a form that’s convenient for the object in memory. For example, use the key and value arrays to repopulate the C# Dictionary.
+
+
 ## Build All
 After finishing creating or updating surrogates, make sure to click **"Tools" > "Runtime Asset Library" > "Build All"** from the main menu. This command will build the type model and serializer.
 
@@ -4197,6 +4255,7 @@ Keep up the great work in your development journey! 😊
 [enumerators_folder]: Docs/Images/enumerators_folder.png
 [build_all]: Docs/Images/build_all.png
 [expose_to_editor]: Docs/Images/expose_to_editor.jpg
+[use_zero_time_scale_in_edit_mode]: Docs/Images/use_zero_time_scale_in_edit_mode.jpg
 [builtin_windows]: Docs/Images/builtin_windows.jpg
 [main_menu]: Docs/Images/main_menu.jpg
 [context_menu]: Docs/Images/context_menu.jpg
