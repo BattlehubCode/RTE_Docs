@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.2.5**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.2.6**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -4188,7 +4188,7 @@ To enable Dynamic Surrogate for a type, use the following code:
 
 ```csharp
 var assetDatabase = IOC.Resolve<IAssetDatabaseModel>(;
-assetDatabase.AddRuntimeSerializableType(typeof(MyMonoBehaviour));
+assetDatabase.AddRuntimeSerializableTypes(typeof(MyMonoBehaviour));
 ```
 
 To use field serialization, ensure that the field:
@@ -4221,9 +4221,9 @@ The `[SerializeReference]` attribute is not supported.
 
 Sometimes you might want to serialize something that the serializer doesn’t support (for example, a C# Dictionary). The best approach is to implement the `ISerializationCallbackReceiver` interface in your class. This allows you to implement callbacks that are invoked at key points during serialization and deserialization:
 
-- When an object is about to be serialized, Unity invokes the `OnBeforeSerialize()` callback. Inside this callback is where you can transform your data into something Unity understands. For example, to serialize a C# Dictionary, copy the data from the Dictionary into an array of keys and an array of values.
-- After the `OnBeforeSerialize()` callback is complete, Unity serializes the arrays.
-- Later, when the object is deserialized, Unity invokes the `OnAfterDeserialize()` callback. Inside this callback is where you can transform the data back into a form that’s convenient for the object in memory. For example, use the key and value arrays to repopulate the C# Dictionary.
+- When an object is about to be serialized, Runtime Asset Database invokes the `OnBeforeSerialize()` callback. Inside this callback is where you can transform your data into something Runtime Asset Database understands. For example, to serialize a C# Dictionary, copy the data from the Dictionary into an array of keys and an array of values.
+- After the `OnBeforeSerialize()` callback is complete, Runtime Asset Database serializes the arrays.
+- Later, when the object is deserialized, Runtime Asset Database invokes the `OnAfterDeserialize()` callback. Inside this callback is where you can transform the data back into a form that’s convenient for the object in memory. For example, use the key and value arrays to repopulate the C# Dictionary.
 
 
 ## Build All
