@@ -250,7 +250,7 @@ The converter is implemented in the `RTSLProjectConverter` class. It takes the R
 2. Click "Install/Upgrade" dependencies to install the required Universal Render Pipeline package.
 3. Click **Tools -> Runtime Editor -> Use URP RenderPipelineAsset**.
 4. Click **Tools -> Runtime Editor -> Add URP support for RTEditor**.
-5. If you are using Runtime Editor Extensions (RTExtensions prefab), click **Tools -> Runtime Editor -> Add URP support for RTEditor** again.
+5. If you are using Runtime Editor Extensions (RTExtensions prefab), click **Tools -> Runtime Editor -> Add URP support for RTExtensions**.
    ![Add Required Prefabs][universal_rp_2]
 6. In Project Settings / Player, switch the color space to **Linear**.
    ![Linear Color Space][universal_rp_3]
