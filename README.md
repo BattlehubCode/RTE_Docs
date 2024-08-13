@@ -254,9 +254,6 @@ The converter is implemented in the `RTSLProjectConverter` class. It takes the R
    ![Add Required Prefabs][universal_rp_2]
 6. In Project Settings / Player, switch the color space to **Linear**.
    ![Linear Color Space][universal_rp_3]
-7. Update Asset Database using **Tools -> Runtime Asset Database -> Build All**
-	![Build All Menu][build_all_2]
- 
 
 > **Note**  
 > If the scene window will always be docked, set `RenderPipelineInfo.UserForegroundLayerForUI = false`. See the [MinimalLayoutExample script in Scene1 and Scene2](#example-scenes) for details.
