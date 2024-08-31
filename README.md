@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.3.3**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.4.0**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This toolset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 If you're new to this documentation, please start with the introduction section for an overview of the Runtime Editor and its features.
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
@@ -144,6 +144,14 @@ If you're new to this documentation, please start with the introduction section 
    * [Runtime Gizmos](#runtime-gizmos)
 - [Animation Editor ](#animation-editor)
 - [Runtime Editor Extensions](#runtime-editor-extensions)
+- [Runtime Scripting](#runtime-scripting)
+   * [Getting Started with Runtime Scripting](#getting-started-with-runtime-scripting)
+   * [Jint Script](#jint-script)
+   * [Declaring Variables](#declaring-variables)
+   * [Using UnityEngine API](#using-unityengine-api)
+   * [JintComponent.Add, JintComponent.Get](#jintcomponentadd-jintcomponentget)
+   * [Create Jint Script Programmatically](#create-jint-script-programmatically)
+   * [More Runtime Scripting Samples](#more-runtime-scripting-samples)
 - [Asset Database](#asset-database)
    * [IRuntimeEditor and IAssetDatabaseModel Interfaces](#iruntimeeditor-and-iassetdatabasemodel-interfaces)
       + [IRuntimeEditor Interface](#iruntimeeditor-interface)
@@ -2553,6 +2561,209 @@ https://rteditor.battlehub.net/v350/manual/animation-editor.html
 
 https://rteditor.battlehub.net/v350/manual/editor-extensions.html
 
+# Runtime Scripting
+
+In Runtime Editor 4.4.0, support for Jint as a runtime scripting backend was added.  
+Jint is a JavaScript interpreter for .NET that can run on any modern .NET platform, as it supports .NET Standard 2.0 and .NET 4.6.2 targets (and later). [Learn more about Jint here](https://github.com/sebastienros/jint).  
+Jint has an advantage over the Roslyn scripting backend in that it is easier to manage. It works not only on standalone platforms and Android, but also supports WebGL and virtually any other platform.
+
+## Getting Started with Runtime Scripting
+
+1. Unpack `Assets/Battlehub/3 RTEditor Scripting (Jint).unitypackage`.
+2. If you're starting with a new scene, click **Tools > Runtime Editor > Create RTEditor**.
+3. Click **Tools > Runtime Editor > Add Runtime Scripting (Jint)**.
+   ![Add Jint Scripting][jint_scripting_1]
+4. Start the Runtime Editor.
+5. In the Project View, right-click and select **Create > JintScript** from the context menu.
+   ![Create Jint Script][jint_scripting_2]
+6. Create an empty GameObject.
+   ![Create Empty GameObject][jint_scripting_3]
+7. In the Inspector, click **Add Component** and type `JintScript`.
+   ![Add Component][jint_scripting_4]
+8. Click **Play** in the Runtime Editor.
+9. Observe `Debug.Log` messages printed by `JintScript` in the console.
+   ![Click Play in Runtime Editor][jint_scripting_5]
+10. You can open the script editor by double-clicking the script in the Project View.
+	![Script Editor][jint_scripting_6]
+	
+## Jint Script
+A typical Jint script looks as follows:
+
+```javascript
+var UnityEngine = importNamespace('UnityEngine');
+
+var Awake = function (component) {
+    UnityEngine.Debug.Log("Awake");
+};
+
+var Start = function (component) {
+    UnityEngine.Debug.Log("Start");
+};
+
+var OnDestroy = function (component) {
+    UnityEngine.Debug.Log("OnDestroy");
+};
+
+return {
+    Awake: Awake,
+    Start: Start,
+    OnDestroy: OnDestroy
+};
+```
+
+Method names correspond to the names of Unity MonoBehaviour methods. You can declare Awake, OnEnable, Start, OnDisable, Update, FixedUpdate, and OnDestroy.
+There are two additional methods called by the Runtime Editor: OnRemove and OnRestore. The Runtime Editor does not immediately delete GameObjects; they remain in the undo stack until eventually destroyed, at which point the OnDestroy method is called. If you restore a GameObject from the undo/redo stack, the OnRestore method will be called.
+Other methods like LateUpdate and OnApplicationQuit are currently not supported.
+
+## Declaring variables
+There are four types of properties that can be exposed to the Runtime Editor and displayed in the Inspector: String, Number, Boolean, and Object.
+
+```javascript
+ var UnityEngine = importNamespace('UnityEngine');
+ var Log = UnityEngine.Debug.Log;
+
+ var Start = function(component) {
+     Log(this.String + "", "" + this.Number + "", "" + this.Boolean + "", "" + this.Object);
+ }
+
+ return {
+     String: ""Runtime Editor"",
+     Number: 2024,
+     Boolean: true,
+     Object: {},
+
+     Start : Start
+ };
+ ```
+![Properties][jint_scripting_7]
+
+## Using UnityEngine API
+
+Using the Unity API from a Jint script is intuitive and not much different from how it's used in C#.
+However, to access methods of certain objects, you need to unwrap the object using the u(obj) method, which is a shortcut for jint.clrHelper.unwrap(obj).
+See the u(rb) call in the example below and refer to the following issue for details: [https://github.com/sebastienros/jint/pull/1613](https://github.com/sebastienros/jint/pull/1613)
+
+``` javascript
+  var UnityEngine = importNamespace('UnityEngine');
+  var RTCommon = importNamespace('Battlehub.RTCommon');
+
+  var GameObject = UnityEngine.GameObject;
+  var PrimitiveType = UnityEngine.PrimitiveType;
+  var Rigidbody = UnityEngine.Rigidbody;
+  var Vector3 = UnityEngine.Vector3;
+
+  var ExposeToEditor = RTCommon.ExposeToEditor;
+
+  var Start = function (component) {
+      var plane = GameObject.CreatePrimitive(PrimitiveType.Plane);
+      plane.transform.parent = component.transform.parent;
+      plane.position = Vector3.zero;
+      plane.AddComponent(ExposeToEditor);
+  
+      var go = GameObject.CreatePrimitive(PrimitiveType.Cube);
+      go.transform.parent = component.transform.parent;
+      go.transform.position = new Vector3(0, 10, 0);
+      go.AddComponent(ExposeToEditor);    
+  
+      var rb =  go.AddComponent(Rigidbody);           
+      u(rb).AddForce(
+          Vector3.right,
+          UnityEngine.ForceMode.Impulse);
+  }
+
+  return {
+      Start: Start
+  };
+  "
+```
+![Properties][jint_scripting_8]
+
+## JintComponent.Add, JintComponent.Get
+
+JintComponent.Add can be used to add a Jint script by name, equivalent to AddComponent.
+
+``` javascript
+ var UnityEngine = importNamespace('UnityEngine');
+ var RTScripting = importNamespace('Battlehub.RTScripting');
+
+ var Hello = function (arg) {
+     UnityEngine.Debug.Log(""Hi "" + arg + "", nice to meet you!"")
+ }
+ 
+ var Start = function (component) {
+     RTScripting.JintComponent.Add(component.gameObject, ""TestJintComponent"")
+ }
+
+ return {
+     Start: Start,
+     Hello: Hello
+ };
+```
+
+JintComponent.Get can be used to retrieve a Jint script by name, equivalent to GetComponent.
+
+```javascript
+var UnityEngine = importNamespace('UnityEngine');
+var RTScripting = importNamespace('Battlehub.RTScripting');
+
+var Start = function (component) {
+    UnityEngine.Debug.Log(""I am Test Component!"");
+    
+    var otherComponent = RTScripting.JintComponent.Get(component.gameObject, ""AddJintComponent"");
+    otherComponent.Call(""Hello"", ""Test Component"");
+}
+
+return {
+    Start: Start
+}
+```
+
+## Create Jint Script programmatically
+
+The following approach can be used to create Jint scripts programmatically:
+
+```csharp
+private async Task CreateExampleScriptAsync(string gameObjectName, string scriptName, string scriptCode)
+{
+    var editor = IOC.Resolve<IRuntimeEditor>();
+    
+    // Get script path inside root folder
+    var scriptPath = editor.GetRootFolderPath($"{scriptName}.js");
+
+    // Create script asset
+    await editor.CreateAssetAsync(scriptCode, scriptPath, forceOverwrite: true);
+    
+    // Create game object 
+    var go = CreateGameObject(gameObjectName);
+
+    // And add it to the Scene
+    editor.AddGameObjectToScene(go);
+
+    // Add JintComponent with newly created script
+    go.AddJintComponent(scriptName);
+}
+```
+
+```csharp
+ string scriptCode = @"
+ var UnityEngine = importNamespace('UnityEngine');
+
+ UnityEngine.Debug.Log(""Hello World!"");
+ ";
+
+CreateExampleScript(
+    gameObjectName: "Hello World",
+    scriptName: "Hello World",
+    scriptCode: scriptCode);
+```
+
+## More Runtime Scripting samples
+
+1. Unpack **Assets/Battlehub/3 RTEditor Scripting Demo (Jint).unitypackage.**
+2. Click Tools > Runtime Editor > Show me examples.
+3. Open **Scene61 - Scripting (Jint)** in the [Example Scenes section](#example-scenes).
+![Properties][jint_scripting_9]
+
 # Asset Database
 In **Runtime Editor 4.0.0**, the RTSL subsystem was replaced by the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase). 
 For information on making the runtime editor compatible with projects created using previous versions, see the [Compatibility Modes](#compatibility-modes) section. 
@@ -4299,4 +4510,16 @@ Keep up the great work in your development journey! 😊
 [my_import_source_2]:Docs/Images/my_import_source_2.jpg
 [file_importers_1]:Docs/Images/file_importers_1.jpg
 [file_importers_2]:Docs/Images/file_importers_2.jpg
+[jint_scripting_1]:Docs/Images/jint_scripting_1.jpg
+[jint_scripting_2]:Docs/Images/jint_scripting_2.jpg
+[jint_scripting_3]:Docs/Images/jint_scripting_3.jpg
+[jint_scripting_4]:Docs/Images/jint_scripting_4.jpg
+[jint_scripting_5]:Docs/Images/jint_scripting_5.jpg
+[jint_scripting_6]:Docs/Images/jint_scripting_6.jpg
+[jint_scripting_7]:Docs/Images/jint_scripting_7.jpg
+[jint_scripting_8]:Docs/Images/jint_scripting_8.jpg
+[jint_scripting_9]:Docs/Images/jint_scripting_9.jpg
+
+
+
 
