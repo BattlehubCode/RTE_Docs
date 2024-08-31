@@ -2565,7 +2565,6 @@ https://rteditor.battlehub.net/v350/manual/editor-extensions.html
 
 In Runtime Editor 4.4.0, support for Jint as a runtime scripting backend was added.  
 Jint is a JavaScript interpreter for .NET that can run on any modern .NET platform, as it supports .NET Standard 2.0 and .NET 4.6.2 targets (and later). [Learn more about Jint here](https://github.com/sebastienros/jint).  
-Jint has an advantage over the Roslyn scripting backend in that it is easier to manage. It works not only on standalone platforms and Android, but also supports WebGL and virtually any other platform.
 
 ## Getting Started with Runtime Scripting
 
