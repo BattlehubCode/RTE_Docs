@@ -400,7 +400,7 @@ This interface allows for robust selection management within the Runtime Editor,
 using UnityEngine;
 using Battlehub.RTCommon;
 
-public class RuntimeSelectioExample : MonoBehaviour
+public class RuntimeSelectionExample : MonoBehaviour
 {
     IRuntimeSelection m_selection;
 
