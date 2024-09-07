@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.4.0**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.4.1**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
 
@@ -130,7 +130,8 @@ Welcome to the [**Runtime Editor v.4.4.0**](https://assetstore.unity.com/package
    * [Inspector Configuration](#inspector-configuration)
       + [Register Editors Programatically](#register-editors-programatically)
       + [Steps to Register Property Editors Programmatically](#steps-to-register-property-editors-programmatically)
-      + [Component Properties Visiblity](#component-properties-visiblity)
+      + [Component Properties Visibility](#component-properties-visibility)
+	  + [Custom Type Properties Visibility](#custom-type-properties-visibility)
       + [Customizing Component Editor Header](#customizing-component-editor-header)
       + [HeaderDescriptor Structure](#headerdescriptor-structure)
    * [Localization](#localization)
@@ -2317,7 +2318,7 @@ public class CustomComponentEditorInit : EditorExtension
 }
 ```
 
-### Component Properties Visiblity
+### Component Properties Visibility
 
 To select the properties displayed by the component editor, you need to create a class that inherits from `ComponentDescriptorBase<>`. Implement the `GetProperties` method to return `PropertyDescriptors` for all properties that will be present in the component editor UI. 
 
@@ -2446,6 +2447,77 @@ The remaining built-in component descriptors can be found in the `Assets/Battleh
 
 > **Note** </br>
 To save a new component, you should create a **Surrogate** class for it. See the [Serializer Extensions](#serializer-extensions) section for details.
+
+### Custom Type Properties Visibility
+
+Here is the example on how to create custom type property descriptor:
+
+```csharp
+using System.Collections.Generic;
+using Battlehub.RTEditor;
+using UnityEngine;
+
+
+public class CustomTypeDescriptor : CustomTypeDescriptorBase<CustomType>
+{
+    public override PropertyDescriptor[] GetProperties()
+    {
+        return new []
+        {
+            Property("Name", (CustomType x) => x.Name),
+            Property("Val", (CustomType x) => x.Value, new Range(1, 100)),
+            Property("Col", (CustomType x) => x.Color),
+            Method("Reset", (CustomType x) => x.Reset())
+        };
+    }
+}
+
+[System.Serializable]
+public class CustomType
+{
+    [SerializeField]
+    private string m_name;
+
+    public string Name 
+    {
+        get { return m_name; }
+        set { m_name = value; }
+    }
+
+    [SerializeField]
+    private float m_value;
+
+    public float Value 
+    {
+        get { return m_value; }
+        set { m_value = value; }
+    }
+
+    [SerializeField]
+    private Color m_color;
+
+    public Color Color
+    {
+        get { return m_color; }
+        set { m_color = value; }
+    }
+
+    public void Reset()
+    {
+        Color = Color.white;
+        Value = 0;
+    }
+}
+
+public class NewBehaviourScript : MonoBehaviour
+{
+    [SerializeField]
+    private CustomType m_field = new CustomType();
+
+    [SerializeField]
+    private List<CustomType> m_list;
+}
+```
 
 ### Customizing Component Editor Header
 
