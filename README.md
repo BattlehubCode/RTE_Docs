@@ -2535,15 +2535,16 @@ https://rteditor.battlehub.net/v350/manual/menu-control.html
 
 # Runtime Transform Handles
 
-Runtime Transform Handles are the runtime 3D controls used to manipulate items in the scene. There are three built-in transform tools to position, rotate, and scale objects via the transform component. Another special built-in tool, the rect tool, allows you to move and change the scale of game objects. 
-
-Supplementary controls such as the scene gizmo and grid help to change the viewing angle and projection mode, identify selected objects, and orientate in the scene space. Other important components include:
+Runtime Transform Handles are the runtime 3D controls used to manipulate GameObjects in the scene. 
+There are three built-in transform tools for positioning, rotating, and scaling objects via the transform component. 
+Supplementary controls, such as the scene gizmo and grid, allow for changing the viewing angle and projection mode, and for showing the grid in the scene. 
+Other important components include
 
 - **Selection Component**: Allows for selecting objects.
 - **Scene Component**: Facilitates navigation within the scene.
 - **Handles Component**: Enables changing the appearance of transform handles.
 
-https://rteditor.battlehub.net/v350/manual/transform-handles.html
+https://github.com/BattlehubCode/RTH_Docs
 
 ## Runtime Gizmos
 
