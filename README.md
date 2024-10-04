@@ -3897,8 +3897,6 @@ For the **Resources Loader**, you should use the relative path in the Resources 
 For the **Addressables Loader**, the key will be used as a parameter for the [Addressables.LoadAsset method](https://docs.unity3d.com/Packages/com.unity.addressables@1.20/api/UnityEngine.AddressableAssets.Addressables.LoadAsset.html#UnityEngine_AddressableAssets_Addressables_LoadAsset__1_System_Object_).<br/>
 For the **GLTFastLoader Loader**, the key can be an absolute URI, an absolute path, or a path relative to the **.Library** folder inside the runtime project folder.<br/>
 
-Here is the refined documentation with improved grammar and clarity:
-
 ### TriLibLoader Example
 
 The Runtime Editor is only able to load .glb and .gltf models. For .fbx and other formats, you need to use an asset such as [TriLib](https://assetstore.unity.com/packages/tools/modeling/trilib-2-model-loading-package-157548). Here is an example of how to create an external asset loader using the TriLib library and integrate it with the Runtime Editor. The procedure is almost the same as for any other loader.
