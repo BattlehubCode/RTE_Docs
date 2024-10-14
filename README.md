@@ -4504,7 +4504,7 @@ Sometimes you might want to serialize something that the serializer doesn’t su
 
 
 ## Build All
-After finishing creating or updating surrogates, make sure to click **"Tools" > "Runtime Asset Library" > "Build All"** from the main menu. This command will build the type model and serializer.
+After finishing creating or updating surrogates, make sure to click **"Tools" > "Runtime Asset Database" > "Build All"** from the main menu. This command will build the type model and serializer.
 
 ![Build All Menu][build_all_2]
 ![Type Model][build_all]
