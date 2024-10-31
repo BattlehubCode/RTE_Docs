@@ -2281,7 +2281,7 @@ public class RegisterPropertyEditorsExample : EditorExtension
 }
 ```
 
-### Steps to Register Property Editors Programmatically
+### Steps to Register Component Editors Programmatically
 
 1. **Create a New Script**: Create a new C# script, for example, `RegisterPropertyEditorsExample.cs`.
 
