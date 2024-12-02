@@ -4464,7 +4464,7 @@ It is possible to avoid creating surrogates by hand, instead letting the runtime
 To enable Dynamic Surrogate for a type, use the following code:
 
 ```csharp
-var assetDatabase = IOC.Resolve<IAssetDatabaseModel>(;
+var assetDatabase = IOC.Resolve<IAssetDatabaseModel>();
 assetDatabase.AddRuntimeSerializableTypes(typeof(MyMonoBehaviour));
 ```
 
