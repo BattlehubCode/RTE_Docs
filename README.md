@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.5.2**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.5.1**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
 
