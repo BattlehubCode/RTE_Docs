@@ -1,6 +1,6 @@
 # Runtime Editor for Unity
 
-Welcome to the [**Runtime Editor v.4.5.1**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
+Welcome to the [**Runtime Editor v.4.5.2**](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806) documentation. This asset includes scripts and prefabs designed to help you create scene editors, game level editors, or your own modeling applications. 
 
 [![Asset Store][youtube_icon]](https://assetstore.unity.com/packages/tools/modeling/runtime-editor-64806)
 
@@ -229,6 +229,10 @@ There are various example scenes available. To access them:
 # Compatibility Modes
 In Runtime Editor 4.x.x, the [Runtime Asset Database](https://github.com/Battlehub0x/RuntimeAssetDatabase) has replaced the [Runtime Save Load](https://rteditor.battlehub.net/v350/manual/save-load.html) subsystem, which is now considered legacy. By default, Runtime Editor cannot open projects created using RTSL. However, there are two compatibility modes, **AssetDatabaseOverRTSL** and **LegacyRTSL**, 
 which allow you to open and work with projects created before RTE 4.x.x. 
+
+> **Note**
+  Before selecting compatibility mode, extract **Assets/Battlehub/LegacyRTSL.unitypackage**
+
 To select a compatibility mode, use the **Compatibility Mode** dropdown in the Runtime Editor component editor.
 	![Compatibility Mode][compatibility_mode]
 
@@ -244,6 +248,9 @@ In this mode, users can open only legacy RTSL projects. All legacy windows and A
 # RTSL to AssetDatabase Project Converter
 
 An example of a project converter from the old RTSL format to the new AssetDatabase format can be found in [Assets\Battlehub\RTEditorDemo\Examples\RTSL to AssetDatabase Project Converter.unity](#example-scenes).
+
+> **Note**
+  To access this example, first extract **Assets/Battlehub/LegacyRTSL.unitypackage**
 
 The converter is implemented in the `RTSLProjectConverter` class. It takes the RTSL project path and the new AssetDatabase project path as inputs. The converter performs the following steps:
 
