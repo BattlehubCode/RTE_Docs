@@ -215,6 +215,11 @@ The Runtime Editor consists of several major parts, effectively decoupled using 
 7. Press "Play".
 	![Getting Started Result][getting_started_5]
 
+> **Note**  
+> In Unity 6.2 and higher, make sure to switch **Active Input Handling** to **Both**.  
+> You can do this from the Project Settings window:  
+> **Edit > Project Settings > Player > Other Settings > Configuration > Active Input Handling**
+
 # Example Scenes
 There are various example scenes available. To access them:
 
